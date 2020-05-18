@@ -1,0 +1,29 @@
+# デイジー図書の入手
+- [視覚障害者情報総合ネットワーク サピエ図書館](https://www.sapie.or.jp/cgi-bin/CN1WWW)
+    - 約2,000作品のテキストデイジーや、マルチメディアデイジー（作品数不明）を保有
+    - 直接利用の個人会員の利用は無料
+    - 全国各地にある「サピエ会員施設・団体」にて登録申請が必要
+        - 小平市は小川西町図書館だが、[A会員、 B会員共に個人会員は受入れておらず？](https://member.sapie.or.jp/institutions/list?id=2)
+- [（NPO）支援技術開発機構：図書ダウンロード](https://atdo.website/download/#free)
+    - 6作品、無料、すぐにダウンロード可能
+- [（NPO）日本DAISYコンソーシアム：マルチメディアDAISY(デイジー）で東日本大震災に関わる情報を](https://www.dinf.ne.jp/doc/daisy/jdc/index.html)
+- [（NPO）サクセスネット：チャティ文庫](https://saccessnet.com/chattylib/)
+    - 児童書7作品、小学校教科書に載っている作品141作品、無料、登録申請が必要
+- [（公財）日本障害者リハビリテーション協会：マルチメディアDAISY図書一覧](https://www.dinf.ne.jp/doc/daisy/book/index.html)
+    - 約50作品、ダウンロード版は1作品500円、登録申請が必要
+- [（公財）日本障害者リハビリテーション協会：DAISYライブラリー：](https://www.dinf.ne.jp/doc/daisy/book/daisylibrary.html)
+    - 約100作品、1作品500円、視覚障害者等の印刷物を読むことが困難な方のみへの提供、登録申請が必要
+- [（社福）日本ライトハウス情報文化センター：サンプルデータのダウンロード（協力：大阪市教育委員会）](http://www.lighthouse.or.jp/iccb/library/index_library/index_mmd/sample/)
+    - 3作品、無料、すぐにダウンロード可能
+- [（社福）日本ライトハウス情報文化センター：マルチメディアデイジー図書・教科書の製作・提供](http://www.lighthouse.or.jp/iccb/library/index_library/index_mmd/mmdownload/)
+    - 145作品、無料、視覚障害者等の印刷物を読むことが困難な方のみへの提供、登録申請が必要
+- [多言語絵本の会](https://www.rainbow-ehon.com/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%87%E3%82%A4%E3%82%B8%E3%83%BC-dl%E7%94%A8/)
+    - 11作品、無料、すぐにダウンロード可能
+- [多言語絵本の会：ノーマネット](https://www.normanet.ne.jp/services/download/rainbow.html)
+    - 10作品、無料、すぐにダウンロード可能
+- [所沢マルチメディアデイジー：製作図書](https://tokorozawa-mdaisy.org/daisybook1.html)
+    - 5作品がダウンロード/ブラウザで実行可能
+- [ノーマネット：マルチメディアDAISYダウンロード](https://www.normanet.ne.jp/services/download/daisy.html)
+    - 約20作品、無料、すぐにダウンロード可能
+- [立命館大学DAISY研究会：DAISY図書](http://rits-daisy.com/?page_id=41)
+    - 日本語のみの絵本は20作品、無料、、すぐにダウンロード可能、その他多言語図書など
