@@ -17,6 +17,7 @@
 
 [NPO法人 全国ＬＤ親の会](http://www.jpald.net/index.php)
 
+[大阪マルチメディアdaisy研究会](https://www.facebook.com/osakadaisy/)
 
 ### 読みやすい無料フォント
 [Dyslexie](https://en.wikipedia.org/wiki/Dyslexie)

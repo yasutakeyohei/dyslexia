@@ -11,6 +11,17 @@
 
 [きこえとことばの教室](http://www.kodaira.ed.jp/02kodaira/%E3%81%93%E3%81%A8%E3%81%B0%EF%BC%A8%EF%BC%B02007/kikoetokotoba.html)
 
+[特別支援教室わかば](http://www.kodaira.ed.jp/18kodaira/wakaba.html)
+
+特別支援教室わかばへ申し込む際にWISC-IVの検査結果提出が必要。一年以内に実施、かつ詳細な結果が必要。病院での診断に8,000円？他に医師診察記録も必要？で4,000円程。
+
+教育相談室（小平元気村おがわ東内）
+
+### スクールカウンセラー
+- [小平市スクールカウンセラー派遣事業実施要項](https://www.city.kodaira.tokyo.jp/reiki/reiki_honbun/g135RG00000827.html)
+- [臨床心理士](http://fjcbcp.or.jp/rinshou/gyoumu/)
+    - 臨床心理士は民間資格、診断はできず、査定（アセスメント）、面接、援助、調査研究を担う
+
 [「DAISY（デイジー）図書」をご利用ください](https://www.city.kodaira.tokyo.jp/kurashi/033/033933.html)
 
 [小平市特別支援教育総合推進計画後期計画](http://www.city.kodaira.tokyo.jp/kurashi/020/020015.html)

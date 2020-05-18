@@ -1,4 +1,4 @@
-# 国際ディスレクシア協会による定義
+# 国際ディスレクシア協会（IDA）による定義
 [国際ディスレクシア協会（International Dyslexia Association）](https://dyslexiaida.org/definition-of-dyslexia/)では以下のように定義しています。この定義はさまざまなところで使われています。
 
 >Dyslexia is characterized by difficulties with accurate and / or fluent word recognition and by poor spelling and decoding abilities. These difficulties typically result from a deficit in the phonological component of language that is often unexpected in relation to other cognitive abilities and the provision of effective classroom instruction. Secondary consequences may include problems in reading comprehension and reduced reading experience that can impede growth of vocabulary and background knowledge.
