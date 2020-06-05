@@ -1,6 +1,6 @@
 [book]
 authors = ["Yasutake Yohei"]
-language = "en"
+language = "ja"
 multilingual = false
 src = "src"
 title = "ディスレクシアに関する情報まとめ"
