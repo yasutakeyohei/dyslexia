@@ -18,16 +18,16 @@
 >この定義コンセンサス・プロジェクトは、IDAが国立学習障害センター（NCLD）および国立成育医療研究センター（NICHD）と協力して主導しました。結果として得られた定義は、専門家のコミュニティ間における認識の共有を助け、今後の重要な公共政策の取り組みのための基礎を築くことができました。この重要な節目に到達するためには、大規模な献身的なチームの並々ならぬ努力が必要でした。参加者は以下の通りです。
 >
 >[G. エマーソン・ディックマン](https://www.emersondickman.com/)（IDA長官、プロジェクトリーダー）  
-G.リード・リヨン（NICHD 子どもの発達と行動部門主任）  
-サリー＆ベネット・シェイウィッツ（イェール大学）  
-ジャック・フレッチャー（テキサス大学医学部、ヒューストン）  
-ウィリアム・エリス（NCLD）  
-マイケル・ライアン（心理学者）  
-バイロン・ローク（ウィンザー大学）  
-ルイーザ・モーツ（作家・研究者）  
-ブルース・ペニントン（デンバー大学  
-ゴードン・シャーマン（ハーバード大学）  
-マーシャ・ヘンリー（IDA会長）
+[G.リード・リヨン](https://childrenofthecode.org/interviews/lyon.htm)（NICHD 子どもの発達と行動部門主任）  
+[サリー＆ベネット・シェイウィッツ](https://www.nytimes.com/2018/09/21/health/dyslexia-shaywitz-yale.html)（イェール大学）  
+[ジャック・フレッチャー](https://uh.edu/class/psychology/about/people/jack-fletcher/)（テキサス大学医学部、ヒューストン）  
+[ウィリアム・エリス](https://www.baltimoresun.com/news/bs-xpm-1995-11-12-1995316090-story.html)（NCLD）  
+[マイケル・ライアン](http://dyslexiahelp.umich.edu/dyslexics/letter-from-dr-ryan)（心理学者）  
+[バイロン・ローク](https://www.tandfonline.com/doi/abs/10.1080/13854046.2011.638043?journalCode=ntcn20)（ウィンザー大学）  
+[ルイーザ・モーツ](http://www.louisamoats.com/)（作家・研究者）  
+[ブルース・ペニントン](https://www.du.edu/ahss/psychology/facultystaffstudents/faculty-listing/pennington.html)（デンバー大学）  
+[ゴードン・シャーマン](https://www.thenewgrange.org/about/gordon-sherman/)（ハーバード大学）  
+[マーシャ・ヘンリー](https://products.brookespublishing.com/cw_contributorinfo.aspx?ContribID=2053&Name=Marcia+K.+Henry%2C+Ph.D.) [（動画）](https://www.youtube.com/watch?v=bi3rMHMWX1U)（IDA会長）
 >
 >ディスレクシアの定義は、現在進行中の先進的な神経学的研究から生まれた知識を反映して進化し続けています。2002年、NICHDとIDAの後援を得て、G.エマーソン・ディックマンはIDAの1994年の定義を更新・拡張するためのコンセンサスグループを再招集しました。グループの参加者は以下の通りでした。
 >
@@ -35,13 +35,13 @@ G.リード・リヨン（NICHD 子どもの発達と行動部門主任）
 G.リード・リヨン（NICHD）*  
 ジャック・フレッチャー（テキサス大学医学部）*  
 ベネットとサリー・シェイウィッツ（エール大学）*  
-スーザン・ブレイディ（ロードアイランド大学）  
-ヒュー・キャッツ（カンザス大学）  
-ギネビア・エデン（ジョージタウン大学）  
-ジェフリー・ギルガー（カリフォルニア州立大学、LA）  
-ロビン・モリス（ジョージア州立大学）  
+[スーザン・ブレイディ](https://web.uri.edu/psychology/meet/susan-brady/)（ロードアイランド大学）  
+[ヒュー・キャッツ](https://directory.cci.fsu.edu/hugh-catts/)（カンザス大学）  
+[ギネビア・エデン](https://gufaculty360.georgetown.edu/s/contact/00336000014RdJHAA0/guinevere-eden)（ジョージタウン大学）  
+[ジェフリー・ギルガー](https://www.ucmerced.edu/content/jeffrey-gilger)（カリフォルニア州立大学、LA）  
+[ロビン・モリス](https://cradl.gsu.edu/profile/robin-morris/)（ジョージア州立大学）  
 トーマス・ヴィオール（IDAエグゼクティブ・ディレクター）  
-ハーレー・トメイ（IDA会長）  
+[ハーレー・トメイ](https://www.youtube.com/watch?v=-JfNtXnvgdI)（IDA会長）  
 >
 >このグループが作成した定義は、2002年11月12日のIDA理事会で採択されました。この定義は現在、多くの州法に組み込まれています。
 >

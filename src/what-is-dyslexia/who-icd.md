@@ -4,24 +4,24 @@
 ICDの中で、ディスレクシアは以下のように分類されています。
 
 ## ICD-11（2019年6月18日公表）
-<pre class="tree">
+<pre class="tree" style="overflow: scroll">
 <a href="https://icd.who.int/en">ICD-11</a>
  │
- ├ 第6章:精神と行動の障害
+ ├ 第6章:精神と行動の障害（Mental, behavioural or neurodevelopmental disorders）
  │　│ 
- │　├ (6A) 神経発達症群
+ │　├ (6A) 神経発達症群（Neurodevelopmental disorders）
  │　　　│
- │　　　├ (6A03) 発達性学習症
+ │　　　├ (6A03) 発達性学習症（Developmental learning disorder）
  │　　　　　├ <span class="highlight"><a href="https://icd.who.int/browse11/l-m/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f1008636089">(6A03.0) 発達性学習症、読字不全を伴う</a></span>
  │
  │
- ├ 第21章:症状、徴候又は臨床所見、他に分類されないもの
+ ├ 第21章:症状、徴候又は臨床所見、他に分類されないもの（Symptoms, signs or clinical findings, not elsewhere classified）
  　　│ 
  　　├ Symptoms, signs or clinical findings of the nervous system
  　　　　　├ Symptoms or signs involving the nervous system
  　　　　　　　│ 
- 　　　　　　　├ (MB4B) Symbolic dysfunctions
-　　　　　　　　　　├ <span class="highlight"><a href="https://icd.who.int/browse11/l-m/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f724140102">(MB4B.0) ディスレクシアとアレクシア</a></span>
+ 　　　　　　　├ (MB4B) 表象機能の障害（Symbolic dysfunctions）
+　　　　　　　　　　├ <span class="highlight"><a href="https://icd.who.int/browse11/l-m/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f724140102">(MB4B.0) ディスレクシアとアレクシア（Dyslexia and alexia）</a></span>
 </pre>
 
 （以下は安竹による翻訳のため、学術的な正確さは保証しません <i class="fa fa-smile-o" aria-hidden="true"></i>）
