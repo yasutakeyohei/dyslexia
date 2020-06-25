@@ -1,5 +1,4 @@
 # DAISY 4.0 とEPUB 3 の関係
-＊作成中
 
 [EPUB3 ≒ DAISY4 — EPUB 3とDAISY 4の関係と現在の状況](https://code.kzakza.com/2013/05/epub3_daisy4_2013/)
 - DAISY 4.0 は「交換フォーマット（中間フォーマット）」であり、EPUB 3 は、読者が利用するための「配布フォーマット」。
