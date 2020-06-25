@@ -1,7 +1,7 @@
 ディスレクシアに関する情報まとめ
 ====
 
-ディスレクシアに関する情報をmdbookの形式でまとめ、[こちらのサイト](https://yasutakeyohei.com/books/dyslexia/)で表示しております。
+ディスレクシアに関する情報をmdbookの形式でまとめ、[こちらのサイト](https://yasutakeyohei.com/books/dyslexia/)で公開しています。
 
 ## ライセンス
 [MIT](/LICENSE)
