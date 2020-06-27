@@ -9,3 +9,5 @@ theme = "src/theme"
 [output.html.fold]
 enable = true
 level = 0
+[output.html.search]
+enable = false
