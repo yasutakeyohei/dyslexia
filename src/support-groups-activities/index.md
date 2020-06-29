@@ -11,6 +11,8 @@
 
 [発達性ディスレクシア研究会](http://square.umin.ac.jp/dyslexia/index.html)
 
+[NPO法人 EDGE ディスレクシアの人が活きる社会に](https://www.npo-edge.jp/)
+
 [NPO法人 LD・Dyslexiaセンター](http://square.umin.ac.jp/LDDX/index.html)
 
 [NPO法人 支援技術開発機構（ATDO）](https://atdo.website/)

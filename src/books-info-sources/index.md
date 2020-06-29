@@ -74,6 +74,7 @@
 
 ### [特異的発達障害診断・治療のための実践ガイドライン](http://www.shindan.co.jp/books/index.php?menu=10&cd=178100&kbn=1)
 
+### [僕は、字が読めない。読字障害(ディスレクシア)と戦いつづけた南雲明彦の24年](https://www.shueisha-int.co.jp/publish/%E5%83%95%E3%81%AF%E3%80%81%E5%AD%97%E3%81%8C%E8%AA%AD%E3%82%81%E3%81%AA%E3%81%84%E3%80%82)
 
 
 ## レポート
