@@ -4,9 +4,11 @@ language = "ja"
 multilingual = false
 src = "src"
 title = "ディスレクシアに関する情報まとめ"
+description = "「読むこと」もしくは「書くこと」に困難さを抱える障害である「ディスレクシア」についての全般的な情報を、周知啓発のためにまとめています。少なく見積もっても人口の2.5%が読み書きに著しい困難さを抱えています。"
 [output.html]
 theme = "src/theme"
 git-repository-url="https://github.com/yasutakeyohei/dyslexia"
+google-analytics="UA-144705402-1"
 [output.html.fold]
 enable = true
 level = 0
