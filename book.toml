@@ -6,6 +6,7 @@ src = "src"
 title = "ディスレクシアに関する情報まとめ"
 [output.html]
 theme = "src/theme"
+git-repository-url="https://github.com/yasutakeyohei/dyslexia"
 [output.html.fold]
 enable = true
 level = 0
