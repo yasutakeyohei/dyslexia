@@ -1,5 +1,5 @@
 # Summary
-- [ディスレクシアに関する情報まとめ](./index.md)
+- [はじめに](./index.md)
 - [GIGAスクール構想が始まりました](./giga-school.md)
 - [ディスレクシアとは](./what-is-dyslexia/index.md)
     - [さまざまなケース](./what-is-dyslexia/cases.md)
