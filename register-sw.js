@@ -3,7 +3,7 @@ let indexController = this;
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("/sw.js")
+      .register("/books/dyslexia/sw.js")
       .then(registration => {
         if (registration.waiting) {
           indexController.updateReady(registration.waiting);
