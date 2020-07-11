@@ -35,11 +35,9 @@
         <link rel="stylesheet" href="{{ path_to_root }}css/print.css" media="print">
 
         <!-- Highlight.js Stylesheets -->
-        <!--
         <link rel="stylesheet" href="{{ path_to_root }}highlight.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="{{ path_to_root }}tomorrow-night.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="{{ path_to_root }}ayu-highlight.css" media="print" onload="this.media='all'">
-        -->
 
         <!-- Custom theme stylesheets -->
         {{#each additional_css}}
@@ -276,13 +274,14 @@
         {{/if}}
 
         <script src="{{ path_to_root }}clipboard.min.js" type="text/javascript" charset="utf-8" defer></script>
-        <!--<script src="{{ path_to_root }}highlight.js" type="text/javascript" charset="utf-8" defer></script>-->
+        <script src="{{ path_to_root }}highlight.js" type="text/javascript" charset="utf-8" defer></script>
         <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8" defer></script>
 
         <!-- Custom JS scripts -->
         {{#each additional_js}}
         <script type="text/javascript" src="{{ ../path_to_root }}{{this}}"></script>
         {{/each}}
+
 
         {{#if is_print}}
         {{#if mathjax_support}}
