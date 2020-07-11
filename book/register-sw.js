@@ -1,9 +1,9 @@
-var indexController = this;
+let indexController = this;
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("sw.js")
+      .register("/sw.js")
       .then(registration => {
         if (registration.waiting) {
           indexController.updateReady(registration.waiting);
@@ -26,7 +26,7 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-function trackInstalling(worker) {
+const trackInstalling = (worker) => {
   var indexController = this;
   worker.addEventListener("statechange", function() {
     if (worker.state == "installed") {
@@ -35,10 +35,12 @@ function trackInstalling(worker) {
   });
 }
 
-function updateReady(worker) {
+const updateReady = (worker) => {
+  /*
   var res = confirm("New version available, reload page?");
   if (res) {
+    */
     worker.postMessage({ action: "skipWaiting" });
     location.reload();
-  }
+  /*}*/
 }
