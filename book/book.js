@@ -325,9 +325,11 @@ function playpen_text(playpen) {
             ace_theme = "ace/theme/dawn";
         }
 
+        /*
         setTimeout(function () {
             themeColorMetaTag.content = getComputedStyle(document.body).backgroundColor;
         }, 1);
+        */
 
         if (window.ace && window.editors) {
             window.editors.forEach(function (editor) {
