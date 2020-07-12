@@ -24,6 +24,9 @@
         <meta property="og:description" content="{{ chapter_title }}"/>
         <meta property="og:locale" content="ja_JP" />
 
+        <!-- PWA -->
+        <meta name="theme-color" content="#27407A"/>
+
         <link rel="shortcut icon" href="{{ path_to_root }}{{ favicon }}" media="print" onload="this.media='all'">
 
         <!-- Fonts -->
@@ -49,6 +52,7 @@
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         {{/if}}
 
+        <!-- PWA -->
         <link rel="manifest" href="{{ ../path_to_root }}manifest.json">
         <link rel="apple-touch-icon" href="{{ ../path_to_root }}icon-apple-192.png">
 
