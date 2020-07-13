@@ -1,36 +1,35 @@
-let indexController = this;
+const main = () => {
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("/books/dyslexia/sw.js")
+        .then(registration => {
+          if (registration.waiting) {
+            updateReady(registration.waiting);
+            return;
+          }
+          if (registration.installing) {
+            trackInstalling(registration.installing);
+            return;
+          }
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("/books/dyslexia/sw.js")
-      .then(registration => {
-        if (registration.waiting) {
-          indexController.updateReady(registration.waiting);
-          return;
-        }
-        if (registration.installing) {
-          indexController.trackInstalling(registration.installing);
-          return;
-        }
+          registration.addEventListener("updatefound", function() {
+            trackInstalling(registration.installing);
+          });
 
-        registration.addEventListener("updatefound", function() {
-          indexController.trackInstalling(registration.installing);
+          console.log(`Service Worker registered! Scope: ${registration.scope}`);
+        })
+        .catch(err => {
+          console.log(`Service Worker registration failed: ${err}`);
         });
-
-        console.log(`Service Worker registered! Scope: ${registration.scope}`);
-      })
-      .catch(err => {
-        console.log(`Service Worker registration failed: ${err}`);
-      });
-  });
+    });
+  }
 }
 
 const trackInstalling = (worker) => {
-  var indexController = this;
   worker.addEventListener("statechange", function() {
     if (worker.state == "installed") {
-      indexController.updateReady(worker);
+      updateReady(worker);
     }
   });
 }
@@ -44,3 +43,5 @@ const updateReady = (worker) => {
     location.reload();
   /*}*/
 }
+
+main();
