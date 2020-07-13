@@ -3,11 +3,9 @@ importScripts(
 );
 
 if (workbox) {
-  workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
+   console.log(`Yay! Workbox is loaded 🎉`);
 
-  console.log(`Yay! Workbox is loaded 🎉`);
-
-  workbox.precaching.precacheAndRoute([], {
+  workbox.precaching.precacheAndRoute(self.__WB_MANIFEST, {
     ignoreUrlParametersMatching: [/.*/]
   });
 
