@@ -38,6 +38,23 @@ if (workbox) {
     }
   });
 
+  self.addEventListener("push", function (event) {
+    if (event.data) {
+      console.log('This push event has data: ', event.data.text());
+    } else {
+      console.log('This push event has no data.');
+    }
+  
+    const title = "テスト用のタイトル";
+    const options = {
+      body: "bodyの内容です。",
+      icon: '/img/icons/android-chrome-192x192.png',
+      badge: '',
+    };
+  
+    event.waitUntil(self.registration.showNotification(title, options));
+  });
+
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
 }

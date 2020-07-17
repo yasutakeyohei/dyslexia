@@ -3,6 +3,6 @@ module.exports = {
   "globPatterns": [
     "**/*.{html,css,js,jpg,png,eot,svg,ttf,woff,woff2}"
   ],
-  "swDest": "./book/sw.js",
-  "swSrc": "./sw.js"
+  "swDest": "./book/firebase-message-sw.js",
+  "swSrc": "./firebase-message-sw.js"
 };

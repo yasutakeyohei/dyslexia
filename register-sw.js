@@ -1,8 +1,12 @@
+var localAddrs = ["localhost", "127.0.0.1", ""];
+const swFilePath = (localAddrs.indexOf(document.location.hostname) === -1) ? "/books/dyslexia/firebase-message-sw.js" : "/firebase-message-sw.js"
+
+
 const main = () => {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("/books/dyslexia/sw.js")
+        .register(swFilePath)
         .then(registration => {
           if (registration.waiting) {
             updateReady(registration.waiting);
