@@ -1,5 +1,5 @@
 var localAddrs = ["localhost", "127.0.0.1", ""];
-const swFilePath = (localAddrs.indexOf(document.location.hostname) === -1) ? "/books/dyslexia/firebase-message-sw.js" : "/firebase-message-sw.js"
+const swFilePath = (localAddrs.indexOf(document.location.hostname) === -1) ? "/books/dyslexia/firebase-messaging-sw.js" : "/firebase-messaging-sw.js"
 
 
 const main = () => {
