@@ -296,9 +296,9 @@ pre.tree {
 }
 
 /* === ボタンを表示するエリア ============================== */
-
+/* https://codepen.io/raubaca/pen/BjGKde */
 /* Hide the input */
-#chck {
+#notify-subscription {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -341,13 +341,17 @@ pre.tree {
   font-weight: bold;
 }
 
-#chck:checked + .check-trail {
+#notify-subscription:checked + .check-trail {
   background: #88adff;
 }
-#chck:checked + .check-trail .check-handler {
+#notify-subscription:checked + .check-trail .check-handler {
   margin-left: 50%;
   background: #4b7bea;
 }
-#chck:checked + .check-trail .check-handler::before {
+#notify-subscription:checked + .check-trail .check-handler::before {
   content: "✔";
+}
+
+#how-to-set-notify {
+  text-align:right;
 }

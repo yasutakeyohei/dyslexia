@@ -116,11 +116,12 @@
 
             <div style="display:flex;justify-content: flex-end;">
                 <p style="margin:auto 5px auto 0;">更新通知</p>
-                <input id="chck" type="checkbox">
-                <label for="chck" class="check-trail">
+                <input id="notify-subscription" type="checkbox">
+                <label for="notify-subscription" class="check-trail">
                     <span class="check-handler"></span>
                 </label>
             </div>
+            <p id="how-to-set-notify" style="display:none;"><a href="">更新通知をONにするには</a></p>
 
             {{#toc}}{{/toc}}
             <p><a href="https://github.com/yasutakeyohei" style="text-decoration: none;"><i class="fa fa-github-alt"
@@ -316,6 +317,15 @@
     <script src="{{ path_to_root }}clipboard.min.js" type="text/javascript" charset="utf-8" defer></script>
     <script src="{{ path_to_root }}highlight.js" type="text/javascript" charset="utf-8" defer></script>
     <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8" defer></script>
+
+    <!-- axios -->
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
 
     <!-- Custom JS scripts -->
     {{#each additional_js}}
