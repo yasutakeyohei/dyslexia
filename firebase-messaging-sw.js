@@ -1,6 +1,21 @@
 importScripts(
-    "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
+  "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js",
+  "https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js",
+  "https://www.gstatic.com/firebasejs/5.7.2/firebase-messaging.js"
 );
+
+firebase.initializeApp({
+  messagingSenderId: "659926117267"
+});
+
+const messaging = firebase.messaging();
+
+self.addEventListener('notificationclick', (event) => {
+  if (event.action) {
+      clients.openWindow(event.action);
+  }
+  event.notification.close();
+}); 
 
 if (workbox) {
    console.log(`Yay! Workbox is loaded 🎉`);

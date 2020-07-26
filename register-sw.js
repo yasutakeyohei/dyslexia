@@ -6,8 +6,24 @@ const main = () => {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register(swFilePath)
+        .register(swFilePath, {updateViaCache: 'none'})
         .then(registration => {
+          messaging.useServiceWorker(registration);
+          messaging.onMessage((payload) => {
+            const title = payload.notification.title;
+            const options = {
+                body: payload.notification.body,
+                icon: payload.notification.icon,
+                actions: [
+                    {
+                        action: payload.fcmOptions.link,
+                        title: 'Book Appointment'
+                    }
+                ]
+            };
+            registration.showNotification(title, options);
+          });
+
           if (registration.waiting) {
             updateReady(registration.waiting);
             return;
@@ -16,7 +32,6 @@ const main = () => {
             trackInstalling(registration.installing);
             return;
           }
-
           registration.addEventListener("updatefound", function() {
             trackInstalling(registration.installing);
           });
