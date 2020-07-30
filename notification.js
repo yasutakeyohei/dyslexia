@@ -1,8 +1,7 @@
-const TOPIC = 'dyslexia';
+var localAddrs = ["localhost", "127.0.0.1", ""];
+const API_URL = (localAddrs.indexOf(document.location.hostname) === -1) ? "https://yasutakeyohei.com/notification-api.php" : "http://127.0.0.1:8080/public/notification-api.php"
 
-//api
-//const ROOT_URL = 'https://yasutakeyohei.com/notification-api.php';
-const ROOT_URL = 'http://127.0.0.1:8080/public/notification-api.php';
+const TOPIC = 'dyslexia';
 
 const API_SUBSCRIBE_TOKEN_TO_TOPIC = 'subscribe-token-to-topic';
 const API_UNSUBSCRIBE_FROM_TOPIC = 'unsubscribe-token-from-topic';
@@ -40,10 +39,12 @@ const setState = async (newState) => {
     ...newState
   }; //merge state
   subscribeCB.checked = (state.subscriptionChecked === true);
-  console.log("changed to " + subscribeCB.checked);
   await transitionEnd(subscribeEL);
 }
 
+/**
+ * Wait for checkbox animation end
+ */
 const transitionEnd = (el) =>
   new Promise(resolve => {
     const transitionEnded = e => {
@@ -53,6 +54,7 @@ const transitionEnd = (el) =>
     el.addEventListener('transitionend', transitionEnded);
   });
 
+
 const alertMessage = (title, description) => {
   GrowlNotification.notify({
     title,
@@ -60,29 +62,38 @@ const alertMessage = (title, description) => {
     image: { visible: true },
     type: 'error',
     position: 'top-left',
-    closeTimeout: 0
+    closeTimeout: 5000
   });
 }
 
 const successMessage = (title, description) => {
   GrowlNotification.notify({
+    title,
+    description,
     image: { visible: true },
     type: 'success',
     position: 'top-left',
+    closeTimeout: 5000
+  });
+}
+
+const infoMessage = (title, description) => {
+  GrowlNotification.notify({
+    title,
+    description,
+    image: { visible: true },
+    type: 'info',
+    position: 'top-right',
     closeTimeout: 0
   });
 }
 
-const displayMessage = async (message) => {
-  await setState({
-    snackbar: true,
-    snackbarMessage: message
-  });
-}
-
+/**
+ * Post payload to api
+ */
 const postAPI = async (mode, payload) => {
   try {
-    return await axios.post(`${ROOT_URL}/${mode}`, payload);
+    return await axios.post(`${API_URL}/${mode}`, payload);
   } catch (error) {
     return null;
   }
@@ -130,8 +141,8 @@ const subscribeNotification = async () => {
         return false;
       }
 
-      response = await postAPI(API_STORE_TOKEN, {currentToken});
-      if(response) {
+      const response = await postAPI(API_STORE_TOKEN, {token: currentToken});
+      if(response.data.success) {
         localStorage.setItem(TOKEN, currentToken);
         storedToken = currentToken;
       } else {
@@ -140,10 +151,11 @@ const subscribeNotification = async () => {
       }
     }
 
-    const subscribed = await postAPI(API_SUBSCRIBE_TOKEN_TO_TOPIC, {storedToken, TOPIC});
+    const subscribed = await postAPI(API_SUBSCRIBE_TOKEN_TO_TOPIC, {token: storedToken, topic: TOPIC});
     if (subscribed) {
       localStorage.setItem(TOKEN_SUBSCRIBED_TO_TOPIC, "TRUE");
-      successMessage('登録完了', 'コンテンツの主な更新時に通知致します。');
+      successMessage('通知登録完了しました', 'コンテンツ更新時にお知らせいたします');
+      return true;
     } else {
       alertMessage('トークン登録エラー', '通知サーバーへの登録ができませんでした。時間が経ってから再度お試しください。');
       return false;
@@ -158,49 +170,75 @@ const subscribeNotification = async () => {
  */
 const unsubscribeNotification = async () => {
   const storedToken = localStorage.getItem(TOKEN);
-  const isUnSubscribed = await postAPI(API_UNSUBSCRIBE_FROM_TOPIC, {storedToken, TOPIC});
-  if (isUnSubscribed) {
-    localStorage.removeItem(TOKEN_SUBSCRIBED_TO_TOPIC);
-    await postAPI(API_DELETE_TOKEN, {storedToken});
-    await setState({
-      subscriptionChecked: false
-    });
-    successMessage('解除完了', '通知登録を解除致しました。');
-  } else {
-    alertMessage('トークン削除エラー', '時間が経ってから再度お試しください。');
-  }
+
+  localStorage.removeItem(TOKEN_SUBSCRIBED_TO_TOPIC);
+  localStorage.removeItem(TOKEN);
+
+  const response1 = await postAPI(API_UNSUBSCRIBE_FROM_TOPIC, {token: storedToken, topic: TOPIC});
+  const response2 = await postAPI(API_DELETE_TOKEN, {token: storedToken});
+  if(response1.error) console.log(response1.error.message);
+  if(response2.error) console.log(response2.error.message);
+
+  successMessage('登録解除しました', '今後、お知らせは送信されません');
+
+  return true;
 }
 
+/**
+ * Retrieve initial state from localStorage and permission state
+ */
 const retrieveInitialState = async () => {
-  const storedToken = localStorage.getItem(TOKEN);
-  const subscribed = (localStorage.getItem(TOKEN_SUBSCRIBED_TO_TOPIC) !== null);
-  const permitted = (Notification.permission === 'granted');
+  const subscribedToTopic = (localStorage.getItem(TOKEN_SUBSCRIBED_TO_TOPIC) !== null);
+  const permitted  = (Notification.permission === 'granted');
+  const subscribed = (subscribedToTopic && permitted);
 
-  if (!subscribed || !permitted) {
-    await setState({ subscriptionChecked: false });
-    return;
-  }
-
-  // update storedToken if not valid
-  if (storedToken !== null) {
-    try {
-      currentToken = await messaging.getToken();
-      if (currentToken !== storedToken) {
-        await postAPI(API_DELETE_TOKEN, {storedToken});
-        await postAPI(API_STORE_TOKEN, {currentToken});
-        localStorage.setItem(TOKEN, currentToken);
-      }
-    } catch (err) {
-      console.log(err);
-      //need something
-    }
-  }
-  await setState({ subscriptionChecked: true });
+  await setState({ subscriptionChecked: subscribed });
 }
 
+/**
+ * Main
+ */
 const notifyMain = async () => {
+  await navigator.serviceWorker.ready;
   await retrieveInitialState();
 
+  //Foreground notification
+  messaging.onMessage((payload) => {
+    const subscribedToTopic = (localStorage.getItem(TOKEN_SUBSCRIBED_TO_TOPIC) !== null);
+
+    const body = `${payload.notification.body}<br><div><a href="${payload.fcmOptions.link}">ページはこちら</a></div>`;
+    const title = payload.notification.title;
+
+    if(subscribedToTopic) {
+      infoMessage(title, body);
+    }
+    console.log("notification message:", title, body);
+  });
+
+  //Token refreshed
+  messaging.onTokenRefresh(async () => {
+    const subscribedToTopic = (localStorage.getItem(TOKEN_SUBSCRIBED_TO_TOPIC) !== null);
+    if(subscribedToTopic) {
+      const storedToken = localStorage.getItem(TOKEN);
+      try {
+        const refreshedToken = await messaging.getToken();
+        console.log('Token refreshed.');
+
+        if (refreshedToken !== storedToken) {
+          await postAPI(API_DELETE_TOKEN, {token: storedToken});
+          await postAPI(API_STORE_TOKEN, {token: refreshedToken});
+          localStorage.setItem(TOKEN, refreshedToken);
+        }
+
+      } catch(err) {
+        console.log('Unable to retrieve refreshed token ', err);
+        alertMessage("トークン登録エラー", "更新されたトークンが登録できませんでした。再度通知登録をお願いします。");
+        setState({ subscriptionChecked: false });
+      }
+    }
+  });
+
+  //Checkbox changed
   subscribeCB.addEventListener('change', async () => {
     howtoP.style.display = 'block';
     if (subscribeCB.checked) {
