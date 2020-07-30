@@ -1,25 +1,46 @@
 importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js",
-  "https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js",
-  "https://www.gstatic.com/firebasejs/5.7.2/firebase-messaging.js"
+  "https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js",
+  "https://www.gstatic.com/firebasejs/7.17.1/firebase-messaging.js"
 );
 
 firebase.initializeApp({
-  messagingSenderId: "659926117267"
+  messagingSenderId: "659926117267",
+  projectId: "notify-c234b",
+  apiKey: "AIzaSyAvfbEl1p4RMbQWcEAcv2w_cc1ThNsB2xQ",
+  appId: "1:659926117267:web:70138bb6ddcd8d7b029666",
 });
 
 const messaging = firebase.messaging();
 
-self.addEventListener('notificationclick', (event) => {
+self.addEventListener('notificationclick', event => {
   if (event.action) {
-      clients.openWindow(event.action);
+    clients.openWindow(event.action);
   }
   event.notification.close();
-}); 
+});
+
+// backgroundメッセージ
+messaging.setBackgroundMessageHandler(payload => {
+  console.log('Handling background message', payload);
+
+  const subscribedToTopic = (localStorage.getItem(TOKEN_SUBSCRIBED_TO_TOPIC) !== null);
+
+  if (subscribedToTopic) {
+    return self.registration.showNotification(payload.title, {
+      body: payload.body,
+      icon: payload.icon,
+      data: payload.link,
+    });
+  }
+});
 
 if (workbox) {
-   console.log(`Yay! Workbox is loaded 🎉`);
+  console.log(`Yay! Workbox is loaded 🎉`);
 
+  self.addEventListener('install', event => {
+    self.skipWaiting();
+  });
   workbox.precaching.precacheAndRoute(self.__WB_MANIFEST, {
     ignoreUrlParametersMatching: [/.*/]
   });
@@ -31,45 +52,6 @@ if (workbox) {
       cacheName: "google-fonts-stylesheets"
     })
   );
-
-  self.addEventListener('activate', function(event) {
-    
-    event.waitUntil(
-      caches.keys().then(function(cacheNames) {
-        return Promise.all(
-          cacheNames.filter(function(cacheName) {
-
-          }).map(function(cacheName) {
-            return caches.delete(cacheName);
-          })
-        );
-      })
-    );
-  });
-
-  self.addEventListener('message', function(event) {
-    if (event.data.action === 'skipWaiting') {
-      self.skipWaiting();
-    }
-  });
-
-  self.addEventListener("push", function (event) {
-    if (event.data) {
-      console.log('This push event has data: ', event.data.text());
-    } else {
-      console.log('This push event has no data.');
-    }
-  
-    const title = "テスト用のタイトル";
-    const options = {
-      body: "bodyの内容です。",
-      icon: '/img/icons/android-chrome-192x192.png',
-      badge: '',
-    };
-  
-    event.waitUntil(self.registration.showNotification(title, options));
-  });
-
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
 }
