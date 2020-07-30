@@ -355,3 +355,17 @@ pre.tree {
 #how-to-set-notify {
   text-align:right;
 }
+
+.growl-notification__content {
+    line-height: 2.5rem;    
+}
+
+img {
+    border: 1px solid #333;
+    box-shadow: 4px 4px 4px 0 rgba(1, 1, 1, 0.4);
+}
+
+img.noshadow {
+    border: unset;
+    box-shadow: unset;
+}
