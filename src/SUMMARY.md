@@ -75,3 +75,4 @@
     - [DO-IT Japan](./support-groups-activities/do-it-japan.md)
 - [専門家](./experts.md)
 - [書籍・論文・情報源](./books-info-sources/index.md)
+- [更新通知について](./about-notification/index.md)
