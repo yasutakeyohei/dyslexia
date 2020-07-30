@@ -355,3 +355,7 @@ pre.tree {
 #how-to-set-notify {
   text-align:right;
 }
+
+.growl-notification__content {
+    line-height: 2.5rem;    
+}
