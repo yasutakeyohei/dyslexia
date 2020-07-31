@@ -1,5 +1,5 @@
 var localAddrs = ["localhost", "127.0.0.1", ""];
-const API_URL = (localAddrs.indexOf(document.location.hostname) === -1) ? "https://yasutakeyohei.com/notification-api.php" : "http://127.0.0.1:8080/public/notification-api.php"
+const API_URL = (localAddrs.indexOf(document.location.hostname) === -1) ? "https://yasutakeyohei.com/books/notification-api.php" : "http://127.0.0.1:8080/public/notification-api.php"
 
 const TOPIC = 'dyslexia';
 
