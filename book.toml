@@ -10,8 +10,9 @@ description = "「読むこと」もしくは「書くこと」に困難さを�
 theme = "src/theme"
 git-repository-url="https://github.com/yasutakeyohei/dyslexia"
 google-analytics="UA-144705402-1"
-additional-js=["growl-notification/growl-notification.min.js", "register-sw.js", "notification.js"]
-additional-css=["growl-notification/light-theme.min.css"]
+# additional-js=["growl-notification/growl-notification.min.js", "register-sw.js", "notification.js", "medium-zoom.js"]
+# additional-css=["growl-notification/light-theme.min.css"]
+additional-js=["medium-zoom.js"]
 
 [output.html.fold]
 enable = true
@@ -19,3 +20,7 @@ level = 0
 
 [output.html.search]
 enable = false
+
+[output.z]
+command = "python ../../postprocess.py"
+optional = true
