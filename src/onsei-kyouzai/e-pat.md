@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # e-Pat（文字・画像付き音声教材）
 [e-Patサイト](https://home.hiroshima-u.ac.jp/ujima/onsei/index.html)
 

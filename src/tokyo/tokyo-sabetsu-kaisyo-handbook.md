@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # 東京都 障害者差別解消法ハンドブック
 
 ## [東京都障害者差別解消法ハンドブック（H30.10改定版）](https://www.fukushihoken.metro.tokyo.lg.jp/shougai/shougai_shisaku/sabetsukaisho_yougo/sabekaikeihatsu.files/handbook_code.pdf)

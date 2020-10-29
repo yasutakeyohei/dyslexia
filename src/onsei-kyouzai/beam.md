@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # 音声教材BEAM
 [音声教材BEAMサイト](https://www.npo-edge.jp/support/audio-materials/)
 
