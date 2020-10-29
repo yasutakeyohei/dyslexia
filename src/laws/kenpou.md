@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # 日本国憲法 抜粋
 [昭和二十一年憲法](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=321CONSTITUTION#80)
 ## 第三章　国民の権利及び義務

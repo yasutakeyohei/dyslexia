@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # 障害者基本法 抜粋
 [昭和四十五年法律第八十四号](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=345AC1000000084)
 ## 第一章　総則

@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # デイジー図書・デイジー教科書について
 ## デイジーとは
 デイジー（DAISY: Digital Accessible Information SYstem）は、日本語では「[アクセシブルな情報システム](https://ja.wikipedia.org/?curid=2218853)」と訳されている国際標準規格のことです。以下のような特徴があります。

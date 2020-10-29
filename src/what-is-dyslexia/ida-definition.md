@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # 国際ディスレクシア協会（IDA）による定義
 [国際ディスレクシア協会（International Dyslexia Association）](https://dyslexiaida.org/definition-of-dyslexia/)では以下のように定義しています。この定義はさまざまなところで使われています。
 

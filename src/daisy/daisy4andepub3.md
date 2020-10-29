@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # DAISY 4.0 とEPUB 3 の関係
 
 [EPUB3 ≒ DAISY4 — EPUB 3とDAISY 4の関係と現在の状況](https://code.kzakza.com/2013/05/epub3_daisy4_2013/)

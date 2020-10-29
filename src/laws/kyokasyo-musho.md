@@ -1,3 +1,4 @@
+{{first:2020-05-18}}
 # 義務教育諸学校の教科用図書の無償に関する法律 抜粋
 [昭和三十七年法律第六十号](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=337AC0000000060)
 ### 第一条（趣旨）
