@@ -33,7 +33,7 @@ for filepath in glob.iglob('../../book/**/*.html', recursive=True):
     with open(filepath, encoding="utf8") as file:
         s = file.read()
 
-    print(re.search(removeIndexRe, s).group())
+    # print(re.search(removeIndexRe, s).group())
     s = re.sub(removeIndexRe, subst, s, 0) #index.htmlの削除
     if key != "" :
         replace = '''
