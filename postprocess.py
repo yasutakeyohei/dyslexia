@@ -6,11 +6,20 @@ import datetime
 
 from datetime import datetime as dt
 
+description =""
+def cutDesc(match):
+    global description
+    description = match.groups()[0]
+    return ""
+
+
 removeIndexRe1 = r"(href\s*?\=\s*?\")index\.html(.*?\")"
 subst1 = "\\1./\\2"
 
 removeIndexRe2 = r"(href\s*?\=\s*?\")(.*?)\/index\.html(.*?\")"
 subst2 = "\\1\\2/\\3"
+
+descriptionRe = r"<p>.*?{{description:(.*)}}.*?</p>"
 
 # index.htmlの削除
 for filepath in glob.iglob('../../book/**/*.html', recursive=True):
@@ -40,6 +49,12 @@ for filepath in glob.iglob('../../book/**/*.html', recursive=True):
     
     s = re.sub(removeIndexRe1, subst1, s, 0) #"index.html"の削除
     s = re.sub(removeIndexRe2, subst2, s, 0) #"~/~/index.html"の削除
+
+    description = ""
+    s = re.sub(r"<p>.*{{description:(.*)}}.*</p>", cutDesc, s, 0)
+    if (description != "") :
+        meta = f'<meta name="description" content="{description}">'
+        s = s.replace("<!-- yield meta description here -->", meta, 1)
     if key != "" :
         replace = '''
             <ul class="published-at-updated-at">
@@ -51,6 +66,9 @@ for filepath in glob.iglob('../../book/**/*.html', recursive=True):
     
     with open(filepath, "w", encoding="utf8") as file:
         file.write(s)
+
+
+
 
 # 個別ページ用javascriptディレクトリのコピー
 #shutil.copytree('../../js-each/','../../book/html/js-each/')
