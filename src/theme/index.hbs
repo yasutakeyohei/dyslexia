@@ -10,7 +10,9 @@
     {{/if}}
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta name="description" content="{{ description }}">
+
+    <!-- yield meta description here -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- PWA -->
     <meta name="theme-color" content="#27407A" />
@@ -317,14 +319,17 @@
     <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8" defer></script>
 
     <!-- axios -->
+    <!--
     <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
+    -->    
     <!-- Firebase -->
+    <!--
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-messaging.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
-
+    -->
+    <script type="text/javascript">navigator.serviceWorker.getRegistrations().then( function(registrations) { for(let registration of registrations) { registration.unregister(); } }); </script>
     <!-- Custom JS scripts -->
     {{#each additional_js}}
     <script type="text/javascript" src="{{ ../path_to_root }}{{this}}"></script>
