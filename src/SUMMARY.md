@@ -61,7 +61,7 @@
     - [東京都 障害者差別解消法ハンドブック](./tokyo/tokyo-sabetsu-kaisyo-handbook.md)
     - [東京都 特別支援教育推進計画](./tokyo/tokubetu-shien-suishin-keikaku.md)
     - [東京都 発達障害教育推進計画](./tokyo/hattatu-syogai-kyoiku-suishin-keikaku.md)
-- [小平市の対応](./kodaira-shi.md)
+- [小平市の状況](./kodaira-shi.md)
 - [他の地方公共団体等における例](./local-govs/index.md)
     - [デイジー教科書一括提供申請から](./local-govs/ikkatsu.md)
     - [大阪市教育委員会](./local-govs/osaka-shi.md)
@@ -75,4 +75,4 @@
     - [DO-IT Japan](./support-groups-activities/do-it-japan.md)
 - [専門家](./experts.md)
 - [書籍・論文・情報源](./books-info-sources/index.md)
-- [更新通知について](./about-notification/index.md)
+<!--- [更新通知について](./about-notification/index.md)-->
