@@ -24,3 +24,6 @@ enable = false
 [output.z]
 command = "python ../../postprocess.py"
 optional = true
+
+[output.html.redirect]
+"./gigaschool.html" = "./news/20201030_giga-school.html"
