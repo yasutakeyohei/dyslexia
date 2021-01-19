@@ -141,17 +141,9 @@ main h1 {
     max-width: var(--content-max-width);
 }
 
-.content p {
-    line-height: 1.45em;
-}
-
-.content ol {
-    line-height: 1.45em;
-}
-
-.content ul {
-    line-height: 1.45em;
-}
+.content p { line-height: 1.8em; }
+.content ol { line-height: 1.8em; }
+.content ul { line-height: 1.8em; }
 
 .content a {
     text-decoration: none;
@@ -255,6 +247,26 @@ blockquote {
 }
 
 /* custom */
+
+/* チャプター番号を非表示に */
+li.chapter-item {
+    white-space: nowrap;
+}
+
+li.chapter-item strong {
+    display: none;
+}
+ol.section li.chapter-item {
+    list-style: none;
+}
+ol.section li.chapter-item:before {
+    content:"-";
+    padding-right:5px;
+}
+
+.content li {
+    margin-bottom: 1.5rem;
+}
 
 div.back-to-main-site {
     background-color: #fff;
@@ -364,16 +376,6 @@ pre.tree {
     line-height: 2.5rem;    
 }
 
-img {
-    border: 1px solid #333;
-    box-shadow: 4px 4px 4px 0 rgba(1, 1, 1, 0.4);
-}
-
-img.noshadow {
-    border: unset;
-    box-shadow: unset;
-}
-
 ul.published-at-updated-at {
     display: flex;
     justify-content: flex-end;
@@ -398,4 +400,8 @@ table.simple td {
     border: 1px solid rgb(189, 189, 189);
     padding: 0.8rem;
     line-height: 2rem;
+}
+
+figure figcaption {
+    line-height: 1.8em;
 }
