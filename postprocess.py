@@ -6,12 +6,11 @@ import datetime
 
 from datetime import datetime as dt
 
-description =""
-def cutDesc(match):
-    global description
-    description = match.groups()[0]
+matchedStr =""
+def getMatched(match):
+    global matchedStr
+    matchedStr = match.groups()[0]
     return ""
-
 
 removeIndexRe1 = r"(href\s*?\=\s*?\")index\.html(.*?\")"
 subst1 = "\\1./\\2"
@@ -45,16 +44,28 @@ for filepath in glob.iglob('../../book/**/*.html', recursive=True):
     with open(filepath, encoding="utf8") as file:
         s = file.read()
 
-    # print(re.search(removeIndexRe, s).group())
-    
     s = re.sub(removeIndexRe1, subst1, s, 0) #"index.html"の削除
     s = re.sub(removeIndexRe2, subst2, s, 0) #"~/~/index.html"の削除
 
-    description = ""
-    s = re.sub(r"<p>.*{{description:(.*)}}.*</p>", cutDesc, s, 0)
-    if (description != "") :
-        meta = f'<meta name="description" content="{description}">'
+    matchedStr = ""
+    s = re.sub(r"<p>.*{{description:(.*)}}.*</p>", getMatched, s, 0)
+    if (matchedStr != "") :
+        meta = f'<meta name="description" content="{matchedStr}">'
         s = s.replace("<!-- yield meta description here -->", meta, 1)
+        meta = f'<meta property="og:description" content="{matchedStr}" />'
+        s = s.replace("<!-- yield og:description here -->", meta, 1)
+
+    matchedStr = ""
+    s = re.sub(r"<p>.*{{og-image:\s*(.*)}}.*</p>", getMatched, s, 0)
+
+    if (matchedStr != "") :
+        imageURL, w, h = [x.strip() for x in matchedStr.split(',')]
+        meta = '''<meta property="og:image" content="{imageURL}" />
+        <meta property="og:image:secure_url" content="{imageURL}" />
+        <meta property="og:image:width" content="{w}" />
+        <meta property="og:image:height" content="{h}" />'''.format(imageURL = imageURL, w = w, h = h)
+        s = s.replace("<!-- yield og:image:* here -->", meta, 1)
+
     if key != "" :
         replace = '''
             <ul class="published-at-updated-at">
@@ -67,13 +78,13 @@ for filepath in glob.iglob('../../book/**/*.html', recursive=True):
     with open(filepath, "w", encoding="utf8") as file:
         file.write(s)
 
-
-
-
 # 個別ページ用javascriptディレクトリのコピー
-#shutil.copytree('../../js-each/','../../book/html/js-each/')
+shutil.copytree('../../js-each/','../../book/html/js-each/')
 
 #個別ページ用CSSディレクトリのコピー
-#shutil.copytree('../../css-each/','../../book/html/css-each/')
+shutil.copytree('../../css-each/','../../book/html/css-each/')
+
+
+
 
 
