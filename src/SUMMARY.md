@@ -1,6 +1,9 @@
-# Summary
-- [はじめに](./index.md)
-- [GIGAスクール構想が始まりました](./giga-school.md)
+# 
+
+- [はじめに・目次](./index.md)
+- [ニュース](./news/index.md)
+    - [合理的配慮が民間も義務化されるようです](./news/20210112_gouriteki-hairyo.md)
+    - [GIGAスクール構想が始まりました](./news/20201030_giga-school.md)
 - [ディスレクシアとは](./what-is-dyslexia/index.md)
     - [さまざまなケース](./what-is-dyslexia/cases.md)
     - [ディスレクシアの著名人](./what-is-dyslexia/celebrities.md)
@@ -73,6 +76,7 @@
     - [東京学芸大学附属小金井小学校](./local-govs/tokyo-gakugei-koganei-syo.md)
 - [サポート組織・活動](./support-groups-activities/index.md)
     - [DO-IT Japan](./support-groups-activities/do-it-japan.md)
+- [フォント](./fonts.md)
 - [専門家](./experts.md)
 - [書籍・論文・情報源](./books-info-sources/index.md)
 <!--- [更新通知について](./about-notification/index.md)-->
