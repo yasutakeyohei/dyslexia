@@ -4,16 +4,16 @@
 
 # はじめに・目次
 
-<figure>
-<img src="./images/hieroglyph-dyslexia.png" alt="ヒエログリフ" data-zoomable="" style="z-index:999">
-<figcaption>古代エジプトのヒエログリフで書いた“DYSLEXIA”と、古代中国の金文で書いた「小平市」です。<a href="https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%81%AE%E6%AD%B4%E5%8F%B2">文字の出現</a>は、人類史上、ほんの最近のことのようです。
-</figcaption>
-</figure>
-
 ## 概要
 ここは、ディスレクシアに関する情報をまとめているサイトです。
 
 内容はすべて[オープンソースで編集し](https://github.com/yasutakeyohei/dyslexia)、mdbookというユーティリティを使用して公開しています。編集にご協力くださる方はご連絡ください。内容の過不足については[GitHubのissues](https://github.com/yasutakeyohei/dyslexia/issues)か、[こちら](https://yasutakeyohei.com/#contact)までご連絡ください。
+
+<figure>
+<img src="./images/hieroglyph-dyslexia.png" alt="ヒエログリフ" data-zoomable="" style="z-index:999">
+<figcaption>古代エジプトのヒエログリフで書いた“DYSLEXIA”と、古代中国の金文で書いた「小平市」。<br><a href="https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%81%AE%E6%AD%B4%E5%8F%B2">文字の出現</a>は、人類史上、ほんの最近のことのようです。
+</figcaption>
+</figure>
 
 ## 経緯
 このまとめを作るに至った経緯は以下の通りです。
