@@ -2,8 +2,8 @@
 
 - [はじめに・目次](./index.md)
 - [ニュース](./news/index.md)
-    - [合理的配慮が民間も義務化されるようです](./news/20210112_gouriteki-hairyo.md)
-    - [GIGAスクール構想が始まりました](./news/20201030_giga-school.md)
+    - [民間事業者も合理的配慮が義務化されるかもしれません](./news/20210112_gouriteki-hairyo.md)
+    - [GIGAスクール構想が前倒しになりました](./news/20201030_giga-school.md)
 - [ディスレクシアとは](./what-is-dyslexia/index.md)
     - [さまざまなケース](./what-is-dyslexia/cases.md)
     - [ディスレクシアの著名人](./what-is-dyslexia/celebrities.md)
