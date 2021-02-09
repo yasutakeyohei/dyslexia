@@ -4,6 +4,9 @@
 
 次に挙げる方々に関しては、[Wikipedia ディスレクシアの著名人一覧（英語版）（１）](https://en.wikipedia.org/wiki/Category:People_with_dyslexia)、[（２）](https://en.wikipedia.org/wiki/List_of_people_with_dyslexia)などから引用しました。
 
+## 砂長 美ん 氏
+[一般社団法人 ありがとうショップの代表理事をされています](http://arigatoshop.jp/ourvision/)
+
 ## 中竹 竜二 氏
 [日本ラグビーフットボール協会コーチングディレクター](https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%AB%B9%E7%AB%9C%E4%BA%8C)
 
@@ -13,7 +16,7 @@
 > [『鈍足だったら、速く走るな』](https://ondyslexia.blogspot.com/2013/07/blog-post_8.html)
 
 ## 南雲 明彦 氏
-[講演、執筆、相談等の活動をされているようです](https://nagumo-akihiko.com/)
+[講演、執筆、相談等の活動をされています](https://nagumo-akihiko.com/)
 
  [僕は、字が読めない。読字障害(ディスレクシア)と戦いつづけた南雲明彦の24年](https://www.shueisha-int.co.jp/publish/%E5%83%95%E3%81%AF%E3%80%81%E5%AD%97%E3%81%8C%E8%AA%AD%E3%82%81%E3%81%AA%E3%81%84%E3%80%82)
 
