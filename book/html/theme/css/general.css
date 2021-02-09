@@ -46,7 +46,7 @@ h6 code {
 }
 
 .highlight {
-    background-color: #ffffc5;
+    border-bottom: 1px solid var(--fg);
 }
 
 .left {
@@ -402,6 +402,16 @@ table.simple td {
     line-height: 2rem;
 }
 
+figure {
+    margin: 3rem;
+    text-align: center;
+    border: 1px solid gray;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, .5);
+    padding: 1rem;
+}
 figure figcaption {
+    padding: 1rem;
+    font-size: 1.4rem;
     line-height: 1.8em;
+    text-align:left;
 }
