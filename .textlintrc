@@ -3,7 +3,12 @@
     "comments": true
   },
   "rules": {
-    "textlint-rule-preset-japanese": true
+    "textlint-rule-preset-japanese": true,
+    "prh": {
+      "rulePaths": [
+        "./prh.yml"
+      ]
+    }
   },
   "filters": {
     "comments": true,
