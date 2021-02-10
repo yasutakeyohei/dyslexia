@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">デイジー教科書以外の音声教材</a> > UNLOCK
+
 {{first:2020-05-18}}
+
 # UNLOCK
 [UNLOCKサイト](http://www.karilab.jp/unlock/index.html)
 

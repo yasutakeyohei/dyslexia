@@ -1,4 +1,6 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > ニュース
 
+{{first:2020-01-19}}
 
 # ニュース
 

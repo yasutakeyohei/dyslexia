@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 義務教育諸学校の教科用図書の無償措置に関する法律
+
 {{first:2020-05-18}}
+
 # 義務教育諸学校の教科用図書の無償措置に関する法律 抜粋
 [昭和三十八年法律第百八十二号](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=338AC0000000182)
 ### 第一条（この法律の目的）

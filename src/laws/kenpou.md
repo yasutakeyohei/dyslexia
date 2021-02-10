@@ -1,5 +1,9 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 日本国憲法
+
 {{first:2020-05-18}}
+
 # 日本国憲法 抜粋
+
 [昭和二十一年憲法](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=321CONSTITUTION#80)
 ## 第三章　国民の権利及び義務
 ### [第二十六条](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=321CONSTITUTION#80)

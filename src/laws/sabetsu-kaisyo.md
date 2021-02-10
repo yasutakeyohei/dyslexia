@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 障害者差別解消法
+
 {{first:2020-05-18}}
+
 # 障害を理由とする差別の解消の推進に関する法律（障害者差別解消法） 抜粋
 [平成二十五年法律第六十五号](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=425AC0000000065)
 ## 第一章　総則

@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 読書バリアフリー法
+
 {{first:2020-05-18}}
+
 # 視覚障害者等の読書環境の整備の推進に関する法律（通称「読書バリアフリー法」） 抜粋
 [令和元年法律第四十九号](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=501AC1000000049)
 ## 第一章　総則

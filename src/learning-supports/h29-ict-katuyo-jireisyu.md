@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">学習環境と指導の充実</a> > ICT機器の活用事例集
+
 {{first:2020-05-18}}
+
 # ICT機器の活用事例集
 ＊作成中
 

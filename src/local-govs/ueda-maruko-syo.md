@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">他の地方公共団体における例</a> > 上田丸子中央小学校
+
 {{first:2020-05-18}}
+
 # 上田市立丸子中央小学校
 ＊作成中
 

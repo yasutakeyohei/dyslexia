@@ -1,5 +1,9 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 発達障害者支援法
+
 {{first:2020-05-18}}
+
 # 発達障害者支援法
+
 附則を除く・令和2年5月15日時点
 
 [平成十六年法律第百六十七号](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=416AC1000000167)

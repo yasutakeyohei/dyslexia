@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">東京都の対応</a> > 特別支援教育推進計画
+
 {{first:2020-05-18}}
+
 # 東京都 特別支援教育推進計画
 ＊作成中
 

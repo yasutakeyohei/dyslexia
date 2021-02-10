@@ -1,4 +1,7 @@
+<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">デイジー教科書以外の音声教材</a> > 音声教材BEAM
+
 {{first:2020-05-18}}
+
 # 音声教材BEAM
 [音声教材BEAMサイト](https://www.npo-edge.jp/support/audio-materials/)
 
