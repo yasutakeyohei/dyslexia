@@ -415,3 +415,14 @@ figure figcaption {
     line-height: 1.8em;
     text-align:left;
 }
+
+p.breadcrumbs {
+    margin: 0;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-fg);
+    font-size:1.5rem;
+}
+
+p.breadcrumbs a {
+    color: var(--sidebar-fg);
+}
