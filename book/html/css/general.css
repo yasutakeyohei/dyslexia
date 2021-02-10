@@ -248,6 +248,10 @@ blockquote {
 
 /* custom */
 
+h1 {
+    font-size: 3rem;
+}
+
 /* チャプター番号を非表示に */
 li.chapter-item {
     white-space: nowrap;
