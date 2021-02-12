@@ -1,6 +1,6 @@
 # 
 
-- [はじめに・目次](./index.md)
+- [ディスレクシアまとめトップページ](./index.md)
 - [ニュース](./news/index.md)
     - [民間事業者も合理的配慮が義務化されるかもしれません](./news/20210112_gouriteki-hairyo.md)
     - [GIGAスクール構想が前倒しになりました](./news/20201030_giga-school.md)
