@@ -17,7 +17,7 @@
 }
 
 html {
-    font-family: "UD デジタル 教科書体 N-R", "Open Sans", sans-serif;
+    font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "Open Sans", sans-serif;
     color: var(--fg);
     background-color: var(--bg);
     text-size-adjust: none;
@@ -429,4 +429,25 @@ p.breadcrumbs {
 
 p.breadcrumbs a {
     color: var(--sidebar-fg);
+}
+
+
+div.tips {
+    border-radius: 1rem;
+    margin: 3rem 0 4rem 0;
+    padding: 1rem 2rem;
+    border: 2px dashed #174894;
+}
+div.tips p:first-of-type {
+    margin:1rem 0;
+}
+div.tips p:last-of-type {
+    margin-bottom:0;
+}
+div.tips:before {
+    font-weight: bold;
+    display: block;
+}
+div.tips ul {
+    margin-bottom: 0;
 }
