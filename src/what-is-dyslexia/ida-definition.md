@@ -3,15 +3,15 @@
 {{first:2020-05-18}}
 
 # 国際ディスレクシア協会（IDA）による定義
-[国際ディスレクシア協会（International Dyslexia Association）](https://dyslexiaida.org/definition-of-dyslexia/)では以下のように定義しています。この定義はさまざまなところで使われています。
+[国際ディスレクシア協会（International Dyslexia Association）](https://dyslexiaida.org/definition-of-dyslexia/)では次のように定義しています。この定義は、さまざまなところで使われています。
 
 >Dyslexia is characterized by difficulties with accurate and / or fluent word recognition and by poor spelling and decoding abilities. These difficulties typically result from a deficit in the phonological component of language that is often unexpected in relation to other cognitive abilities and the provision of effective classroom instruction. Secondary consequences may include problems in reading comprehension and reduced reading experience that can impede growth of vocabulary and background knowledge.
 
-単純に翻訳すると、以下のようになります。
+単純に翻訳すると、次のようになります。
 
 > ディスレクシアは神経生物学的な原因に起因する特異的な学習障害である。その特徴は、正確な単語認識と流暢な単語認識のどちらか、もしくは両方が困難であることと、文字の綴りや読解能力が低いことにある。これらの障害は通常、言語の音韻的要素の欠如に起因している。他の認知能力や、効果的な教室指導が行われている場面を見ているだけでは、障害があることはなかなか分からない。二次的な結果として、読解力に問題が生じたり、読む機会が減るなどし、語彙や背景知識における成長を阻害することがある。
 
-また、この定義は「プロジェクトを通じて複数の専門家によるコンセンサスを得た」ものということで、以下のように記載されています。
+また、この定義は「プロジェクトを通じて複数の専門家によるコンセンサスを得た」ものということで、次のように記載されています。
 
 >2002年11月12日、IDA理事会によって採択されました。ニュージャージー州、オハイオ州、ユタ州など、多くの州の教育法典がこの定義を採用しています。この定義についてどのようにコンセンサスが得られたかについては、こちらをご覧ください。
 
