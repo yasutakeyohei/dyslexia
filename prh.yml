@@ -4,8 +4,6 @@ rules:
     pattern: 児童生徒
   - expected: 小・中学校
     pattern: 小中学校
-  - expected: さまざまな
-    pattern: 様々な
 
   # 記号
   # 半角括弧を全角括弧に
@@ -35,7 +33,7 @@ rules:
     pattern:  様々
     prh: 漢字で書かず、ひらがなで書くと読みやすくなります
   - expected: よい
-    pattern:  /良い(?!例)/
+    pattern:  /良い(?!(例|方向))/
     prh: 良し悪しを評価する表現は"良い"、しなくていい、など評価でない表現は"よい"を使います
     specs:
       - from: 良い
@@ -558,8 +556,6 @@ rules:
       - 有る
       - 在る
     expected: ある
-  - pattern: /一体([^に化感])/
-    expected: いったい$1
   - pattern: 一向に
     expected: いっこうに
   - pattern: 一旦
@@ -1980,8 +1976,6 @@ rules:
     pattern:  /\bIntent\b/
   - expected: ウィジェット
     pattern:  /\bWidget\b|\bwidget\b/
-  - expected: ウィルス
-    pattern:  /ウイルス/
   - expected: ウィンドウ
     pattern:  /ウインドウ/
   - expected: ウェア
