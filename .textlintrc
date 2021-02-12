@@ -1,21 +1,19 @@
 {
   "filters": {
-    "comments": true
+    "comments": true,
+    "allowlist": {
+      "allow": [
+        "/{{.*}}/m"
+      ]
+    }
   },
   "rules": {
-    "textlint-rule-preset-japanese": true,
+    "preset-ja-technical-writing": true,
+    "preset-jtf-style": true,
     "prh": {
       "rulePaths": [
         "./prh.yml"
       ]
     }
   },
-  "filters": {
-    "comments": true,
-    "whitelist": {
-      "allow": [
-        "読めないわけではなく"
-      ]
-    }
-  }
 }
