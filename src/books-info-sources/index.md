@@ -12,7 +12,25 @@
 [on dyslexia](https://ondyslexia.blogspot.com/)
 
 ## 書籍
+
+<div class="book-wrapper" style="display: grid;grid-template-columns: 30% 70%;">
+
+<div>
+<a target="_blank"  href="https://www.amazon.co.jp/gp/product/4065156165/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4065156165&linkCode=as2&tag=kifu-simasu-22&linkId=37d2f14050bcb2daf045cf6e41320a1f"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4065156165&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=kifu-simasu-22" ></a>
+</div>
+<div style="grid-row:1/3;grid-column:2">
+
 ### [発達障害の子を育てる本　スマホ・タブレット活用編](https://bookclub.kodansha.co.jp/product?item=0000321996)
+
+</div>
+<div>
+
+[出版元サイトへはこちら](https://bookclub.kodansha.co.jp/product?item=0000321996)
+
+</div>
+</div>
+
+
 網羅的かつ簡潔にまとまっている良書だと思います。
 - 子どもたちの過去：読み書きに苦しみ、十分に学べない子がいた
 - 子どもたちのいま：スマホ・タブレットを使って学ぶ子が増えている
