@@ -76,6 +76,7 @@
     - [東京学芸大学附属小金井小学校](./local-govs/tokyo-gakugei-koganei-syo.md)
 - [サポート組織・活動](./support-groups-activities/index.md)
     - [DO-IT Japan](./support-groups-activities/do-it-japan.md)
+- [特別支援教育](./tokubetu-sien-kyoiku/index.md)
 - [フォント](./fonts.md)
 - [専門家](./experts.md)
 - [書籍・論文・情報源](./books-info-sources/index.md)
