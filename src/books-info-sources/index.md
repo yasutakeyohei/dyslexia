@@ -13,86 +13,43 @@
 
 ## 書籍
 
-<div class="book-wrapper" style="display: grid;grid-template-columns: 30% 70%;">
+### マンガ
 
-<div>
-<a target="_blank"  href="https://www.amazon.co.jp/gp/product/4065156165/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4065156165&linkCode=as2&tag=kifu-simasu-22&linkId=37d2f14050bcb2daf045cf6e41320a1f"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4065156165&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=kifu-simasu-22" ></a>
-</div>
-<div style="grid-row:1/3;grid-column:2">
+<table class="book">
+<tr>
+<td rowspan="4" style="text-align:center">
+<a target="_blank"  href="https://www.amazon.co.jp/gp/product/B073RZ16WZ/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B073RZ16WZ&linkCode=as2&tag=kifu-simasu-22&linkId=d0cce43c1515bacb4b996ca4c8617495"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B073RZ16WZ&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=kifu-simasu-22" ></a>
+</td>
+<td><a href="https://www.poplar.co.jp/topics/49379.html">うちの子は字が書けない (発達性読み書き障害の息子がいます) </a></td>
+</tr>
+<tr><td>千葉リョウコ、<a href="https://researchmap.jp/read0202502">宇野彰</a></td></tr>
+<tr>
+<td>2019年12月19日発売</td>
+</tr>
+<td><a href="https://bookclub.kodansha.co.jp/product?item=0000321996">講談社サイト <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+</tr>
+<tr><td colspan="2">
+ディスレクシアのお子さんがいる母親（漫画家）が、自身の実体験を描いたものです。「合理的配慮があっても、子どもがそれを拒否したくなる」といった心理状況も描写されていました。ディスレクシアに関する研究で第一人者である、筑波大学人間学教授の宇野彰氏によるQ&Aなど、解説も充実しています。学校の教室や公共施設に一冊ずつ常備してほしい一冊です。
+</td></tr>
+</table>
 
-### [発達障害の子を育てる本　スマホ・タブレット活用編](https://bookclub.kodansha.co.jp/product?item=0000321996)
 
-</div>
-<div>
+<table class="book">
+<tr>
+<td rowspan="4" style="text-align:center">
+<a target="_blank"  href="https://www.amazon.co.jp/gp/product/4065156165/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4065156165&linkCode=as2&tag=kifu-simasu-22&linkId=37d2f14050bcb2daf045cf6e41320a1f"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4065156165&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=kifu-simasu-22"></a>
+</td>
+<td><a href="https://bookclub.kodansha.co.jp/product?item=0000321996">発達障害の子を育てる本　スマホ・タブレット活用編</a></td>
+</tr>
+<tr><td><a href="https://www.rcast.u-tokyo.ac.jp/ja/research/people/staff-nakamura_kenryu.html">中邑 賢龍（監修）</a>、<a href="https://www.rcast.u-tokyo.ac.jp/ja/research/people/staff-kondo_takeo.html">近藤 武夫（監修）</a></td></tr>
+<tr>
+<td>2019年12月19日発売</td>
+</tr>
+<td><a href="https://bookclub.kodansha.co.jp/product?item=0000321996">講談社サイト <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+</tr>
+<tr><td colspan="2">網羅的かつ簡潔にまとまっている良書だと思います。</td></tr>
+</table>
 
-[出版元サイトへはこちら](https://bookclub.kodansha.co.jp/product?item=0000321996)
-
-</div>
-</div>
-
-
-網羅的かつ簡潔にまとまっている良書だと思います。
-- 子どもたちの過去：読み書きに苦しみ、十分に学べない子がいた
-- 子どもたちのいま：スマホ・タブレットを使って学ぶ子が増えている
-- 子どもたちの未来：すべての子が、その子らしく学べる世の中に
-1. 今日からテクノロジーを活用しよう！
-    - いまそこにあるテクノロジーを使う
-    - 診断がなくても困っているなら使う
-    - （キーワード解説）読むことに苦しむ「印刷物障害」とは
-    - 本人が「やりたいこと」を実現するために使う
-    - 目の前の困難が解消し、将来の夢が広がる
-    - ツールを使って学習を積み重ね、起業したAさん
-    - 音声読み上げを聞きながら読む
-    - （支援の鉄則1）子どもといっしょに体験してみる
-    - 使いやすい音声教材を入手する
-    - ノートアプリやフリック入力を使って書く
-    - 書き取りを録音・撮影・音声入力で補う
-    - 筆算など苦手な部分にアプリを使う
-    - 考えをマッピングアプリで整理する
-    - ノイズ低減機器や補聴援助システムなどを利用する
-    - SNSやインターネットで活動を広げる
-    - スマートスピーカやクラウドで予定を管理
-    - 必要なツールがわかる「ディスレクシアホイール」
-1. なぜ発達障害の子に役立つのか
-    - 苦手なことを各種のツールで「代替」できる
-    - （キーワード解説）環境の問題を考慮する「障害の社会モデル」
-    - 子どもが学習に「アクセス」できる！
-    - （支援の鉄則2）学びの本質を変えない
-    - 学校や先生のサポートも欠かせない
-    - 発達障害の診断や検査、療育も重要
-    - （キーワード解説）困難の詳細が分かる「読み書き評価」
-    - 子どもの得意なまなび方がわかる「比べるテスト」
-1. まずは家庭で使ってみよう！
-    - 学ぶ意欲を取り戻し、不登校から抜け出したBさん
-    - 基本的には家にあるものでOK
-    - ツールを用意したら使い方のルールを決める
-    - 小学一年生になれば、もう十分に使える
-    - 宿題に使いながら役立つものを選んでいく
-    - 本人が活用法を自分で説明できるようにする
-    - 子どもの自己選択・自己決定をうながす
-    - あまり活用されず、遊び道具になってしまったら
-    - 本人が自己決定を学べるプログラム「DO-IT Japan」
-1. 授業やテストにも使っていこう！
-    - タブレットの持ち込みを自分で学校と交渉したCさん
-    - 本人・家族が、学校に相談するときの流れ
-    - 自分の権利を守る「セルフ・アドボカシー」
-    - 判断の基準は「合理的配慮」になるかどうか
-    - 合理的配慮と認められた例・認められなかった例
-    - 「ひとりだけ特別扱い」「不公平」と指摘されたら
-    - ツールを使って本来の「学ぶ力」を発揮する
-    - 本人が必要性を考える
-    - 学校と定期的に相談し、使い方を見直していく
-    - 定期テストでも「代読」などの配慮を受ける
-    - アメリカの「合理的配慮」と「UDL」も参考に
-1. 進学先でも将来も、ずっと使い続けよう！
-    - 進級・進学先への「移行支援」
-    - 特別支援教育を受けている場合は
-    - 高校・大学入試での合理的配慮の申請例
-    - 入試で配慮を得るための年間スケジュール
-    - 大学入試で合理的配慮を受け、進学したDさん
-    - 目的は、読み書きや勉強だけじゃない
-    - 将来のビジョンをもつ
-    - 最新技術の発表会「ATAC」へ行こう！
 
 ### [特異的発達障害診断・治療のための実践ガイドライン](http://www.shindan.co.jp/books/index.php?menu=10&cd=178100&kbn=1)
 
