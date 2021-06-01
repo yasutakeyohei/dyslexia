@@ -83,12 +83,8 @@ ICDの中で、ディスレクシアは次のように分類されています�
 
 
 ## 参考資料
-[WHO ICD-11](https://icd.who.int/en)
-
-[WHO ICD-10](https://www.who.int/classifications/icd/icdonlineversions/en/)
-
-[厚生労働省 ICD-11の我が国への適用に向けて](http://jams.med.or.jp/dic/h30material_s2.pdf)
-
-[CBTセンターブログ 2018/06/20: 1 Neurodevelopmental disorders 神経発達症群 ICD-11](https://cbtcenter.jp/blog/?itemid=2064)
-
-[日本精神神経学会 ICD-11 新病名案](https://www.jspn.or.jp/uploads/uploads/files/activity/ICD-11Beta_Name_of_Mental_Disorders%20List(tentative)20180601.pdf)
+- [WHO ICD-11](https://icd.who.int/en)
+- [WHO ICD-10](https://www.who.int/classifications/icd/icdonlineversions/en/)
+- [厚生労働省 ICD-11の我が国への適用に向けて](http://jams.med.or.jp/dic/h30material_s2.pdf)
+- [CBTセンターブログ 2018/06/20: 1 Neurodevelopmental disorders 神経発達症群 ICD-11](https://cbtcenter.jp/blog/?itemid=2064)
+- [日本精神神経学会 ICD-11 新病名案](https://www.jspn.or.jp/uploads/uploads/files/activity/ICD-11Beta_Name_of_Mental_Disorders%20List(tentative)20180601.pdf)
