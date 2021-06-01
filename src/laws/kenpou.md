@@ -2,14 +2,14 @@
 
 {{first:2020-05-18}}
 
-# 日本国憲法 抜粋
+# 日本国憲法（抜粋）
 
-[昭和二十一年憲法](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=321CONSTITUTION#80)
-## 第三章　国民の権利及び義務
-### [第二十六条](https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=321CONSTITUTION#80)
-すべて国民は、法律の定めるところにより、<span class="highlight">その能力に応じて、ひとしく教育を受ける権利を有する。</span>  
-**２**　すべて国民は、法律の定めるところにより、その保護する子女に普通教育を受けさせる義務を負ふ。<span class="highlight">義務教育は、これを無償とする。</span>
+日本国憲法には、「すべての国民はその能力に応じてひとしく教育を受ける権利が有り、義務教育は無償である」と書かれています。知的障害ではないディスレクシアの生徒児童は「通常学級と同等な内容の教育を受ける権利がある」とも解釈できると思います。
 
----
-
-<div class="note"><i class="fa fa-comment-o"></i> 憲法では、すべての国民はその能力に応じて教育を受ける権利が有り、義務教育は無償とされています。知的障害ではないディスレクシアの生徒児童は「通常学級と同等な内容の教育を受ける権利がある」と解釈できると思います。</div>
+> ## [日本国憲法](https://elaws.e-gov.go.jp/document?lawid=321CONSTITUTION)
+>
+> **[第26条](https://elaws.e-gov.go.jp/document?lawid=321CONSTITUTION#Mp-At_26)**
+>
+> すべて国民は、法律の定めるところにより、<span class="highlight">その能力に応じて、ひとしく教育を受ける権利を有する。</span>
+>
+> **2**　すべて国民は、法律の定めるところにより、その保護する子女に普通教育を受けさせる義務を負ふ。<span class="highlight">義務教育は、これを無償とする。</span>
