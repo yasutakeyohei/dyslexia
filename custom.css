@@ -718,8 +718,11 @@ div.tips p:last-of-type {
 table.td-center td {
   text-align:center;
 }
-table.th-left th {
+table.tbody-th-left tbody th {
   text-align:left;
+}
+table.th-wrap th {
+  white-space: initial;
 }
 
 div.table-wrapper {
