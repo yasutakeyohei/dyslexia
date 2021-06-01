@@ -19,10 +19,7 @@
 二次障害が起きないよう、本来の障害を早期発見することに加え、自分自身と周囲の人々の、障害に対する十分な理解が必要となります。
 
 ## 参考
-[国立特別支援教育総合研究所：二次障害の理解と対応](http://icedd.nise.go.jp/pdf/lecture/lecture-list/lecture-list019.pdf)
-
-[学校保健：いじめ、二次障害の問題](https://www.gakkohoken.jp/special/archives/222)
-
-[全日本民医連：特集２　子どもの発達障害　早期発見で２次障害防止を](https://www.min-iren.gr.jp/?p=7889)
-
-[発達障害が引き起こす二次障害へのケアとサポート（学研出版）](https://hon.gakken.jp/book/1340416900)
+- [国立特別支援教育総合研究所：二次障害の理解と対応](http://icedd.nise.go.jp/pdf/lecture/lecture-list/lecture-list019.pdf)
+- [学校保健：いじめ、二次障害の問題](https://www.gakkohoken.jp/special/archives/222)
+- [全日本民医連：特集２　子どもの発達障害　早期発見で２次障害防止を](https://www.min-iren.gr.jp/?p=7889)
+- [発達障害が引き起こす二次障害へのケアとサポート（学研出版）](https://hon.gakken.jp/book/1340416900)
