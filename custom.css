@@ -718,6 +718,9 @@ div.tips p:last-of-type {
 table.td-center td {
   text-align:center;
 }
+table.th-left th {
+  text-align:left;
+}
 
 div.table-wrapper {
   overflow-x: auto;
