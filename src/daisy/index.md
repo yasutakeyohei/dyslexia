@@ -4,54 +4,50 @@
 
 # デイジー図書・デイジー教科書について
 ## デイジーとは
-デイジー（DAISY: Digital Accessible Information SYstem）は、日本語では「[アクセシブルな情報システム](https://ja.wikipedia.org/?curid=2218853)」と訳されている国際標準規格のことです。以下のような特徴があります。
+デイジー（DAISY: Digital Accessible Information SYstem）は、日本語では「[アクセシブルな情報システム](https://ja.wikipedia.org/?curid=2218853)」と訳されている国際標準規格のことです。次のような特徴があります。
 - 視覚障害者のためのデジタル録音図書や、ディスレクシア・学習障害者等のためのデジタル図書作成に使われる
-
 - 音声、テキスト、画像などのデジタルコンテンツを含められる
-
 - 音声やテキストは、読みたい場所からすぐ再生できるように構造化され、見出しによってアクセスが可能
-
 - 音声、テキスト、画像などのデータが含まれている場合、それらを同時（同期的）に再生できる（テキスト等の再生部分は、通常ハイライト表示される）
-
 - バージョンアップを重ね、DAISY 1.0, 2.0. 2.02. 3.0, 4.0 の5つの規格があり、2012年に承認された最新のDAISY 4.0は、[EPUB3](https://ja.wikipedia.org/wiki/EPUB#3.0)に内包されている
-
 - デイジー規格の公式保守機関は、[The DAISY Consortium](https://daisy.org/)であり、日本からは[NPO法人 支援技術開発機構(ATDO)](https://atdo.website/)の[河村宏](https://jp.linkedin.com/in/hiroshi-kawamura-b7665813)氏が理事として参加している
-
 - 日本では [日本DAISYコンソーシアム](https://www.normanet.ne.jp/~jdc/index.html)が中心的役割を担っている（と思われる）
 
 ## デイジー図書
 デイジー規格に基づいて作成された図書のことをデイジー図書といいます。デイジー図書には大きく分けて、音声デイジー図書、テキストデイジー図書、マルチメディアデイジー図書の3種類があります。
-<div class="resp-table">
-    <table>
-        <thead>
-            <tr>
-                <td></td>
-                <th>構造化された<br>録音音声</th>
-                <th>構造化された<br>テキスト</th>
-                <th>その他<br>画像など</th>
-            </tr>
-        </thead>
+
+<div class="table-wrapper">
+<table class="bordered td-center">
+    <thead>
         <tr>
-            <th>音声デイジー図書</td>
-            <td>〇</td>
-            <td>×</td>
-            <td>×</td>
+            <td>　</td>
+            <th>構造化された<br>録音音声</th>
+            <th>構造化された<br>テキスト</th>
+            <th>その他<br>画像など</th>
         </tr>
-        <tr>
-            <th>テキストデイジー図書</td>
-            <td>×</td>
-            <td>〇</td>
-            <td>オプション</td>
-        </tr>
-        <tr>
-            <th>マルチメディアデイジー図書</td>
-            <td>〇</td>
-            <td>〇</td>
-            <td>オプション</td>
-        </tr>
-    </table>
-<p style="text-align:right;font-size:0.8em;">〇：図書のデータとして含まれる、×：図書のデータとして含まれない</p>
+    </thead>
+    <tr>
+        <th>音声デイジー図書</td>
+        <td>〇</td>
+        <td>×</td>
+        <td>×</td>
+    </tr>
+    <tr>
+        <th>テキストデイジー図書</td>
+        <td>×</td>
+        <td>〇</td>
+        <td>オプション</td>
+    </tr>
+    <tr>
+        <th>マルチメディアデイジー図書</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>オプション</td>
+    </tr>
+</table>
 </div>
+
+<p style="text-align:right;font-size:0.8em;">〇：図書のデータとして含まれる、×：図書のデータとして含まれない</p>
 
 
 ### 1. 音声デイジー図書
@@ -68,13 +64,12 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c4zqmWJm3Zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## デイジー図書・デイジー教科書の問題点
-デイジー規格のバージョンが複数あり、それぞれ仕様の異なる部分があるため、再生機材や再生用ソフトウェアが既存のデイジー図書に対応していない場合もあります。また、ボランティアとして製作された再生用ソフトウェアはアップデートされていないものも多いです。製作ソフトも同様です。今後はDAISY4規格に基づいて製作され、EPUB3のMedia Overlays規格に則った形式でのデイジー図書配布が主流になるはずです。
+デイジー規格のバージョンが複数あり、それぞれ仕様の異なる部分があるため、再生機材や再生用ソフトウェアが既存のデイジー図書に対応していない場合もあります。また、ボランティアとして製作された再生用ソフトウェアはアップデートされていないものも多いです。製作ソフトも同様です。今後はDAISY4規格に基づいて製作され、EPUB3のMedia Overlays規格にのっとった形式でのデイジー図書配布が主流になるはずです。
 
 DAISY図書が抱える技術的な問題点については、こちらによくまとめられています。
 - [デイジー教科書製作の技術的な問題](https://www.dinf.ne.jp/doc/daisy/activities/daisykanren/daisytext_problem.html)
 
 ## 参考
-[障害保健福祉研究情報システム デイジーを知ろう！１ そもそもデイジーって？](https://www.dinf.ne.jp/doc/japanese/access/daisy/daisy1_norma1601.html)
-
-[いちえ会 デイジー図書の3つの種類](https://www.ichiekai.net/d-studio/archives/171)
+- [障害保健福祉研究情報システム デイジーを知ろう！１ そもそもデイジーって？](https://www.dinf.ne.jp/doc/japanese/access/daisy/daisy1_norma1601.html)
+- [いちえ会 デイジー図書の3つの種類](https://www.ichiekai.net/d-studio/archives/171)
 
