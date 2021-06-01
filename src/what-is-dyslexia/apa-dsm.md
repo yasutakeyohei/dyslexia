@@ -89,15 +89,10 @@ DSM-5の中で、ディスレクシアは次のように分類されています
 ただし、ディスレクシア自体も便宜上の用語であることには違いはありません。実際はさまざまな状況があり、それぞれに適切な対応が必要です。
 
 ## 参考資料
-[APA DSM](https://www.psychiatry.org/psychiatrists/practice/dsm)
-
-[APA DSM-5](https://www.appi.org/Diagnostic_and_Statistical_Manual_of_Mental_Disorders_DSM-5_Fifth_Edition)
-
-[医学書院　DSM-5 精神疾患の診断・統計マニュアル](https://www.igaku-shoin.co.jp/bookDetail.do?book=86264)
-
-[Dyslexic Library HOW DYSLEXIA IS DIAGNOSED](https://dyslexiclibrary.com/diagnostic-criteria/)
-
-[発達障害情報・支援センター 障害をもつ大学生を理解するためのハンドブック](http://www.rehab.go.jp/ddis_pdf/50.pdf)
-
-[日本精神神経学会 ICD-11 新病名案](https://www.jspn.or.jp/uploads/uploads/files/activity/ICD-11Beta_Name_of_Mental_Disorders%20List(tentative)20180601.pdf)
+- [APA DSM](https://www.psychiatry.org/psychiatrists/practice/dsm)
+- [APA DSM-5](https://www.appi.org/Diagnostic_and_Statistical_Manual_of_Mental_Disorders_DSM-5_Fifth_Edition)
+- [医学書院　DSM-5 精神疾患の診断・統計マニュアル](https://www.igaku-shoin.co.jp/bookDetail.do?book=86264)
+- [Dyslexic Library HOW DYSLEXIA IS DIAGNOSED](https://dyslexiclibrary.com/diagnostic-criteria/)
+- [発達障害情報・支援センター 障害をもつ大学生を理解するためのハンドブック](http://www.rehab.go.jp/ddis_pdf/50.pdf)
+- [日本精神神経学会 ICD-11 新病名案](https://www.jspn.or.jp/uploads/uploads/files/activity/ICD-11Beta_Name_of_Mental_Disorders%20List(tentative)20180601.pdf)
 
