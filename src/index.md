@@ -4,6 +4,7 @@
 
 # ディスレクシアまとめ
 
+
 ## 概要
 ここは、ディスレクシアに関する情報をまとめているサイトです。
 
@@ -54,17 +55,7 @@
 
 ## 目次
 
-<style type="text/css">
-div.summary ul {
-  line-height: 1.2em;
-  list-style-type:none;
-}
-div.summary li {
-  margin-bottom: 0.5em;
-}
-</style>
-
-<div class="summary">
+<div class="mokuji">
 
 {{ #include SUMMARY.md }}
 
