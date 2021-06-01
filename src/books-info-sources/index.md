@@ -16,13 +16,16 @@
 ### マンガ
 
 <table class="book">
+<thead>
 <tr>
-<td rowspan="4" style="text-align:center">
+<th colspan="2"><a href="https://www.poplar.co.jp/book/search/result/archive/8008145.html">うちの子は字が書けない (発達性読み書き障害の息子がいます) </a></th>
+</tr>
+</thead>
+<tbody>
+<td rowspan="3" style="text-align:center">
 <a target="_blank"  href="https://www.amazon.co.jp/gp/product/B073RZ16WZ/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B073RZ16WZ&linkCode=as2&tag=kifu-simasu-22&linkId=d0cce43c1515bacb4b996ca4c8617495"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B073RZ16WZ&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=kifu-simasu-22" ></a>
 </td>
-<td><a href="https://www.poplar.co.jp/book/search/result/archive/8008145.html">うちの子は字が書けない (発達性読み書き障害の息子がいます) </a></td>
-</tr>
-<tr><td>千葉リョウコ、<a href="https://researchmap.jp/read0202502">宇野彰</a></td></tr>
+<td>千葉リョウコ、<a href="https://researchmap.jp/read0202502">宇野彰</a></td></tr>
 <tr>
 <td>2019年12月19日発売</td>
 </tr>
@@ -31,6 +34,7 @@
 <tr><td colspan="2">
 ディスレクシアのお子さんがいる母親（漫画家）が、自身の実体験を描いたものです。「合理的配慮があっても、子どもがそれを拒否したくなる」といった心理状況も描写されていました。ディスレクシアに関する研究で第一人者である、筑波大学人間学教授の宇野彰氏によるQ&Aなど、解説も充実しています。学校の教室や公共施設に一冊ずつ常備してほしい一冊です。
 </td></tr>
+</tbody>
 </table>
 
 
