@@ -1,5 +1,5 @@
 html {
-  font-family: "UD デジタル 教科書体 N-R", "BIZ UDゴシック Regular", "Hiragino Kaku Gothic ProN", "ascii";
+  font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "Hiragino Kaku Gothic ProN", "ascii";
 }
 
 body {
@@ -728,6 +728,21 @@ table.th-wrap th {
 div.table-wrapper {
   overflow-x: auto;
   white-space: nowrap;
+}
+
+table.book {
+  width: 100%;
+  margin: 4rem 0;
+}
+table.book thead th {
+  white-space: normal;
+}
+table.book thead th a {
+  color: var(--fg);
+}
+table.book tbody tr:first-of-type td:first-of-type {
+  width: 40%;
+  text-align: center;
 }
 
 span.highlight {
