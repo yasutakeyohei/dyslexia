@@ -679,10 +679,10 @@ td.aright {
 
 /* dyslexia CUSTOM */
 figure {
-  margin: 3rem;
+  margin: 3rem 0;
   text-align: center;
-  border: 1px solid gray;
-  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, .5);
+  border: 1px solid var(--fg);
+  box-shadow: 0 1rem 1rem 0 var(--scrollbar);
   padding: 1rem;
 }
 figure figcaption {
