@@ -736,9 +736,10 @@ table.book {
 }
 table.book thead th {
   white-space: normal;
+  text-align:left;
 }
 table.book thead th a {
-  color: var(--fg);
+  color: var(--fg) !important;
 }
 table.book tbody tr:first-of-type td:first-of-type {
   width: 40%;
