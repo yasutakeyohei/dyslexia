@@ -29,7 +29,7 @@
       <td>千葉リョウコ、<a href="https://researchmap.jp/read0202502">宇野彰</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.poplar.co.jp/book/search/result/archive/8008278.html">ポプラ社サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.poplar.co.jp/book/search/result/archive/8008278.html">ポプラ社の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">『うちの子は字が書けない（発達性読み書き障害の息子がいます）』の続編です。<br>（解説作成中です）</td>
@@ -52,7 +52,7 @@
       <td>千葉リョウコ、<a href="https://researchmap.jp/read0202502">宇野彰</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.poplar.co.jp/book/search/result/archive/8008145.html">ポプラ社サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a><br><a href="https://www.poplar.co.jp/topics/49379.html">ポプラ社による紹介 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.poplar.co.jp/book/search/result/archive/8008145.html">ポプラ社の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a><br><a href="https://www.poplar.co.jp/topics/49379.html">ポプラ社による紹介 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">お子さんがディスレクシアの診断を受けている漫画家の母親が、実体験を描いたものです。宇野彰先生（筑波大教授、LD・Dyslexiaセンター理事長）との対談やQ&A解説もあり、内容は充実していると思います。全体を通して明るい雰囲気で、子どももパッと読める内容ですので、学校の教室や公共施設に一冊ずつ常備してほしいと感じる漫画です。</td>
@@ -75,7 +75,7 @@
       <td><a href="https://ja.wikipedia.org/wiki/%E6%84%9B%E6%9C%AC%E3%81%BF%E3%81%9A%E3%81%BB">愛本みずほ</a></td>
     </tr>
     <tr>
-      <td><a href="https://kc.kodansha.co.jp/product?item=0000048239">講談社サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://kc.kodansha.co.jp/product?item=0000048239">講談社の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">ディスレクシアの主人公が、社会のさまざまな障害に直面しながらも、前向きに暮らしていく様子を描いた漫画です。</td>
@@ -98,7 +98,7 @@
       <td><a href="https://www.kodomowakamono.com/">品川 裕香</a>、<a href="http://kitaxca.com/">北原 明日香</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.iwasakishoten.co.jp/book/b280455.html">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.iwasakishoten.co.jp/book/b280455.html">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -121,7 +121,7 @@
       <td><a href="https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E4%BA%9C%E6%9C%AA">杉本亜未</a></td>
     </tr>
     <tr>
-      <td><a href="https://kc.kodansha.co.jp/title?code=1000003004">講談社サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://kc.kodansha.co.jp/title?code=1000003004">講談社の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">現在、AmazonのKndle Unlimitedにて全巻読むことができます。（解説作成中です）</td>
@@ -148,7 +148,7 @@
       <td><a href="https://www.kodomowakamono.com/">品川 裕香</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.iwasakishoten.co.jp/book/b473357.html">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.iwasakishoten.co.jp/book/b473357.html">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -171,7 +171,7 @@
       <td><a href="https://www.kodomowakamono.com/">品川 裕香</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.iwasakishoten.co.jp/book/b192662.html">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.iwasakishoten.co.jp/book/b192662.html">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -194,7 +194,7 @@
       <td><a href="https://www.kodomowakamono.com/">品川 裕香</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.iwasakishoten.co.jp/book/b192657.html">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.iwasakishoten.co.jp/book/b192657.html">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -217,7 +217,7 @@
       <td><a href="https://www.kodomowakamono.com/">品川 裕香</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.iwasakishoten.co.jp/book/b192616.html">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.iwasakishoten.co.jp/book/b192616.html">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -226,6 +226,29 @@
 </table>
 
 #### その他
+
+<table class="book bordered">
+  <thead>
+    <tr>
+      <th colspan="2"><a href="https://www.tokyo-shoseki.co.jp/books/80620/">私のディスレクシア</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><a href="https://www.amazon.co.jp/%E7%A7%81%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%AC%E3%82%AF%E3%82%B7%E3%82%A2-%E3%83%95%E3%82%A3%E3%83%AA%E3%83%83%E3%83%97-%E3%82%B7%E3%83%A5%E3%83%AB%E3%83%84/dp/4487806208?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&dchild=1&keywords=%E7%A7%81%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%AC%E3%82%AF%E3%82%B7%E3%82%A2&qid=1622713780&sr=8-1&linkCode=li2&tag=kifu-simasu-22&linkId=153514bee670764b5b2db0399c1aa6fd&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4487806208&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=kifu-simasu-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=kifu-simasu-22&language=ja_JP&l=li2&o=9&a=4487806208" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></td>
+      <td>2013年7月29日発売</td>
+    </tr>
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/Philip_Schultz">フィリップ・シュルツ</a>、室崎 育美（訳）、<a href="https://www.npo-edge.jp/about/npo/representative/">藤堂 栄子（監修）</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.tokyo-shoseki.co.jp/books/80620/">東京書籍の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <td colspan="2">ディスレクシア当事者の苦悩や不安と葛藤、生涯にわたる格闘と、その中で深めてきた思索を、ピューリッツァー賞受賞の、詩人の閑静が語りつくす自伝。まだディスレクシアという用語すらまったく知られていなかった時代に子ども時代を過ごすことで、どのような苦悩があり、どう感じ、考えてきたかが赤裸々に書かれています。私が読んで印象的だったのは、読むことは遅く、常に不安のある行為であったものの、「読書ではなく本そのものが大好きになった」という次のくだりです。「私は語り手の世界の大きさに気がついた。私の世界よりずっと大きかった。そして、登場人物たちが奮闘の末、自分の限界に気づく様子を知って本が大好きになった。確かにディスレクシアのために読むのは遅かったが、感情をバネにして、本が与えてくれる、より大きく豊かな世界を想像するのはやめられなかった。」</td>
+    </tr>
+  </tbody>
+</table>
 
 <table class="book bordered">
   <thead>
@@ -242,7 +265,7 @@
       <td><a href="https://jdyslexia.com/aboutus/message.html">加藤 醇子</a>他</td>
     </tr>
     <tr>
-      <td><a href="https://www.nippyo.co.jp/shop/book/7144.html">日本評論社サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://www.nippyo.co.jp/shop/book/7144.html">日本評論社の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -251,6 +274,8 @@
 </table>
 
 <!--
+
+
 <table class="book bordered">
   <thead>
     <tr>
@@ -266,7 +291,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -289,7 +314,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -312,7 +337,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -335,7 +360,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -358,7 +383,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -381,7 +406,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -404,30 +429,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
-    </tr>
-    <tr>
-      <td colspan="2">（解説作成中です）</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="book bordered">
-  <thead>
-    <tr>
-      <th colspan="2"><a href="siteaddr">タイトル</a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="3">アマゾン画像リンク</td>
-      <td>20xx年x月x日発売</td>
-    </tr>
-    <tr>
-      <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
-    </tr>
-    <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -449,7 +451,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -471,7 +473,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -493,7 +495,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -515,7 +517,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -537,7 +539,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -559,7 +561,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -581,7 +583,7 @@
       <td><a href="addr">著者1</a>、<a href="addr">著者2</a></td>
     </tr>
     <tr>
-      <td><a href="siteaddr">岩崎書店サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="siteaddr">岩崎書店の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">（解説作成中です）</td>
@@ -606,7 +608,7 @@
       <td><a href="https://www.rcast.u-tokyo.ac.jp/ja/research/people/staff-nakamura_kenryu.html">中邑 賢龍（監修）</a>、<a href="https://www.rcast.u-tokyo.ac.jp/ja/research/people/staff-kondo_takeo.html">近藤 武夫（監修）</a></td>
     </tr>
     <tr>
-      <td><a href="https://bookclub.kodansha.co.jp/product?item=0000321996">講談社サイトでの詳細説明 <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+      <td><a href="https://bookclub.kodansha.co.jp/product?item=0000321996">講談社の紹介ページ <i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <td colspan="2">網羅的かつ簡潔にまとまっている良書だと思います。</td>
@@ -627,6 +629,6 @@
 [児童の読み困難を支援する電子書籍端末ソフト Touch & Readの開発と導入方法の検討](https://www.jstage.jst.go.jp/article/jcss/18/3/18_3_521/_pdf)
 
 
-## 海外サイトでの詳細説明
+## 海外の紹介ページ
 [DyslexiaHelp（ミシガン大学）](http://dyslexiahelp.umich.edu/)
 
