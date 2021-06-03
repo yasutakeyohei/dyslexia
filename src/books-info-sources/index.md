@@ -227,7 +227,7 @@
 
 #### その他
 
-<table class="book bordered">
+<table class="book bordered" id="私のディスレクシア">
   <thead>
     <tr>
       <th colspan="2"><a href="https://www.tokyo-shoseki.co.jp/books/80620/">私のディスレクシア</a></th>
@@ -593,7 +593,7 @@
 
 -->
 
-<table class="book bordered">
+<table class="book bordered" id="発達障害の子を育てる本スマホタブレット活用編">
   <thead>
     <tr>
       <th colspan="2"><a href="https://bookclub.kodansha.co.jp/product?item=0000321996">発達障害の子を育てる本　スマホ・タブレット活用編</a></th>
