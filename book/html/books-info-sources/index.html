@@ -138,11 +138,11 @@
                 <div class="left-buttons">
                     <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents"
                         aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true" id="sidebar-toggle-icon"></i>
                     </button>
                     <button id="theme-toggle" class="icon-button a11y" type="button" title="Change theme"
                         aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                        <i class="icon-invert_colors_on"></i>
+                        <i class="fa fa-universal-access" aria-hidden="true"></i> <!-- CUSTOM: idを追加 -->
                     </button>
                     <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                         <li role="none"><button role="menuitem" class="theme"
@@ -156,7 +156,7 @@
                         <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button>
                         </li>
                     </ul>
-                    <!-- 追加したアクセシビリティツール -->
+                    <!-- CUSTOM: 追加したアクセシビリティツール -->
                     <!--
                     <button id="a11y-fontsize" class="icon-button a11y" type="button" title="フォントサイズの変更（作成中）"
                         aria-label="フォントサイズの変更（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
@@ -165,9 +165,9 @@
                     <button id="a11y-lineheight" class="icon-button a11y" type="button" title="行間の変更（作成中）"
                         aria-label="行間の変更（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                         <i class="icon-format_line_spacing"></i>
-                    </button>                    
+                    </button>
                     -->
-                    
+
                     
                 </div>
 
@@ -203,10 +203,10 @@
                     <p class="breadcrumbs"><a href="../">ディスレクシアまとめ</a> > 書籍・情報源
 
             <ul class="published-at-updated-at">
-                <li><a href="https://github.com/yasutakeyohei/dyslexia/commits/master/src/books-info-sources/index.md"><i class="fa fa-refresh" aria-hidden="true" title="更新日"></i> <time datetime="2021-06-04T22:43:28+09:00" timeprop="modified" title="更新日">2021-06-04</a></time></li>
+                <li><a href="https://github.com/yasutakeyohei/dyslexia/commits/master/src/books-info-sources/index.md"><i class="fa fa-refresh" aria-hidden="true" title="更新日"></i> <time datetime="2021-06-04T23:52:08+09:00" timeprop="modified" title="更新日">2021-06-04</a></time></li>
                 <li><i class="fa fa-file-text-o" aria-hidden="true" title="公開日"></i> <time datetime="2020-05-18" timeprop="datepublished" title="公開日">2020-05-18</time></li>
             </ul>
-            <!-- <lastmod>2021-06-04T22:43:28+09:00</lastmod> -->
+            <!-- <lastmod>2021-06-04T23:52:08+09:00</lastmod> -->
         
 <h1 id="書籍情報源"><a class="header" href="#書籍情報源">書籍・情報源</a></h1>
 <p>＊作成中</p>
@@ -897,6 +897,8 @@
     <!-- Custom JS scripts -->
     
     <script type="text/javascript" src="../medium-zoom.js"></script>
+    
+    <script type="text/javascript" src="../custom.js"></script>
     
     <script type="text/javascript">
         mediumZoom('[data-zoomable]');
