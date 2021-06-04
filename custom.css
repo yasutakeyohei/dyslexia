@@ -795,10 +795,8 @@ blockquote > h2 {
 }
 #menu-bar i {
   font-size:24px;
+  transition: all 5s linear;
 }
 #menu-bar .icon-button {
   line-height: 1 !important;
-}
-#menu-bar .icon-button.a11y {
-  color: var(--links);
 }
