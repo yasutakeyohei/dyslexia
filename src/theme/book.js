@@ -137,11 +137,13 @@ function playpen_text(playpen) {
         .catch(error => result_block.innerText = "Playground Communication: " + error.message);
     }
 
+    /*
     // Syntax highlighting Configuration
     hljs.configure({
         tabReplace: '    ', // 4 spaces
         languages: [],      // Languages used for auto-detection
     });
+
 
     let code_nodes = Array
         .from(document.querySelectorAll('code'))
@@ -269,6 +271,8 @@ function playpen_text(playpen) {
             });
         }
     });
+    */
+
 })();
 
 (function themes() {
@@ -306,7 +310,7 @@ function playpen_text(playpen) {
 
     function set_theme(theme, store = true) {
         let ace_theme;
-
+/*
         if (theme == 'coal' || theme == 'navy') {
             stylesheets.ayuHighlight.disabled = true;
             stylesheets.tomorrowNight.disabled = false;
@@ -324,7 +328,7 @@ function playpen_text(playpen) {
             stylesheets.highlight.disabled = false;
             ace_theme = "ace/theme/dawn";
         }
-
+*/
         /*
         setTimeout(function () {
             themeColorMetaTag.content = getComputedStyle(document.body).backgroundColor;
@@ -544,6 +548,7 @@ function playpen_text(playpen) {
     });
 })();
 
+/*
 (function clipboard() {
     var clipButtons = document.querySelectorAll('.clip-button');
 
@@ -580,6 +585,7 @@ function playpen_text(playpen) {
         showTooltip(e.trigger, "Clipboard error!");
     });
 })();
+*/
 
 (function scrollToTop () {
     var menuTitle = document.querySelector('.menu-title');
