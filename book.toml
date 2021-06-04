@@ -13,7 +13,7 @@ google-analytics="UA-144705402-1"
 # additional-js=["growl-notification/growl-notification.min.js", "register-sw.js", "notification.js", "medium-zoom.js"]
 # additional-css=["growl-notification/light-theme.min.css"]
 additional-css=["custom.css"]
-additional-js=["medium-zoom.js"]
+additional-js=["medium-zoom.js", "custom.js"]
 
 [output.html.print]
 enable = false
