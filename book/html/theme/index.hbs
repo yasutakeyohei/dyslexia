@@ -40,9 +40,11 @@
     <!--<link rel="stylesheet" href="{{ path_to_root }}css/print.css" media="print">-->
 
     <!-- Highlight.js Stylesheets -->
+    <!--
     <link rel="stylesheet" href="{{ path_to_root }}highlight.css">
     <link rel="stylesheet" href="{{ path_to_root }}tomorrow-night.css">
     <link rel="stylesheet" href="{{ path_to_root }}ayu-highlight.css">
+    -->
 
     <!-- Custom theme stylesheets -->
     {{#each additional_css}}
@@ -144,9 +146,9 @@
                         aria-label="Toggle Table of Contents" aria-controls="sidebar">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme"
+                    <button id="theme-toggle" class="icon-button a11y" type="button" title="Change theme"
                         aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                        <i class="fa fa-paint-brush"></i>
+                        <i class="icon-invert_colors_on"></i>
                     </button>
                     <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                         <li role="none"><button role="menuitem" class="theme"
@@ -160,12 +162,18 @@
                         <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button>
                         </li>
                     </ul>
-                    <!-- -->
-                    <button id="a11y-toggle" class="icon-button" type="button" title="アクセシビリティ設定（作成中）"
-                        aria-label="アクセシビリティ設定（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                        <i class="fa fa-universal-access"></i>
+                    <!-- 追加したアクセシビリティツール -->
+                    <!--
+                    <button id="a11y-fontsize" class="icon-button a11y" type="button" title="フォントサイズの変更（作成中）"
+                        aria-label="フォントサイズの変更（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="icon-text_fields"></i>
                     </button>
-
+                    <button id="a11y-lineheight" class="icon-button a11y" type="button" title="行間の変更（作成中）"
+                        aria-label="行間の変更（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="icon-format_line_spacing"></i>
+                    </button>                    
+                    -->
+                    
                     {{#if search_enabled}}
                     <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
                         aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S"
@@ -323,8 +331,10 @@
     <script src="{{ path_to_root }}searcher.js" type="text/javascript" charset="utf-8"></script>
     {{/if}}
 
+<!--
     <script src="{{ path_to_root }}clipboard.min.js" type="text/javascript" charset="utf-8" defer></script>
     <script src="{{ path_to_root }}highlight.js" type="text/javascript" charset="utf-8" defer></script>
+-->
     <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8" defer></script>
 
     <!-- axios -->

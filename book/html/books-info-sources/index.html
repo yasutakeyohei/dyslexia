@@ -38,9 +38,11 @@
     <!--<link rel="stylesheet" href="../css/print.css" media="print">-->
 
     <!-- Highlight.js Stylesheets -->
+    <!--
     <link rel="stylesheet" href="../highlight.css">
     <link rel="stylesheet" href="../tomorrow-night.css">
     <link rel="stylesheet" href="../ayu-highlight.css">
+    -->
 
     <!-- Custom theme stylesheets -->
     
@@ -138,9 +140,9 @@
                         aria-label="Toggle Table of Contents" aria-controls="sidebar">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme"
+                    <button id="theme-toggle" class="icon-button a11y" type="button" title="Change theme"
                         aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                        <i class="fa fa-paint-brush"></i>
+                        <i class="icon-invert_colors_on"></i>
                     </button>
                     <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                         <li role="none"><button role="menuitem" class="theme"
@@ -154,12 +156,18 @@
                         <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button>
                         </li>
                     </ul>
-                    <!-- -->
-                    <button id="a11y-toggle" class="icon-button" type="button" title="アクセシビリティ設定（作成中）"
-                        aria-label="アクセシビリティ設定（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                        <i class="fa fa-universal-access"></i>
+                    <!-- 追加したアクセシビリティツール -->
+                    <!--
+                    <button id="a11y-fontsize" class="icon-button a11y" type="button" title="フォントサイズの変更（作成中）"
+                        aria-label="フォントサイズの変更（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="icon-text_fields"></i>
                     </button>
-
+                    <button id="a11y-lineheight" class="icon-button a11y" type="button" title="行間の変更（作成中）"
+                        aria-label="行間の変更（作成中）" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="icon-format_line_spacing"></i>
+                    </button>                    
+                    -->
+                    
                     
                 </div>
 
@@ -195,10 +203,10 @@
                     <p class="breadcrumbs"><a href="../">ディスレクシアまとめ</a> > 書籍・情報源
 
             <ul class="published-at-updated-at">
-                <li><a href="https://github.com/yasutakeyohei/dyslexia/commits/master/src/books-info-sources/index.md"><i class="fa fa-refresh" aria-hidden="true" title="更新日"></i> <time datetime="2021-06-03T21:38:47+09:00" timeprop="modified" title="更新日">2021-06-03</a></time></li>
+                <li><a href="https://github.com/yasutakeyohei/dyslexia/commits/master/src/books-info-sources/index.md"><i class="fa fa-refresh" aria-hidden="true" title="更新日"></i> <time datetime="2021-06-04T22:43:28+09:00" timeprop="modified" title="更新日">2021-06-04</a></time></li>
                 <li><i class="fa fa-file-text-o" aria-hidden="true" title="公開日"></i> <time datetime="2020-05-18" timeprop="datepublished" title="公開日">2020-05-18</time></li>
             </ul>
-            <!-- <lastmod>2021-06-03T21:38:47+09:00</lastmod> -->
+            <!-- <lastmod>2021-06-04T22:43:28+09:00</lastmod> -->
         
 <h1 id="書籍情報源"><a class="header" href="#書籍情報源">書籍・情報源</a></h1>
 <p>＊作成中</p>
@@ -409,7 +417,7 @@
   </tbody>
 </table>
 <h4 id="その他"><a class="header" href="#その他">その他</a></h4>
-<table class="book bordered">
+<table class="book bordered" id="私のディスレクシア">
   <thead>
     <tr>
       <th colspan="2"><a href="https://www.tokyo-shoseki.co.jp/books/80620/">私のディスレクシア</a></th>
@@ -772,7 +780,7 @@
 </table>
 
 -->
-<table class="book bordered">
+<table class="book bordered" id="発達障害の子を育てる本スマホタブレット活用編">
   <thead>
     <tr>
       <th colspan="2"><a href="https://bookclub.kodansha.co.jp/product?item=0000321996">発達障害の子を育てる本　スマホ・タブレット活用編</a></th>
@@ -868,8 +876,10 @@
 
     
 
+<!--
     <script src="../clipboard.min.js" type="text/javascript" charset="utf-8" defer></script>
     <script src="../highlight.js" type="text/javascript" charset="utf-8" defer></script>
+-->
     <script src="../book.js" type="text/javascript" charset="utf-8" defer></script>
 
     <!-- axios -->
