@@ -150,11 +150,25 @@
                         aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                         <i class="fa fa-universal-access" aria-hidden="true"></i> <!-- CUSTOM: idを追加 -->
                     </button>
+                    <!--
                     <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                         <li role="none"><button role="menuitem" class="theme"
                                 id="light">{{ theme_option "Light" }}</button></li>
                         <li role="none"><button role="menuitem" class="theme"
                                 id="rust">{{ theme_option "Rust" }}</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="coal">{{ theme_option "Coal" }}</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="navy">{{ theme_option "Navy" }}</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button>
+                        </li>
+                    </ul>
+                    -->
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><i class="icon-invert_colors_on"></i>：<button role="menuitem" class="theme"
+                                id="light">1</button> <button role="menuitem" class="theme"
+                                id="rust">2</button> <button role="menuitem" class="theme"
+                                id="coal">3</button></li>
                         <li role="none"><button role="menuitem" class="theme"
                                 id="coal">{{ theme_option "Coal" }}</button></li>
                         <li role="none"><button role="menuitem" class="theme"

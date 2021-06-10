@@ -144,11 +144,25 @@
                         aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                         <i class="fa fa-universal-access" aria-hidden="true"></i> <!-- CUSTOM: idを追加 -->
                     </button>
+                    <!--
                     <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                         <li role="none"><button role="menuitem" class="theme"
                                 id="light">Light (default)</button></li>
                         <li role="none"><button role="menuitem" class="theme"
                                 id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button>
+                        </li>
+                    </ul>
+                    -->
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><i class="icon-invert_colors_on"></i>：<button role="menuitem" class="theme"
+                                id="light">1</button> <button role="menuitem" class="theme"
+                                id="rust">2</button> <button role="menuitem" class="theme"
+                                id="coal">3</button></li>
                         <li role="none"><button role="menuitem" class="theme"
                                 id="coal">Coal</button></li>
                         <li role="none"><button role="menuitem" class="theme"
@@ -254,6 +268,21 @@
 
     </div>
 
+    
+    <!-- Livereload script (if served using the cli tool) -->
+    <script type="text/javascript">
+        var socket = new WebSocket("ws://localhost:3000/__livereload");
+        socket.onmessage = function (event) {
+            if (event.data === "reload") {
+                socket.close();
+                location.reload();
+            }
+        };
+
+        window.onbeforeunload = function () {
+            socket.close();
+        }
+    </script>
     
 
     
