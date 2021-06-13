@@ -31,10 +31,50 @@
   const a11yToggleButton = document.getElementById('a11y-toggle');
   const a11yPopup = document.getElementById('a11y-list');
 
+  const defaultState = {
+    theme: default_theme,
+    fontFamily: "",
+    lineSpacing: "",
+    letterSpacing: "",
+    fontSize: "",
+    ruby: "",
+  }
+
+  let state = {
+    theme: "",
+    fontFamily: "",
+    lineSpacing: "",
+    letterSpacing: "",
+    fontSize: "",
+    ruby: "",
+  };
+
+  const setState = (newState, store = true) => {
+    state = {...state, ...newState}; //merge state
+    if (store) {
+      try {
+        localStorage.setItem('mdbook-state', JSON.stringify(state));
+      } catch (e) {}
+    }
+  }
+  const getState = () => {
+    let state;
+    try {
+      state = JSON.parse(localStorage.getItem('mdbook-state'));
+    } catch (e) {}
+    if (state === null || state === undefined) {
+      return defaultState;
+    } else {
+      return state;
+    }
+  }
+  setState(getState(), false);
+
+
   showA11yPopup = () => {
     a11yPopup.style.display = 'block';
     a11yToggleButton.setAttribute('aria-expanded', true);
-    a11yPopup.querySelector("button#" + get_theme()).focus();
+    a11yPopup.querySelector("button#" + getTheme()).focus();
   }
   hideA11yPopup = () => {
     a11yPopup.style.display = 'none';
@@ -42,11 +82,13 @@
     a11yToggleButton.focus();
   }
   updatePopup = () => {
-    a11yPopup.querySelector("button.theme").classList.remove("selected");
-    a11yPopup.querySelector("button#" + get_theme()).classList
+    [...a11yPopup.querySelectorAll("button.theme")].forEach((elm) => {
+      elm.classList.remove("selected");
+    });
+    a11yPopup.querySelector("button#" + getTheme()).classList.add("selected");
   }
 
-  get_theme = () => {
+  getTheme = () => {
     let theme;
     try {
       theme = localStorage.getItem('mdbook-theme');
@@ -58,8 +100,8 @@
     }
   }
 
-  set_theme = (theme, store = true) => {
-    let previousTheme = get_theme();
+  setTheme = (theme, store = true) => {
+    let previousTheme = getTheme();
     if (store) {
       try {
         localStorage.setItem('mdbook-theme', theme);
@@ -67,8 +109,9 @@
     }
     html.classList.remove(previousTheme);
     html.classList.add(theme);
+    updatePopup();
   }
-  set_theme(get_theme(), false);
+  setTheme(getTheme(), false);
 
 
   a11yToggleButton.addEventListener('click', () => {
@@ -77,9 +120,21 @@
 
   a11yPopup.addEventListener('click', (e) => {
     let a11y = e.target.id || e.target.parentElement.id;
+
     if (e.target.classList.contains("theme")) {
-      set_theme(a11y);
+      setTheme(a11y);
+    } else if (e.target.classList.contains("font-family")) {
+      setFontFamily(a11y);
+    } else if (e.target.classList.contains("line-spacing")) {
+      setLineSpacing(a11y);
+    } else if (e.target.classList.contains("letter-spacing")) {
+      setLetterSpacing(a11y);
+    } else if (e.target.classList.contains("font-size")) {
+      setFontSize(a11y);
+    } else if (e.target.classList.contains("ruby")) {
+      setRuby(a11y);
     }
+
   });
 
   a11yPopup.addEventListener('focusout', (e) => {
