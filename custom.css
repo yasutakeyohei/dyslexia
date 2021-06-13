@@ -818,7 +818,7 @@ blockquote > h2 {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 2px 0px; 
+  gap: 3px 0px; 
   grid-template-areas: 
     ". . . . . ."
     ". . . . . ."
@@ -851,6 +851,10 @@ blockquote > h2 {
   color: inherit;
   background: inherit;
   font-size: inherit;
+}
+.a11y-popup-div button.selected {
+  background: var(--fg);
+  color: var(--bg);
 }
 .a11y-popup-div button:hover {
   background-color: var(--theme-hover);
