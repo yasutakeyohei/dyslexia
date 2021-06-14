@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="{{ language }}" class="sidebar-visible no-js {{ default_theme }}">
+<html lang="{{ language }}" class="sidebar-visible no-js {{ default_theme }} font-family-ud line-height-0 letter-spacing-0 font-size-0"> <!-- CUSTOM: 念のためデフォルトクラスを追加-->
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8">
@@ -165,52 +165,56 @@
                         </li>
                     </ul>
 
-
                     <button id="a11y-toggle" class="icon-button a11y" type="button" title="Change theme"
                         aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                         <i class="fa fa-universal-access" aria-hidden="true"></i> <!-- CUSTOM: idを追加 -->
                     </button>
 
                     <div id="a11y-list" class="a11y-popup-div" aria-label="Accessibility Tools" role="menu">
-                        <div><i class="icon-invert_colors_on" aria-hidden="true"></i></div>
-                        <div><button role="menuitem" class="theme" id="light">1</button></div>
-                        <div><button role="menuitem" class="theme" id="rust">2</button></div>
-                        <div><button role="menuitem" class="theme" id="coal">3</button></div>
-                        <div><button role="menuitem" class="theme" id="navy">4</button></div>
-                        <div><button role="menuitem" class="theme" id="ayu">5</button></div>
-                        <div><i class="icon-font" aria-hidden="true"></i></div>
-                        <div><button role="menuitem" class="font-family" id="font-family-1">1</button></div>
-                        <div><button role="menuitem" class="font-family" id="font-family-2">2</button></div>
-                        <div><button role="menuitem" class="font-family" id="font-family-3">3</button></div>
-                        <div><button role="menuitem" class="font-family" id="font-family-4">4</button></div>
-                        <div><button role="menuitem" class="font-family" id="font-family-5">5</button></div>
-                        <div><i class="icon-format_line_spacing" aria-hidden="true"></i></div>
-                        <div><button role="menuitem" class="line-spacing" id="line-spacing-1">1</button></div>
-                        <div><button role="menuitem" class="line-spacing" id="line-spacing-2">2</button></div>
-                        <div><button role="menuitem" class="line-spacing" id="line-spacing-3">3</button></div>
-                        <div><button role="menuitem" class="line-spacing" id="line-spacing-4">4</button></div>
-                        <div><button role="menuitem" class="line-spacing" id="line-spacing-5">5</button></div>
-                        <div><i class="fa fa-arrows-h" aria-hidden="true"></i></div>
-                        <div><button role="menuitem" class="letter-spacing" id="letter-spacing-1">1</button></div>
-                        <div><button role="menuitem" class="letter-spacing" id="letter-spacing-2">2</button></div>
-                        <div><button role="menuitem" class="letter-spacing" id="letter-spacing-3">3</button></div>
-                        <div><button role="menuitem" class="letter-spacing" id="letter-spacing-4">4</button></div>
-                        <div><button role="menuitem" class="letter-spacing" id="letter-spacing-5">5</button></div>
-                        <div><i class="icon-text_fields" aria-hidden="true"></i></div>
-                        <div><button role="menuitem" class="font-size" id="font-size-1">1</button></div>
-                        <div><button role="menuitem" class="font-size" id="font-size-2">2</button></div>
-                        <div><button role="menuitem" class="font-size" id="font-size-3">3</button></div>
-                        <div><button role="menuitem" class="font-size" id="font-size-4">4</button></div>
-                        <div><button role="menuitem" class="font-size" id="font-size-5">5</button></div>
-                        <div><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i></div>
+                        <div><i class="icon-invert_colors_on label" aria-hidden="true"></i></div>
+                        <div><button role="menuitem" data-key="theme" data-val="light" data-default="true">1</button></div>
+                        <div><button role="menuitem" data-key="theme" data-val="rust">2</button></div>
+                        <div><button role="menuitem" data-key="theme" data-val="coal">3</button></div>
+                        <div><button role="menuitem" data-key="theme" data-val="navy">4</button></div>
+                        <div><button role="menuitem" data-key="theme" data-val="ayu">5</button></div>
+                        <div><i class="icon-font label" aria-hidden="true"></i></div>
+                        <div><button role="menuitem" data-key="fontFamily" data-val="font-family-ud" data-default="true">UD</button></div>
+                        <div><button role="menuitem" data-key="fontFamily" data-val="font-family-gothic">ゴ</button></div>
+                        <div><button role="menuitem" data-key="fontFamily" data-val="font-family-mincho">明</button></div>
+                        <div><button role="menuitem" data-key="fontFamily" data-val="font-family-uiprop">P</button></div>
+                        <div></div>
+                        <div><i class="icon-format_line_spacing label" aria-hidden="true"></i></div>
+                        <div><button role="menuitem" data-key="lineHeight" data-val="line-height-0" data-default="true">0</button></div>
+                        <div><button role="menuitem" data-key="lineHeight" data-val="line-height-1">1</button></div>
+                        <div><button role="menuitem" data-key="lineHeight" data-val="line-height-2">2</button></div>
+                        <div><button role="menuitem" data-key="lineHeight" data-val="line-height-3">3</button></div>
+                        <div><button role="menuitem" data-key="lineHeight" data-val="line-height-4">4</button></div>
+                        <div><i class="fa fa-arrows-h label" aria-hidden="true"></i></div>
+                        <div><button role="menuitem" data-key="letterSpacing" data-val="letter-spacing-0" data-default="true">0</button></div>
+                        <div><button role="menuitem" data-key="letterSpacing" data-val="letter-spacing-1">1</button></div>
+                        <div><button role="menuitem" data-key="letterSpacing" data-val="letter-spacing-2">2</button></div>
+                        <div><button role="menuitem" data-key="letterSpacing" data-val="letter-spacing-3">3</button></div>
+                        <div><button role="menuitem" data-key="letterSpacing" data-val="letter-spacing-4">4</button></div>
+                        <div><i class="icon-text_fields label" aria-hidden="true"></i></div>
+                        <div><button role="menuitem" data-key="fontSize" data-val="font-size-0" data-default="true">0</button></div>
+                        <div><button role="menuitem" data-key="fontSize" data-val="font-size-1">1</button></div>
+                        <div><button role="menuitem" data-key="fontSize" data-val="font-size-2">2</button></div>
+                        <div><button role="menuitem" data-key="fontSize" data-val="font-size-3">3</button></div>
+                        <div><button role="menuitem" data-key="fontSize" data-val="font-size-4">4</button></div>
+                        <div><i class="fa fa-assistive-listening-systems label" aria-hidden="true"></i></div>
                         <div class="ruby-on">
-                            <button role="menuitem" class="ruby" id="ruby-on">OFF</button>
+                            <button role="menuitem" data-key="ruby" data-val="ruby-on" disabled="disabled">（ON）</button>
                         </div>
                         <div class="ruby-off">
-                            <button role="menuitem" class="ruby" id="ruby-off">ON</button>
+                            <button role="menuitem" data-key="ruby" data-val="ruby-off" data-default="true" disabled="disabled">（OFF）</button>
                         </div>
+                        <div></div>
+                        <div class="reset">
+                            <button role="menuitem" data-key="reset" data-val="action"><i class="fa fa-refresh" aria-hidden="true"></i>RESET</button>
+                        </div>
+                        <div></div>
                         <div class="help">
-                            <button role="menuitem" class="help" id="help"><i class="fa fa-question-circle" aria-hidden="true"></i></button>
+                            <button role="menuitem" data-key="help" data-val="action"><i class="fa fa-question-circle" aria-hidden="true"></i></button>
                         </div>
                     </div>
 
