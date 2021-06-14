@@ -69,8 +69,8 @@ for filepath in glob.iglob('../../book/**/*.html', recursive=True):
     if key != "" :
         replace = '''
             <ul class="published-at-updated-at">
-                <li><a href="{githubp}"><i class="fa fa-refresh" aria-hidden="true" title="更新日"></i> <time datetime="{keyGTM}" timeprop="modified" title="更新日">{key}</a></time></li>
-                <li><i class="fa fa-file-text-o" aria-hidden="true" title="公開日"></i> <time datetime="\\1" timeprop="datepublished" title="公開日">\\1</time></li>
+                <li><a href="{githubp}"><i class="fa fa-refresh" aria-hidden="true" title="更新日" alt="更新日"></i> <span class="screen-reader-only">更新日</span><time datetime="{keyGTM}" timeprop="modified" title="更新日">{key}</time></a></li>
+                <li><i class="fa fa-file-text-o" aria-hidden="true" title="公開日" alt="公開日"></i> <span class="screen-reader-only">公開日</span><time datetime="\\1" timeprop="datepublished" title="公開日">\\1</time></li>
             </ul>
             <!-- <lastmod>{keyGTM}</lastmod> -->
         '''.format(keyGTM = keyGTM, key = key, githubp = githubp)
