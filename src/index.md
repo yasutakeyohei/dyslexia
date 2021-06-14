@@ -12,7 +12,7 @@
 
 <figure>
 <img src="./images/hieroglyph-dyslexia.png" alt="ヒエログリフ" data-zoomable="" style="z-index:999">
-<figcaption>古代エジプトのヒエログリフで書いた“DYSLEXIA”と、古代中国の金文で書いた「小平市」。<br><a href="https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%81%AE%E6%AD%B4%E5%8F%B2">文字の出現</a>は、人類史上、ほんの最近のことのようです。
+<figcaption>古代エジプトのヒエログリフで書いた “DYSLEXIA” と、古代中国の金文で書いた「小平市」。<br><a href="https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%81%AE%E6%AD%B4%E5%8F%B2">文字の出現</a>は、人類史上、ほんの最近のことのようです。
 </figcaption>
 </figure>
 
