@@ -31,110 +31,95 @@
   const a11yToggleButton = document.getElementById('a11y-toggle');
   const a11yPopup = document.getElementById('a11y-list');
 
-  const defaultState = {
-    theme: default_theme,
-    fontFamily: "",
-    lineSpacing: "",
-    letterSpacing: "",
-    fontSize: "",
-    ruby: "",
+   /* 利用可能ステートとデフォルトステートをindex.hbsから取得 */
+  let availableStates = {};
+  let defaultState = {};
+  [...a11yPopup.querySelectorAll("[role='menuitem']")].forEach((elm) => {
+    if (availableStates[elm.dataset.key] === undefined) {
+      availableStates[elm.dataset.key] = [];
+    }
+    availableStates[elm.dataset.key].push(elm.dataset.val);
+    if (elm.dataset.default) {
+      defaultState[elm.dataset.key] = elm.dataset.val;
+    }
+  });
+
+  let state = {};
+
+  const showA11yPopup = () => {
+    a11yPopup.style.display = 'grid';
+    a11yToggleButton.setAttribute('aria-expanded', true);
+    a11yPopup.querySelectorAll("[role='menuitem']")[0].focus();
+  }
+  const hideA11yPopup = () => {
+    a11yPopup.style.display = 'none';
+    a11yToggleButton.setAttribute('aria-expanded', false);
+    a11yToggleButton.focus();
+  }
+  const updatePopup = () => {
+    [...a11yPopup.querySelectorAll("[role='menuitem']")].forEach((elm) => {
+      elm.classList.remove("selected");
+    });
+    Object.keys(defaultState).forEach((key) => {
+      a11yPopup.querySelector(`[data-key='${key}'][data-val='${state[key]}']`).classList.add("selected");
+    });
   }
 
-  let state = {
-    theme: "",
-    fontFamily: "",
-    lineSpacing: "",
-    letterSpacing: "",
-    fontSize: "",
-    ruby: "",
-  };
-
   const setState = (newState, store = true) => {
+    /* 一旦全クラス削除 */
+    for (const v of Object.values(availableStates)) {
+      for(const cls of v) {
+        html.classList.remove(cls);
+      }
+    }
+
     state = {...state, ...newState}; //merge state
+    /* ステートにもとづいてクラスを設定 */
+    for (const cls of Object.values(state)) {
+      html.classList.add(cls);
+    }
+ 
     if (store) {
       try {
         localStorage.setItem('mdbook-state', JSON.stringify(state));
       } catch (e) {}
     }
+    updatePopup();
+  }
+  const validateState = (newState) => {
+    const s = {...defaultState};
+    for (const [k, v] of Object.entries(newState)) {
+      if (k in availableStates) {
+        s[k] = availableStates[k].includes(v) ? newState[k] : defaultState[k];
+      }
+    }
+    return s;
   }
   const getState = () => {
-    let state;
+    let newState = {};
     try {
-      state = JSON.parse(localStorage.getItem('mdbook-state'));
+      newState = JSON.parse(localStorage.getItem('mdbook-state'));
     } catch (e) {}
-    if (state === null || state === undefined) {
-      return defaultState;
-    } else {
-      return state;
-    }
+    return (newState === null || newState === undefined) ? {...defaultState} : {...validateState(newState)};
   }
   setState(getState(), false);
 
 
-  showA11yPopup = () => {
-    a11yPopup.style.display = 'block';
-    a11yToggleButton.setAttribute('aria-expanded', true);
-    a11yPopup.querySelector("button#" + getTheme()).focus();
-  }
-  hideA11yPopup = () => {
-    a11yPopup.style.display = 'none';
-    a11yToggleButton.setAttribute('aria-expanded', false);
-    a11yToggleButton.focus();
-  }
-  updatePopup = () => {
-    [...a11yPopup.querySelectorAll("button.theme")].forEach((elm) => {
-      elm.classList.remove("selected");
-    });
-    a11yPopup.querySelector("button#" + getTheme()).classList.add("selected");
-  }
-
-  getTheme = () => {
-    let theme;
-    try {
-      theme = localStorage.getItem('mdbook-theme');
-    } catch (e) {}
-    if (theme === null || theme === undefined) {
-      return default_theme;
-    } else {
-      return theme;
-    }
-  }
-
-  setTheme = (theme, store = true) => {
-    let previousTheme = getTheme();
-    if (store) {
-      try {
-        localStorage.setItem('mdbook-theme', theme);
-      } catch (e) {}
-    }
-    html.classList.remove(previousTheme);
-    html.classList.add(theme);
-    updatePopup();
-  }
-  setTheme(getTheme(), false);
-
-
   a11yToggleButton.addEventListener('click', () => {
-    a11yPopup.style.display === 'block' ? hideA11yPopup() : showA11yPopup();
+    a11yPopup.style.display === 'grid' ? hideA11yPopup() : showA11yPopup();
   });
 
   a11yPopup.addEventListener('click', (e) => {
-    let a11y = e.target.id || e.target.parentElement.id;
-
-    if (e.target.classList.contains("theme")) {
-      setTheme(a11y);
-    } else if (e.target.classList.contains("font-family")) {
-      setFontFamily(a11y);
-    } else if (e.target.classList.contains("line-spacing")) {
-      setLineSpacing(a11y);
-    } else if (e.target.classList.contains("letter-spacing")) {
-      setLetterSpacing(a11y);
-    } else if (e.target.classList.contains("font-size")) {
-      setFontSize(a11y);
-    } else if (e.target.classList.contains("ruby")) {
-      setRuby(a11y);
+    const val = e.target.dataset.val || e.target.parentElement.dataset.val;
+    if (val === "action") { /* アクションボタンの場合はステートを変更しない */
+      if (e.target.dataset.key === "reset") {
+        setState(defaultState);
+      } else if (e.target.dataset.key === "help") {
+        /* redirect to help page */
+      }
+    } else {
+      setState({[e.target.dataset.key]: val});
     }
-
   });
 
   a11yPopup.addEventListener('focusout', (e) => {
@@ -146,47 +131,9 @@
 
   // Should not be needed, but it works around an issue on macOS & iOS: https://github.com/rust-lang/mdBook/issues/628
   document.addEventListener('click', (e) => {
-    if (a11yPopup.style.display === 'block' && !a11yToggleButton.contains(e.target) && !a11yPopup.contains(e.target)) {
+    if (a11yPopup.style.display === 'grid' && !a11yToggleButton.contains(e.target) && !a11yPopup.contains(e.target)) {
       hideA11yPopup();
     }
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) {
-      return;
-    }
-    if (!a11yPopup.contains(e.target)) {
-      return;
-    }
-
-    let li;
-    switch (e.key) {
-      case 'Escape':
-        e.preventDefault();
-        hideA11yPopup();
-        break;
-      case 'ArrowUp':
-        e.preventDefault();
-        li = document.activeElement.parentElement;
-        if (li && li.previousElementSibling) {
-          li.previousElementSibling.querySelector('button').focus();
-        }
-        break;
-      case 'ArrowDown':
-        e.preventDefault();
-        li = document.activeElement.parentElement;
-        if (li && li.nextElementSibling) {
-          li.nextElementSibling.querySelector('button').focus();
-        }
-        break;
-      case 'Home':
-        e.preventDefault();
-        a11yPopup.querySelector('li:first-child button').focus();
-        break;
-      case 'End':
-        e.preventDefault();
-        a11yPopup.querySelector('li:last-child button').focus();
-        break;
-    }
-  });
 })();
