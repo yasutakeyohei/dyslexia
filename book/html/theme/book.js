@@ -354,7 +354,7 @@ function playpen_text(playpen) {
     // Set theme
     var theme = get_theme();
 
-    set_theme(theme, false);
+    //set_theme(theme, false); /* CUSTOM: ここをコメントアウト */
 
     themeToggleButton.addEventListener('click', function () {
         if (themePopup.style.display === 'block') {

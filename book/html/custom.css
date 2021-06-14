@@ -1,3 +1,29 @@
+/* a11y */
+.font-family-ud     { font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "BIZ UDGothic", "BIZ UDMincho"; }
+.font-family-gothic { font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif"; }
+.font-family-mincho { font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "serif"; }
+.font-family-uiprop { font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "MS PGothic", "sans-serif"; }
+
+.line-height-0 { --line-height: 2.6rem; }
+.line-height-1 { --line-height: 3.5rem; }
+.line-height-2 { --line-height: 5rem; }
+.line-height-3 { --line-height: 6rem; }
+.line-height-4 { --line-height: 8rem; }
+
+.letter-spacing-0 { --letter-spacing: 0rem; }
+.letter-spacing-1 { --letter-spacing: 0.4rem; }
+.letter-spacing-2 { --letter-spacing: 0.8rem; }
+.letter-spacing-3 { --letter-spacing: 1.0rem; }
+.letter-spacing-4 { --letter-spacing: 1.2rem; }
+
+.font-size-0 { --font-size: 1.7rem; }
+.font-size-1 { --font-size: 1.9rem; }
+.font-size-2 { --font-size: 2.1rem; }
+.font-size-3 { --font-size: 2.3rem; }
+.font-size-4 { --font-size: 2.5rem; }
+
+
+
 html {
   font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "Hiragino Kaku Gothic ProN", "ascii";
 }
@@ -5,10 +31,11 @@ html {
 body {
   -webkit-text-size-adjust: 100%;
   /* iPhoneでフォントサイズが勝手に変わるのを阻止 */
+  font-size: var(--font-size);
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.8em; /*1.8em*/
 }
 
 main h1 {
@@ -34,6 +61,20 @@ h5 {
 
 h6 {
   font-size: 0.9em;
+}
+
+.content {
+  letter-spacing: var(--letter-spacing);
+}
+
+.content p {
+  line-height: var(--line-height);
+}
+.content ol {
+  line-height: var(--line-height);
+}
+.content ul {
+  line-height: var(--line-height);
 }
 
 div.back-to-main-site {
@@ -66,7 +107,7 @@ p.breadcrumbs a {
 table th,
 table td {
   padding: 10px;
-  line-height: 2em;
+  line-height: calc( var(--line-height)*2 );/* 2em;*/
 }
 
 /* point, nittei, sanpi, summary */
@@ -644,6 +685,7 @@ td.aright {
   --point-fg: #000094;
   --situgi-q-bg: #ffefd5;
   --situgi-a-bg: #E7F7EE;
+  --a11y-icon-fg: mediumseagreen;
 }
 
 .light div.back-to-main-site {
@@ -658,22 +700,26 @@ td.aright {
 .rust {
   --situgi-q-bg: var(--quote-bg);
   --situgi-a-bg: var(--quote-bg);
+  --a11y-icon-fg: green;
 }
 
 .coal {
   --situgi-q-bg: var(--quote-bg);
   --situgi-a-bg: var(--quote-bg);
+  --a11y-icon-fg: yellowgreen;
 }
 
 .navy {
   --situgi-q-bg: var(--quote-bg);
   --situgi-a-bg: var(--quote-bg);
+  --a11y-icon-fg: aquamarine;
 }
 
 .ayu {
   --point-fg: #fff;
   --situgi-q-bg: var(--quote-bg);
   --situgi-a-bg: var(--quote-bg);
+  --a11y-icon-fg: aquamarine;
 }
 
 
@@ -797,12 +843,17 @@ blockquote > h2 {
   font-size:24px;
   transition: all 5s linear;
 }
+#menu-bar i.label{
+  cursor: unset;
+}
 #menu-bar .icon-button {
   line-height: 1 !important;
 }
+#menu-bar .icon-button.a11y {
+  color: var(--a11y-icon-fg);
+}
 
-
-.theme-popup-div {
+.a11y-popup-div {
   position: absolute;
   left: 10px;
   top: var(--menu-bar-height);
@@ -810,33 +861,41 @@ blockquote > h2 {
   border-radius: 4px;
   font-size: 0.7em;
   color: var(--fg);
-  background: var(--theme-popup-bg);
+  background: var(--searchbar-border-color);
   border: 1px solid var(--theme-popup-border);
   margin: 0;
   padding: 0;
   list-style: none;
-
-  display: grid; 
+  display: none; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 5px 0px; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 3px 0px; 
   grid-template-areas: 
     ". . . . . ."
     ". . . . . ."
     ". . . . . ."
     ". . . . . ."
     ". . . . . ."
-    ". on on off off help"; 
+    ". ruby-on ruby-on ruby-off ruby-off ." 
+    "reset reset reset help help help"; 
 }
-.theme-popup-div .default {
+.a11y-popup-div .default {
   color: var(--icons);
 }
-.theme-popup-div .theme {
+.a11y-popup-div div {
+  background: var(--theme-popup-bg);
+  text-align: center;
+}
+.a11y-popup-div div i {
+  line-height: 1.8 !important;
+  padding: 0px 5px !important;
+}
+.a11y-popup-div button {
   width: 100%;
   height: 100%;
   border: 0;
   margin: 0;
-  padding: 2px 10px;
+  padding: 2px 5px;
   line-height: 25px;
   white-space: nowrap;
   text-align: center;
@@ -845,14 +904,20 @@ blockquote > h2 {
   background: inherit;
   font-size: inherit;
 }
-.theme-popup-div .theme:hover {
+.a11y-popup-div button.selected {
+  border: 2px solid var(--sidebar-active);
+}
+.a11y-popup-div button:hover {
   background-color: var(--theme-hover);
 }
-.theme-popup-div .theme:hover:first-child,
-.theme-popup-div .theme:hover:last-child {
+.a11y-popup-div button:hover:first-child,
+.a11y-popup-div button:hover:last-child {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
-.on { grid-area: on; }
-.off { grid-area: off; }
+.ruby-on { grid-area: ruby-on; }
+.ruby-off { grid-area: ruby-off; }
+.reset { grid-area: reset; }
 .help { grid-area: help; }
+
+
