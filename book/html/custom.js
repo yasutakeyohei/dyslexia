@@ -112,9 +112,10 @@
   a11yPopup.addEventListener('click', (e) => {
     const val = e.target.dataset.val || e.target.parentElement.dataset.val;
     if (val === "action") { /* アクションボタンの場合はステートを変更しない */
-      if (e.target.dataset.key === "reset") {
+      const key = e.target.dataset.key || e.target.parentElement.dataset.key;
+      if (key === "reset") {
         setState(defaultState);
-      } else if (e.target.dataset.key === "help") {
+      } else if (key === "help") {
         /* redirect to help page */
       }
     } else {
