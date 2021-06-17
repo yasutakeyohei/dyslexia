@@ -1,5 +1,6 @@
 /* a11y */
-.font-family-ud     { font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "BIZ UDGothic", "BIZ UDMincho"; }
+.font-family-ud1     { font-family: "UD デジタル 教科書体 N-R", "BIZ UDゴシック Regular", "BIZ UDGothic", "BIZ UDMincho", "a-otf-ud-shin-maru-go-pr6n", "UDデジタル教科書体 R"; }
+.font-family-ud2     { font-family: "a-otf-ud-shin-maru-go-pr6n", "BIZ UDGothic", "BIZ UDMincho", "UDデジタル教科書体 R"; }
 .font-family-gothic { font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif"; }
 .font-family-mincho { font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "serif"; }
 .font-family-uiprop { font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "MS PGothic", "sans-serif"; }
@@ -22,7 +23,13 @@
 .font-size-3 { --font-size: 2.3rem; }
 .font-size-4 { --font-size: 2.5rem; }
 
-
+@font-face {
+  font-family: minmoji;
+  src: url('https://minmoji.ucda.jp/fontseot/https%3A__yasutakeyohei.com');
+  src: local('minmoji'),
+      url('https://minmoji.ucda.jp/fontswoff/https%3A__yasutakeyohei.com') format('woff'),
+      url('https://minmoji.ucda.jp/fonts/https%3A__yasutakeyohei.com') format('opentype');
+}
 
 html {
   font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "Hiragino Kaku Gothic ProN", "ascii";
@@ -849,7 +856,8 @@ blockquote > h2 {
 #menu-bar .icon-button {
   line-height: 1 !important;
 }
-#menu-bar .icon-button.a11y {
+#menu-bar .icon-button.a11y,
+.icon-a11y-wrapper {
   color: var(--a11y-icon-fg);
 }
 
@@ -933,4 +941,9 @@ blockquote > h2 {
   clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
   clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
   white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+/* a11yに影響を受けない要素 */
+ul.published-at-updated-at {
+
 }
