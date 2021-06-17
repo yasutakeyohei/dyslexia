@@ -79,4 +79,5 @@
 - [フォント](./fonts.md)
 - [専門家](./experts.md)
 - [書籍・論文・情報源](./books-info-sources/index.md)
+- [このサイトのアクセシビリティツールについて](./about-a11y.md)
 <!--- [更新通知について](./about-notification/index.md)-->
