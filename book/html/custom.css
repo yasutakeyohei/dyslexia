@@ -1,14 +1,15 @@
 /* a11y */
-.font-family-ud     { font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "BIZ UDGothic", "BIZ UDMincho"; }
+.font-family-ud1     { font-family: "UD デジタル 教科書体 N-R", "BIZ UDゴシック Regular", "BIZ UDGothic", "BIZ UDMincho", "a-otf-ud-shin-maru-go-pr6n", "UDデジタル教科書体 R"; }
+.font-family-ud2     { font-family: "a-otf-ud-shin-maru-go-pr6n", "BIZ UDゴシック Regular", "BIZ UDGothic", "BIZ UDMincho", "UDデジタル教科書体 R"; }
 .font-family-gothic { font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif"; }
 .font-family-mincho { font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "serif"; }
 .font-family-uiprop { font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "MS PGothic", "sans-serif"; }
 
-.line-height-0 { --line-height: 2.6rem; }
-.line-height-1 { --line-height: 3.5rem; }
-.line-height-2 { --line-height: 5rem; }
-.line-height-3 { --line-height: 6rem; }
-.line-height-4 { --line-height: 8rem; }
+.line-height-0 { --line-height: 2.6rem; --line-height-chapter: 1.5em; }
+.line-height-1 { --line-height: 3.5rem; --line-height-chapter: 3.5rem; }
+.line-height-2 { --line-height: 4.5rem; --line-height-chapter: 4.5rem; }
+.line-height-3 { --line-height: 5.5rem; --line-height-chapter: 5.5rem; }
+.line-height-4 { --line-height: 6.5rem; --line-height-chapter: 6.5rem; }
 
 .letter-spacing-0 { --letter-spacing: 0rem; }
 .letter-spacing-1 { --letter-spacing: 0.4rem; }
@@ -22,7 +23,13 @@
 .font-size-3 { --font-size: 2.3rem; }
 .font-size-4 { --font-size: 2.5rem; }
 
-
+@font-face {
+  font-family: minmoji;
+  src: url('https://minmoji.ucda.jp/fontseot/https%3A__yasutakeyohei.com');
+  src: local('minmoji'),
+      url('https://minmoji.ucda.jp/fontswoff/https%3A__yasutakeyohei.com') format('woff'),
+      url('https://minmoji.ucda.jp/fonts/https%3A__yasutakeyohei.com') format('opentype');
+}
 
 html {
   font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "Hiragino Kaku Gothic ProN", "ascii";
@@ -104,10 +111,12 @@ p.breadcrumbs a {
 }
 
 /* table */
-table th,
-table td {
+table thead th,
+table thead td,
+table tbody th,
+table tbody td {
   padding: 10px;
-  line-height: calc( var(--line-height)*2 );/* 2em;*/
+  line-height: var(--line-height);
 }
 
 /* point, nittei, sanpi, summary */
@@ -341,14 +350,15 @@ p.situgi-comment span {
 ul.published-at-updated-at {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0 2rem;
   margin: 0 0 2px 0;
   list-style-type: none;
   font-size: 1.5rem;
   color: gray;
 }
-
-ul.published-at-updated-at>li:first-of-type {
-  margin-right: 2rem;
+ul.published-at-updated-at li {
+  white-space: nowrap;
 }
 
 /* sortable */
@@ -653,11 +663,6 @@ table.bordered td {
   border: 1px solid var(--fg);
 }
 
-table.slim th,
-table.slim td {
-  line-height: inherit;
-}
-
 table.slim {
   margin: 3rem auto;
 }
@@ -727,15 +732,19 @@ td.aright {
 figure {
   margin: 3rem 0;
   text-align: center;
-  border: 1px solid var(--fg);
-  box-shadow: 0 1rem 1rem 0 var(--scrollbar);
   padding: 1rem;
 }
 figure figcaption {
   padding: 1rem;
   font-size: calc(var(--font-size) * 0.8);
   line-height: calc(var(--line-height) * 0.8);
-  text-align:left;
+  text-align: center;
+}
+figure.bordered {
+  border: 1px solid var(--fg);
+}
+figure.shadowed {
+  box-shadow: 0 1rem 1rem 0 var(--scrollbar);
 }
 
 div.mokuji ul {
@@ -849,7 +858,8 @@ blockquote > h2 {
 #menu-bar .icon-button {
   line-height: 1 !important;
 }
-#menu-bar .icon-button.a11y {
+#menu-bar .icon-button.a11y,
+.icon-a11y-wrapper {
   color: var(--a11y-icon-fg);
 }
 
@@ -933,4 +943,15 @@ blockquote > h2 {
   clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
   clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
   white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+/* a11y用 */
+h1, h2, h3, h4, h5, h6,
+li, .back-to-main-site {
+  line-height: calc( var(--line-height)*1.5);
+  letter-spacing: var(--letter-spacing);
+}
+.chapter li.chapter-item {
+  line-height: var(--line-height-chapter);
+  letter-spacing: var(--letter-spacing);
 }

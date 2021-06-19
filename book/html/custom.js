@@ -116,7 +116,7 @@
       if (key === "reset") {
         setState(defaultState);
       } else if (key === "help") {
-        /* redirect to help page */
+        location.href = path_to_root + "about-a11y.html"; /* redirect to help page */
       }
     } else {
       setState({[e.target.dataset.key]: val});
