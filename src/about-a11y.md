@@ -51,20 +51,40 @@
 </table>
 
 
-なお、UDフォントは次のように設定されています。
+UDフォントは次の優先度で設定されます。
 
-**UD1**
+<div class="table-wrapper">
+<table class="bordered slim">
+<caption style="text-align:left;font-weight:bold">UD1を選んだ場合</caption>
+<thead>
+  <tr><th>優先度</th><th>フォント名</th><th>備考</th></tr>
+</thead>
+<tbody>
+    <tr><th style="white-space:nowrap">1<br>（最優先）</th><td style="white-space:nowrap">UD デジタル 教科書体 N-R</td><td>Windows10に標準でインストールされています。</td></tr>
+    <tr><th>2</th><td>BIZ UDゴシック Regular</td><td rowspan="3" style="white-space:initial;">October 2018 Updateが導入されているWindows10にはインストールされています。もしくは<a href="https://www.morisawa.co.jp/products/fonts/bizplus/">こちらの「全3書体MORISAWA BIZ+ 無償版」</a>から無料でダウンロードすることができます。</td></tr>
+    <tr><th>3</th><td>BIZ UDGothic</td></tr>
+    <tr><th>4</th><td>BIZ UDMincho</td></tr>
+    <tr><th>5</th><td>A-OTF UD新丸ゴ Pr6N</td><td style="white-space:initial;">AdobeのCreative Cloudに加入しているとインストールできます。</td></tr>
+    <tr><th>6</th><td>UDデジタル教科書体 R</td><td style="white-space:initial;"><a href="https://typesquare.com/ja/">TypeSquare</a>に登録し、無料で使わせていただいているWebフォントです。上記のいずれもインストールされていない場合に適用されますが、1万ページビューを超えると使えなくなります。</td></tr>
+  </tr>
+</tbody>
+</table>
+</div>
 
-1. UD デジタル 教科書体 N-R
-1. BIZ UDゴシック Regular
-1. BIZ UDGothic
-1. BIZ UDMincho
-1. a-otf-ud-shin-maru-go-pr6n
-1. UDデジタル教科書体 R
+<div class="table-wrapper" style="text-align:left;">
+<table class="bordered slim">
+<caption style="text-align:left;font-weight:bold">UD2を選んだ場合</caption>
+<thead>
+  <tr><th>優先度</th><th>フォント名</th><th>備考</th></tr>
+</thead>
+<tbody>
+    <tr><th>1<br>（最優先）</th><td>A-OTF UD新丸ゴ Pr6N</td><td rowspan="5">上表の説明をご参照ください。</td></tr>
+    <tr><th>2</th><td>BIZ UDゴシック Regular</td></tr>
+    <tr><th>3</th><td>BIZ UDGothic</td></tr>
+    <tr><th>4</th><td>BIZ UDMincho</td></tr>
+    <tr><th>5</th><td>UDデジタル教科書体 R</td></tr>
+  </tr>
+</tbody>
+</table>
+</div>
 
-**UD2**
-
-1. a-otf-ud-shin-maru-go-pr6n
-1. BIZ UDGothic
-1. BIZ UDMincho
-1. UDデジタル教科書体
