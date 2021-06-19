@@ -12,7 +12,7 @@
 
 青い四角（<span style="color:var(--links)">□</span>）で囲まれた部分が、現在選択されている設定を示しています。
 
-それぞれのボタンを押していただければ、どういう機能があるかご確認いただけます。詳しくは次のとおりです。
+それぞれのボタンを押していただければ、どういう機能なのかご確認いただけます。詳しくは次のとおりです。
 
 <table class="bordered slim">
 <thead>
@@ -75,7 +75,7 @@ UDフォントは次の優先度で設定されます。
 </table>
 </div>
 
-<div class="table-wrapper" style="text-align:left;">
+<div class="table-wrapper">
 <table class="bordered slim">
 <caption style="text-align:left;font-weight:bold">UD2を選んだ場合</caption>
 <thead>
