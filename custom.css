@@ -5,11 +5,11 @@
 .font-family-mincho { font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "serif"; }
 .font-family-uiprop { font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "MS PGothic", "sans-serif"; }
 
-.line-height-0 { --line-height: 2.6rem; }
-.line-height-1 { --line-height: 3.5rem; }
-.line-height-2 { --line-height: 5rem; }
-.line-height-3 { --line-height: 6rem; }
-.line-height-4 { --line-height: 8rem; }
+.line-height-0 { --line-height: 2.6rem; --line-height-chapter: 1.5em; }
+.line-height-1 { --line-height: 3.5rem; --line-height-chapter: 3.5rem; }
+.line-height-2 { --line-height: 4.5rem; --line-height-chapter: 4.5rem; }
+.line-height-3 { --line-height: 5.5rem; --line-height-chapter: 5.5rem; }
+.line-height-4 { --line-height: 6.5rem; --line-height-chapter: 6.5rem; }
 
 .letter-spacing-0 { --letter-spacing: 0rem; }
 .letter-spacing-1 { --letter-spacing: 0.4rem; }
@@ -111,10 +111,12 @@ p.breadcrumbs a {
 }
 
 /* table */
-table th,
-table td {
+table thead th,
+table thead td,
+table tbody th,
+table tbody td {
   padding: 10px;
-  line-height: calc( var(--line-height)*2 );/* 2em;*/
+  line-height: var(--line-height);
 }
 
 /* point, nittei, sanpi, summary */
@@ -348,14 +350,15 @@ p.situgi-comment span {
 ul.published-at-updated-at {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0 2rem;
   margin: 0 0 2px 0;
   list-style-type: none;
   font-size: 1.5rem;
   color: gray;
 }
-
-ul.published-at-updated-at>li:first-of-type {
-  margin-right: 2rem;
+ul.published-at-updated-at li {
+  white-space: nowrap;
 }
 
 /* sortable */
@@ -734,15 +737,19 @@ td.aright {
 figure {
   margin: 3rem 0;
   text-align: center;
-  border: 1px solid var(--fg);
-  box-shadow: 0 1rem 1rem 0 var(--scrollbar);
   padding: 1rem;
 }
 figure figcaption {
   padding: 1rem;
   font-size: calc(var(--font-size) * 0.8);
   line-height: calc(var(--line-height) * 0.8);
-  text-align:left;
+  text-align: center;
+}
+figure.bordered {
+  border: 1px solid var(--fg);
+}
+figure.shadowed {
+  box-shadow: 0 1rem 1rem 0 var(--scrollbar);
 }
 
 div.mokuji ul {
@@ -943,7 +950,13 @@ blockquote > h2 {
   white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
 
-/* a11yに影響を受けない要素 */
-ul.published-at-updated-at {
-
+/* a11y用 */
+h1, h2, h3, h4, h5, h6,
+li, .back-to-main-site {
+  line-height: calc( var(--line-height)*1.5);
+  letter-spacing: var(--letter-spacing);
+}
+.chapter li.chapter-item {
+  line-height: var(--line-height-chapter);
+  letter-spacing: var(--letter-spacing);
 }
