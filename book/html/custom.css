@@ -23,14 +23,6 @@
 .font-size-3 { --font-size: 2.3rem; }
 .font-size-4 { --font-size: 2.5rem; }
 
-@font-face {
-  font-family: minmoji;
-  src: url('https://minmoji.ucda.jp/fontseot/https%3A__yasutakeyohei.com');
-  src: local('minmoji'),
-      url('https://minmoji.ucda.jp/fontswoff/https%3A__yasutakeyohei.com') format('woff'),
-      url('https://minmoji.ucda.jp/fonts/https%3A__yasutakeyohei.com') format('opentype');
-}
-
 html {
   font-family: "UD デジタル 教科書体 N-R", "UDデジタル教科書体 R", "BIZ UDゴシック Regular", "Hiragino Kaku Gothic ProN", "ascii";
 }
@@ -953,4 +945,36 @@ li, .back-to-main-site {
 .chapter li.chapter-item {
   line-height: var(--line-height-chapter);
   letter-spacing: var(--letter-spacing);
+}
+
+
+/* 一般質問 */
+.letter {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 0 auto 4rem auto;
+  padding: 2rem;
+  position: relative;
+  border:1px solid gray;
+  background-color: var(--bg);
+}
+.letter:before, .letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-1deg);
+}
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(0.4deg);
 }
