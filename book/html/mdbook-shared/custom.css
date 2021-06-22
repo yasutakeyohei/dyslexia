@@ -302,31 +302,33 @@ input.gridjs-input {
 div.redbox,
 div.tips {
   border-radius: 1rem;
-  margin: 0;
+  margin: calc(var(--line-height)*1.5) 0;
   padding: 1rem 2rem;
 }
-
 div.redbox:before,
 div.tips:before {
   font-weight: bold;
   display: block;
 }
-
 div.redbox ul,
 div.tips ul {
   margin-bottom: 0;
 }
-
 div.redbox {
   border: 1px dashed red;
 }
-
 div.redbox:before {
   content: "🤔気になるコト（要確認事項）";
 }
-
 div.tips {
-  border: 2px dashed var(--fg);
+  border: 1px dashed var(--fg);
+}
+div.tips p:last-of-type {
+  margin-bottom:0;
+}
+div.tips>p:first-child {
+  margin-top:0;
+  font-weight:bold;
 }
 
 p.situgi-comment {
@@ -536,7 +538,7 @@ p.img-wrapper {
 /* https://blog.n-ista.org/2019/01/csslineblogger.html */
 
 .balloon {
-  font-size: small;
+  font-size: calc(var(--font-size)*0.77);
   position: relative;
   width: 70%;
   display: inline-block;
@@ -548,11 +550,12 @@ p.img-wrapper {
   display: inline-block;
   padding: 2rem;
   border-radius: 10px;
-  font-size: medium;
-  line-height: 1.45em;
+  font-size: calc(var(--font-size)*0.94);
 }
-
 .balloon>div p:first-of-type {
+  margin-top: 0;
+}
+.balloon>div>ul:first-child {
   margin-top: 0;
 }
 
@@ -578,7 +581,7 @@ div.balloon.hitori>div {
 }
 
 .balloon.bl-left {
-  margin: 1rem 26% 1rem 4%;
+  margin: 3rem 26% 3rem 4%;
 }
 
 .balloon.bl-left>div {
@@ -635,7 +638,7 @@ blockquote .balloon.bl-left>div:after {
 }
 
 .balloon span.yasutake {
-  font-size: medium;
+  font-size: var(--font-size);
   font-weight: bold;
   color: red;
 }
@@ -753,14 +756,6 @@ pre.tree {
   padding: 20px;
 }
 
-div.tips {
-  line-height: 1.8em;
-  border: 1px dotted var(--fg);
-}
-div.tips p:last-of-type {
-  margin-bottom:0;
-}
-
 table.td-center td {
   text-align:center;
 }
@@ -804,11 +799,11 @@ blockquote > h2 {
 /* custom fonts */
 @font-face {
   font-family: 'icomoon';
-  src:  url('custom-fonts/icomoon.eot?vb0x3d');
-  src:  url('custom-fonts/icomoon.eot?vb0x3d#iefix') format('embedded-opentype'),
-    url('custom-fonts/icomoon.ttf?vb0x3d') format('truetype'),
-    url('custom-fonts/icomoon.woff?vb0x3d') format('woff'),
-    url('custom-fonts/icomoon.svg?vb0x3d#icomoon') format('svg');
+  src:  url('./custom-fonts/icomoon.eot?vb0x3d');
+  src:  url('./custom-fonts/icomoon.eot?vb0x3d#iefix') format('embedded-opentype'),
+    url('./custom-fonts/icomoon.ttf?vb0x3d') format('truetype'),
+    url('./custom-fonts/icomoon.woff?vb0x3d') format('woff'),
+    url('./custom-fonts/icomoon.svg?vb0x3d#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
