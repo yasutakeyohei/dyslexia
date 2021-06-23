@@ -113,6 +113,7 @@ table tbody td {
 /* point, nittei, sanpi, summary */
 fieldset.point {
   margin-top: 0;
+  padding: 0rem 3rem;
 }
 
 fieldset.nittei,
@@ -148,14 +149,14 @@ fieldset.summary {
 .summary li {
   text-indent: -1.5rem;
   color: var(--point-fg);
-  padding: 1rem 3.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .point li:not([class]),
 .sanpi li:not([class]),
 .summary li:not([class]) {
   text-indent: 0;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .point li.chk::before,
@@ -545,7 +546,6 @@ p.img-wrapper {
   vertical-align: top;
   box-sizing: border-box;
 }
-
 .balloon>div {
   display: inline-block;
   padding: 2rem;
@@ -558,11 +558,9 @@ p.img-wrapper {
 .balloon>div>ul:first-child {
   margin-top: 0;
 }
-
 .balloon>div p:last-of-type {
   margin-bottom: 0;
 }
-
 .balloon>div:after {
   content: '';
   position: absolute;
@@ -571,27 +569,21 @@ p.img-wrapper {
   border-style: solid;
   top: 30px;
 }
-
-div.balloon.hitori {
+.balloon.hitori {
   font-weight: bold;
 }
-
-div.balloon.hitori>div {
+.balloon.hitori>div {
   font-weight: normal;
 }
-
 .balloon.bl-left {
   margin: 3rem 26% 3rem 4%;
 }
-
 .balloon.bl-left>div {
   background-color: var(--situgi-q-bg);
 }
-
 blockquote .balloon.bl-left>div {
   background-color: var(--bg);
 }
-
 .balloon.bl-left>div:after {
   border-width: 7px 15px 7px 0;
   border-color: transparent var(--situgi-q-bg) transparent transparent;
@@ -606,12 +598,10 @@ blockquote .balloon.bl-left>div:after {
   margin: 1rem 4% 1rem 26%;
   text-align: right;
 }
-
 .balloon.bl-right>div {
   text-align: left;
   background-color: var(--situgi-a-bg);
 }
-
 .balloon.bl-right>div:after {
   border-width: 7px 0 7px 15px;
   border-color: transparent transparent transparent var(--situgi-a-bg);
@@ -622,7 +612,6 @@ blockquote .balloon.bl-left>div:after {
   background-color: unset;
   border: 6px solid var(--situgi-q-bg);
 }
-
 .balloon.bl-right.bl-tips>div {
   background-color: unset;
   border: 6px solid var(--situgi-a-bg);
@@ -933,8 +922,12 @@ blockquote > h2 {
 
 /* a11y用 */
 h1, h2, h3, h4, h5, h6,
-li, .back-to-main-site {
+.back-to-main-site {
   line-height: calc( var(--line-height)*1.5);
+  letter-spacing: var(--letter-spacing);
+}
+li {
+  line-height: calc( var(--line-height)*1.2);
   letter-spacing: var(--letter-spacing);
 }
 .chapter li.chapter-item {
@@ -972,4 +965,47 @@ li, .back-to-main-site {
   right: -3px;
   top: 1px;
   transform: rotate(0.4deg);
+}
+.letter p.heading,
+.saisitumon p.heading {
+  background: var(--situgi-q-bg);
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+.saisitumon p.heading {
+  padding: 1rem 0;
+}
+
+.letter h3,
+.saisitumon h3,
+.situgi h3 {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background: var(--situgi-q-bg);
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+h3 + div.balloon,
+div.tips + div.balloon {
+  margin-top: 2rem !important;
+}
+
+div.balloon.bl-left + div.balloon.bl-left,
+div.balloon.bl-right + div.balloon.bl-right {
+  margin-top: 0 !important;  
+}
+
+.point h3 {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background: var(--situgi-q-bg);
+  font-weight: bold;
+  text-align: left;
+  margin: 2rem 0;
+  padding: 1rem;
 }
