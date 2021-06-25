@@ -29,7 +29,11 @@
         <link rel="shortcut icon" href="../favicon.png">
 
         <!-- Fonts -->
+        <!--
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        -->
+        <link rel="preload" href="../FontAwesome/css/font-awesome.css" as="style">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css" media="print" onload="this.media='all'">
 
         <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
@@ -46,8 +50,11 @@
         <!-- Custom theme stylesheets -->
         
         <!-- CUSTOM: CSSの読み込み（直書き） -->
+        <!--
         <link rel="stylesheet" href="../mdbook-shared/custom.css">
-
+        -->
+        <link rel="preload" href="../mdbook-shared/custom.css" as="style">
+        <link rel="stylesheet" href="../mdbook-shared/custom.css" media="print" onload="this.media='all'">
 
         
         <!-- PWA -->
@@ -55,7 +62,7 @@
         <link rel="apple-touch-icon" href="../icon-apple-192.png">
 
         <!-- typesquare -->
-        <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?60267d718df44b799ec17594ac1e02e5" charset="utf-8"></script>
+        <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?60267d718df44b799ec17594ac1e02e5" charset="utf-8" defer></script>
 
     </head>
     <body>
@@ -241,10 +248,10 @@
                         <p class="breadcrumbs"><a href="../">ディスレクシアまとめ</a> > <a href="./">ディスレクシアとは</a> > ディスレクシアの著名人
 
             <ul class="published-at-updated-at">
-                <li><a href="https://github.com/yasutakeyohei/dyslexia/commits/master/src/what-is-dyslexia/celebrities.md"><i class="fa fa-refresh" aria-hidden="true" title="更新日" alt="更新日"></i> <span class="screen-reader-only">更新日</span><time datetime="2021-06-23T22:48:36+09:00" timeprop="modified" title="更新日">2021-06-23</time></a></li>
+                <li><a href="https://github.com/yasutakeyohei/dyslexia/commits/master/src/what-is-dyslexia/celebrities.md"><i class="fa fa-refresh" aria-hidden="true" title="更新日" alt="更新日"></i> <span class="screen-reader-only">更新日</span><time datetime="2021-06-23T22:52:27+09:00" timeprop="modified" title="更新日">2021-06-23</time></a></li>
                 <li><i class="fa fa-file-text-o" aria-hidden="true" title="公開日" alt="公開日"></i> <span class="screen-reader-only">公開日</span><time datetime="2020-05-18" timeprop="datepublished" title="公開日">2020-05-18</time></li>
             </ul>
-            <!-- <lastmod>2021-06-23T22:48:36+09:00</lastmod> -->
+            <!-- <lastmod>2021-06-23T22:52:27+09:00</lastmod> -->
         
 <h1 id="ディスレクシアの著名人"><a class="header" href="#ディスレクシアの著名人">ディスレクシアの著名人</a></h1>
 <p>インターネットを検索すると、ディスレクシアの著名人は欧米人には多く見つかります。しかし、日本人やその他アジア人を調べても、検索ではほとんどヒットしません。その理由はさまざま考えられます。</p>
@@ -367,7 +374,7 @@
 <li>モハメド・アリ 氏</li>
 <li>リブタイラー 氏</li>
 </ul>
-<p>なお、黒柳 徹子 氏も検索ではヒットします。しかし、ご自身の著書で、自分は学習障害であろうとしているものの、読み書きには問題がないと書かれていますので、ディスレクシアではないようです。</p>
+<p>なお、黒柳 徹子 氏も検索ではヒットします。しかし、ご自身の著書で、自分は学習障害であろうとしているものの、次のように、読み書きには問題がないと書かれていますので、ディスレクシアではないようです。</p>
 <blockquote>
 <p>このころ、私は、もうカタカナも、ひらがなも読んでいた。幼稚園で、一生懸命、習わせられたわけではないけど、本が読みたかったし、当時は、すべて漢字には、ひらがなのルビが、ふってあったから、ひらながさえ読めれば、かなりのものも読めた。</p>
 <p>字を書くのが苦手な子もいる。一枚の大きな紙に字がバラバラにしか書けない子の書いた字もテレビに映っていた。私は字は書けたけど、絵の時間に先生が「国旗を描きなさい」と言ったとき、私はそんな、日の丸なんて簡単なのは嫌だと思った。</p>
