@@ -29,7 +29,11 @@
         <link rel="shortcut icon" href="../favicon.png">
 
         <!-- Fonts -->
+        <!--
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        -->
+        <link rel="preload" href="../FontAwesome/css/font-awesome.css" as="style">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css" media="print" onload="this.media='all'">
 
         <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
@@ -46,8 +50,11 @@
         <!-- Custom theme stylesheets -->
         
         <!-- CUSTOM: CSSの読み込み（直書き） -->
+        <!--
         <link rel="stylesheet" href="../mdbook-shared/custom.css">
-
+        -->
+        <link rel="preload" href="../mdbook-shared/custom.css" as="style">
+        <link rel="stylesheet" href="../mdbook-shared/custom.css" media="print" onload="this.media='all'">
 
         
         <!-- PWA -->
@@ -55,7 +62,7 @@
         <link rel="apple-touch-icon" href="../icon-apple-192.png">
 
         <!-- typesquare -->
-        <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?60267d718df44b799ec17594ac1e02e5" charset="utf-8"></script>
+        <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?60267d718df44b799ec17594ac1e02e5" charset="utf-8" defer></script>
 
     </head>
     <body>
