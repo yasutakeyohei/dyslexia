@@ -11,6 +11,8 @@
 
 [稲垣 真澄 氏（鳥取県立鳥取療育園 きらり☆アイランド 園長 ）](https://researchmap.jp/read0000229)
 
+[岩波 明 氏（昭和大学 医学部 精神医学講座 主任教授）](https://www.showa-u.ac.jp/education/med/major/psychiat.html)
+
 [宇野 彰 氏（NPO法人 LD・Dyslexiaセンター 理事長）](https://researchmap.jp/read0202502)
 
 [小池 敏英 氏（尚絅学院大学 教授）](https://www.shokei.jp/institution/research/teacher/item.php?p=94)
