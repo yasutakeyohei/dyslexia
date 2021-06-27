@@ -825,7 +825,7 @@ blockquote > h2 {
 }
 #menu-bar i {
   font-size:24px;
-  transition: all 5s linear;
+  transition: color 5s linear;
 }
 #menu-bar i.label{
   cursor: unset;
