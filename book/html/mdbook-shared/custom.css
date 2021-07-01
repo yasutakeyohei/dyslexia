@@ -857,13 +857,14 @@ blockquote > h2 {
   gap: 3px 0px; 
   grid-template-areas: 
     ". . . . . ."
-    ". . . . . ."
+    "font-icon . . . . ."
+    "font-icon font-family font-family font-family font-family font-family" 
     ". . . . . ."
     ". . . . . ."
     ". . . . . ."
     ". ruby-on ruby-on ruby-off ruby-off ." 
     "reset reset reset help help help"; 
-}
+  }
 .a11y-popup-div .default {
   color: var(--icons);
 }
@@ -889,7 +890,8 @@ blockquote > h2 {
   background: inherit;
   font-size: inherit;
 }
-.a11y-popup-div button.selected {
+.a11y-popup-div button.selected,
+.a11y-popup-div input.selected {
   border: 2px solid var(--sidebar-active);
 }
 .a11y-popup-div button:hover {
@@ -900,11 +902,21 @@ blockquote > h2 {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
+.font-icon { grid-area: font-icon; }
+.font-family { grid-area: font-family; }
 .ruby-on { grid-area: ruby-on; }
 .ruby-off { grid-area: ruby-off; }
 .reset { grid-area: reset; }
 .help { grid-area: help; }
-
+.font-icon > div,
+.font-family > div {
+  height:100%;
+  display:grid;
+  align-items:center;
+}
+.font-family input {
+  margin: 0 5px;
+}
 /* スクリーンリーダーだけ読み上げるテキスト用 */
 .screen-reader-only { 
   border: 0;
