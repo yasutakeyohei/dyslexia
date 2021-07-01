@@ -3,6 +3,7 @@ import re
 import shutil
 import os
 import datetime
+import csv
 
 from datetime import datetime as dt
 
@@ -20,9 +21,18 @@ subst2 = "\\1\\2/\\3"
 
 descriptionRe = r"<p>.*?{{description:(.*)}}.*?</p>"
 
+# パン耳リスト用
+breadcrumbs = [[]]
+with open('../../breadcrumbs.csv', 'r', encoding="utf-8") as f:
+    breadcrumbs = csv.DictReader(f)
+    print(breadcrumbs["\\"])
+
 # index.htmlの削除
 for filepath in glob.iglob('../../book/**/*.html', recursive=True):
     filepath = os.path.normpath(filepath)
+    
+#    relativePath = filepath.replace("..\\..\\book\\html\\", "")
+    relativePath = re.search(r"\.\.\\\.\.\\book(\\html.*)\\[^\\]*\.html$", filepath).group(1)
 
     if(os.sep == "/") :
         fp = re.sub(r"../../book/html/(.+)/.html", "\\1.md", filepath, 0)
@@ -113,6 +123,9 @@ for filepath in glob.iglob('../../book/**/*', recursive=True):
 sitemap.append("</urlset>")
 with open("../html/sitemap.xml", "w", encoding="utf8") as file: # zからの相対パス指定
     file.writelines(sitemap)
+
+
+
 
 # 個別ページ用javascriptディレクトリのコピー
 # shutil.copytree('../../js-each/','../../book/html/js-each/')
