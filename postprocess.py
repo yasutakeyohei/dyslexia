@@ -97,7 +97,7 @@ subst2 = "\\1\\2/\\3"
 
 descriptionRe = r"<p>.*?{{description:(.*)}}.*?</p>"
 
-# パンくずリスト用
+# パンくずリストのCSVを読み、辞書を作成
 breadcrumbs = {}
 with open('../../breadcrumbs.csv', 'r', encoding="utf-8") as f:
     reader = csv.reader(f)
@@ -132,9 +132,11 @@ for filePath in glob.iglob('../../book/**/*.html', recursive=True):
     s = re.sub(removeIndexRe1, subst1, s, 0) #"index.html"の削除
     s = re.sub(removeIndexRe2, subst2, s, 0) #"~/~/index.html"の削除
 
-    # breadcrumbs
+    # <!-- breadcrumbs -->をパンくずリストに変換
+    # nobreadcrumbsがある場合（トップページ）は表示せず
+    # headingがある場合はそれをヘディングに設定、それ以外は<h1 id=のタグから取得
     if (not re.search(r"<!-- nobreadcrumbs -->", s)) :
-        m = re.search(r"<!-- heading:(.*) -->", s)
+        m = re.search(r"<!-- heading:\s*(.*) -->", s)
         if(m) :
             heading = m.group(1)
         else :
@@ -143,7 +145,7 @@ for filePath in glob.iglob('../../book/**/*.html', recursive=True):
                 heading = m.group(1)
             else :
                 heading = "No title"
-                print("heading missing: " + fp + "/" + fileName)
+                print("heading missing: " + fpFromHtml)
 
         breadcrumbsHtml = makeBreadcrumbs(fpFromHtml, fileName, heading)
         if (breadcrumbsHtml != "") :
