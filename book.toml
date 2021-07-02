@@ -32,3 +32,7 @@ optional = true
 [output.html.redirect]
 "./gigaschool.html" = "./news/20201030_giga-school.html"
 "./laws/barrier-free.html" = "./dokusyo-barrier-free.html"
+"./hairyo/index.html" = "../gouriteki-hairyo/"
+"./hairyo/jouhou-hosyo.html" = "../gouriteki-hairyo/jouhou-hosyo.html"
+"./hairyo/jugyo-school-life.html" = "../gouriteki-hairyo/jouhou-hosyo.html"
+"./hairyo/juken.html" = "../gouriteki-hairyo/juken.html"
