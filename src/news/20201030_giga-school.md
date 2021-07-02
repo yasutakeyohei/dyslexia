@@ -1,3 +1,4 @@
+<!-- heading: GIGAスクール構想が前倒しになりました -->
 <p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ニュース</a> > GIGAスクール構想が前倒しに
 
 {{first:2020-06-25}}

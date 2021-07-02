@@ -1,3 +1,5 @@
+<!-- heading: 全国的に民間事業者も合理的配慮が義務化されるかもしれません -->
+
 <p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ニュース</a> > 民間事業者も合理的配慮が義務化か
 
 {{first:2020-01-30}}
