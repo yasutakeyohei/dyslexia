@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 読書バリアフリー法
-
 {{first:2020-05-18}}
 
 # 読書バリアフリー法

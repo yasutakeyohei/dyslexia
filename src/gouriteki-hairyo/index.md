@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > 合理的配慮
-
 {{first:2020-05-18}}
 
 # 合理的配慮

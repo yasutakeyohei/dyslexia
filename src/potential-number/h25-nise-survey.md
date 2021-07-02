@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">潜在的人数はどれくらいか</a> > <a href="h24-mext-survey.md">平成24年12月文科省調査</a> > 平成25年6月国立特別支援教育総合研究所補足調査
-
 {{first:2020-05-18}}
 
 # 平成25年6月 国立特別支援教育総合研究所 補足調査

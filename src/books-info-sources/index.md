@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > 書籍・情報源
-
 {{first:2020-05-18}}
 
 # 書籍・情報源

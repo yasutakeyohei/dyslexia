@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">デイジー教科書以外の音声教材</a> > e-Pat
-
 {{first:2020-05-18}}
 
 # e-Pat（文字・画像付き音声教材）

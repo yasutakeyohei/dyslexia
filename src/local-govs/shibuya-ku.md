@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">他の地方公共団体における例</a> > 渋谷区
-
 {{first:2020-05-18}}
 
 # 渋谷区

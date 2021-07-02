@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアとは</a> > WHO ICD上の分類
-
 {{first:2020-05-18}}
 
 # WHO ICD上の分類

@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 日本国憲法
-
 {{first:2020-05-18}}
 
 # 日本国憲法（抜粋）

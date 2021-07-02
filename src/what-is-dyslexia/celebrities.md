@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアとは</a> > ディスレクシアの著名人
-
 {{first:2020-05-18}}
 
 # ディスレクシアの著名人

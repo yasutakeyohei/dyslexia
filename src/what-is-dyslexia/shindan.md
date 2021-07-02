@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアとは</a> > 診断について
-
 {{first:2020-05-18}}
 
 # 診断について

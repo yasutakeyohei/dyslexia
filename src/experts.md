@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="index.md">ディスレクシアまとめ</a> > 専門家
-
 {{first:2020-05-18}}
 
 # 専門家

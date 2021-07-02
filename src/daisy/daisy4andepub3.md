@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">デイジー図書/教科書について</a> > DAISY4.0とEPUB3の関係
-
 {{first:2020-05-18}}
 
 # DAISY4.0とEPUB3の関係

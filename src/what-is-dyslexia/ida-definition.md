@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアとは</a> > 国際ディスレクシア協会（IDA）による定義
-
 {{first:2020-05-18}}
 
 # 国際ディスレクシア協会（IDA）による定義

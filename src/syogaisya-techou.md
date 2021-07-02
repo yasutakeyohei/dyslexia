@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="index.md">ディスレクシアまとめ</a> > 障害者手帳
-
 {{first:2020-05-18}}
 
 # 障害者手帳

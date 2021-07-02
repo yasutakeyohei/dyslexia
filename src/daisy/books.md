@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">デイジー図書/教科書について</a> > デイジー図書の入手
-
 {{first:2020-05-18}}
 
 # デイジー図書の入手

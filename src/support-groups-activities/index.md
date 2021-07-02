@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > サポート組織・活動
-
 {{first:2020-05-18}}
 
 # サポート組織・活動

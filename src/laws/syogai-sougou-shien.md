@@ -1,4 +1,4 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">ディスレクシアに関連した法律</a> > 障害者総合支援法
+<!-- heading: 障害者総合支援法 -->
 
 {{first:2020-05-18}}
 

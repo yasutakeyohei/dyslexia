@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > 音声教材普及推進会議
-
 {{first:2020-05-18}}
 
 # 音声教材普及推進会議

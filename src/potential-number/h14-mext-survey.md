@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="../index.md">ディスレクシアまとめ</a> > <a href="index.md">潜在的人数はどれくらいか</a> > 平成14年2月文部科学省調査
-
 {{first:2020-06-25}}
 
 # 平成14年2月の文部科学省調査

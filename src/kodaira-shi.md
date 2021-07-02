@@ -1,5 +1,3 @@
-<p class="breadcrumbs"><a href="index.md">ディスレクシアまとめ</a> > 小平市の状況
-
 {{first:2020-05-18}}
 
 {{description:ディスレクシアに対する小平市の状況を紹介しています。}}
