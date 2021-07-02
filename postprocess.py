@@ -8,6 +8,8 @@ import json
 
 from datetime import datetime as dt
 
+siteURL = "https://yasutakeyohei.com/books/dyslexia/"
+
 matchedStr =""
 def getMatched(match):
     global matchedStr
@@ -40,6 +42,10 @@ def makeBreadcrumbs(fp, fileName, heading):
             bi = "/" if accumDir == "/" else accumDir[:-1] # /, /test1/test2
 
             if (backDir == "") : backDir = "./"
+
+            backPath = siteURL[:-1] + os.path.normpath(os.path.join(pathDir, backDir)).replace("\\", "/")
+            if(backPath[-1] != "/") : backPath = backPath + "/"
+
             if (i == len(directories) - 1) : # /test1/test2/ 
                 if (fileName == "index.html") : # test2/index.md の場合リンクなし
                     breadcrumbsHtml += f'{breadcrumbs[bi]}'
@@ -54,7 +60,7 @@ def makeBreadcrumbs(fp, fileName, heading):
                         "@type": "ListItem",
                         "position": position,
                         "name": breadcrumbs[bi],
-                        "item": backDir
+                        "item": backPath
                     })
                     position += 1
                     itemListElements.append({
@@ -68,7 +74,7 @@ def makeBreadcrumbs(fp, fileName, heading):
                     "@type": "ListItem",
                     "position": position,
                     "name": breadcrumbs[bi],
-                    "item": backDir
+                    "item": backPath
                 })
                 position += 1
         j = {
@@ -202,7 +208,7 @@ for filePath in glob.iglob('../../book/**/*', recursive=True):
         fp = fp.replace("\\", "/")
     srcfp = "../../src/" + fp.replace(".html", ".md")
 
-    url = "https://yasutakeyohei.com/books/dyslexia/" + fp.replace("index.html", "")
+    url = siteURL + fp.replace("index.html", "")
 
     key = ""
     if os.path.exists(srcfp) :
