@@ -17,7 +17,7 @@ def getMatched(match):
     return ""
 
 # パンくずリスト生成
-def makeBreadcrumbs(fp, fileName, heading):
+def makeBreadcrumbs(fp, fileName, heading, onlyJson):
     pathDir = "/" + re.sub(r"(/?[^/]*\.md)", "", fp) # /, /test1/test2
     breadcrumbsHtml = ""
     if (pathDir in breadcrumbs) :
@@ -82,14 +82,23 @@ def makeBreadcrumbs(fp, fileName, heading):
             "@type": "BreadcrumbList",
             "itemListElement": itemListElements
         }
-        return '''<p class="breadcrumbs">{breadcrumbsHtml}</p>
-        <script type="application/ld+json">
-            {json}
-        </script>
-        '''.format(
-                json = json.dumps(j, indent = 2, ensure_ascii=False),
-                breadcrumbsHtml = breadcrumbsHtml
-            )
+        if (onlyJson) :
+            return '''
+            <script type="application/ld+json">
+                {json}
+            </script>
+            '''.format(
+                    json = json.dumps(j, indent = 2, ensure_ascii=False),
+                )
+        else :
+            return '''<p class="breadcrumbs">{breadcrumbsHtml}</p>
+            <script type="application/ld+json">
+                {json}
+            </script>
+            '''.format(
+                    json = json.dumps(j, indent = 2, ensure_ascii=False),
+                    breadcrumbsHtml = breadcrumbsHtml
+                )
     else :
         print(pathDir + " not listed in breadcrumbs.csv")
         return ""
@@ -141,21 +150,21 @@ for filePath in glob.iglob('../../book/**/*.html', recursive=True):
     # <!-- breadcrumbs -->をパンくずリストに変換
     # nobreadcrumbsがある場合（トップページ）は表示せず
     # headingがある場合はそれをヘディングに設定、それ以外は<h1 id=のタグから取得
-    if (not re.search(r"<!-- nobreadcrumbs -->", s)) :
-        m = re.search(r"<!-- heading:\s*(.*) -->", s)
+    onlyJson = True if (re.search(r"<!-- nobreadcrumbs -->", s))  else False
+    m = re.search(r"<!-- heading:\s*(.*) -->", s)
+    if(m) :
+        heading = m.group(1)
+    else :
+        m = re.search(r'<h1 id=.+><a.+>(.+?)</a></h1>', s)
         if(m) :
             heading = m.group(1)
         else :
-            m = re.search(r'<h1 id=.+><a.+>(.+?)</a></h1>', s)
-            if(m) :
-                heading = m.group(1)
-            else :
-                heading = "No title"
-                print("heading missing: " + fpFromHtml)
+            heading = "No title"
+            print("heading missing: " + fpFromHtml)
 
-        breadcrumbsHtml = makeBreadcrumbs(fpFromHtml, fileName, heading)
-        if (breadcrumbsHtml != "") :
-            s = s.replace("<!-- breadcrumbs -->", breadcrumbsHtml, 1)
+    breadcrumbsHtml = makeBreadcrumbs(fpFromHtml, fileName, heading, onlyJson)
+    if (breadcrumbsHtml != "") :
+        s = s.replace("<!-- breadcrumbs -->", breadcrumbsHtml, 1)
 
 
     matchedStr = ""
