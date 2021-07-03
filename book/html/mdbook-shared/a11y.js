@@ -30,6 +30,7 @@
   const html = document.querySelector('html');
   const a11yToggleButton = document.getElementById('a11y-toggle');
   const a11yPopup = document.getElementById('a11y-list');
+  const a11yFontFamilyInput = document.getElementById('a11y-font-family-name');
 
    /* 利用可能ステートとデフォルトステートをindex.hbsから取得 */
   let availableStates = {};
@@ -65,6 +66,17 @@
     });
   }
 
+  /*
+    {
+      fontFamily: "font-family-input",
+      fontFamilyName: "（ユーザーが指定）",
+      fontSize: "font-size-2",
+      letterSpacing: "letter-spacing-2",
+      lineHeight: "line-height-2",
+      ruby: "ruby-off",
+      theme: "light"
+    }
+  */
   const setState = (newState, store = true) => {
     /* 一旦全クラス削除 */
     for (const v of Object.values(availableStates)) {
@@ -74,9 +86,31 @@
     }
 
     state = {...state, ...newState}; //merge state
+
     /* ステートにもとづいてクラスを設定 */
-    for (const cls of Object.values(state)) {
-      html.classList.add(cls);
+    for (const [key, val] of Object.entries(state)) {
+      if (key !== "fontFamilyName") {
+        html.classList.add(val);
+      }
+    }
+
+    /* 任意のfont-familyを設定している場合 */
+    if (state.fontFamily === "font-family-input") {
+      html.style.fontFamily = state.fontFamilyName;
+    } else {
+      html.style.removeProperty("font-family");
+    }
+
+    /* type squre の動的ロード */
+    if (state.fontFamily === "font-family-ud2") {
+      console.log("tes");
+      if (!document.body.contains(document.getElementById('typesquare-script'))) {
+        console.log("sc");
+        const script = document.createElement('script');
+        script.id = "typesquare-script";
+        script.src = "//typesquare.com/3/tsst/script/ja/typesquare.js?60267d718df44b799ec17594ac1e02e5";
+        document.body.appendChild(script);
+      }
     }
  
     if (store) {
@@ -122,6 +156,13 @@
       setState({[e.target.dataset.key]: val});
     }
   });
+
+  a11yFontFamilyInput.addEventListener('keyup', (e) => {
+    const id = e.target.id;
+    if (id == "a11y-font-family-name") {
+      setState({fontFamilyName: e.target.value})
+    }
+  })
 
   a11yPopup.addEventListener('focusout', (e) => {
     // e.relatedTarget is null in Safari and Firefox on macOS (see workaround below)
