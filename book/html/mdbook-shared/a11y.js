@@ -33,6 +33,7 @@
   const a11yFontFamilyInput = document.getElementById('a11y-font-family-name');
 
    /* 利用可能ステートとデフォルトステートをindex.hbsから取得 */
+   /* fontFamilyNameだけ別扱い */
   let availableStates = {};
   let defaultState = {};
   [...a11yPopup.querySelectorAll("[role='menuitem']")].forEach((elm) => {
@@ -62,7 +63,11 @@
       elm.classList.remove("selected");
     });
     Object.keys(defaultState).forEach((key) => {
-      a11yPopup.querySelector(`[data-key='${key}'][data-val='${state[key]}']`).classList.add("selected");
+      if (state[key] === "font-family-input") {
+        a11yFontFamilyInput.value = state["fontFamilyName"];
+      } else {
+        a11yPopup.querySelector(`[data-key='${key}'][data-val='${state[key]}']`).classList.add("selected");
+      }
     });
   }
 
@@ -103,9 +108,7 @@
 
     /* type squre の動的ロード */
     if (state.fontFamily === "font-family-ud2") {
-      console.log("tes");
       if (!document.body.contains(document.getElementById('typesquare-script'))) {
-        console.log("sc");
         const script = document.createElement('script');
         script.id = "typesquare-script";
         script.src = "//typesquare.com/3/tsst/script/ja/typesquare.js?60267d718df44b799ec17594ac1e02e5";
@@ -120,11 +123,17 @@
     }
     updatePopup();
   }
+
+  /* stateが有効か確認。fontFamilyNameだけ別扱い */
   const validateState = (newState) => {
     const s = {...defaultState};
     for (const [k, v] of Object.entries(newState)) {
-      if (k in availableStates) {
-        s[k] = availableStates[k].includes(v) ? newState[k] : defaultState[k];
+      if (k === "fontFamilyName") {
+        s[k] = newState[k];
+      } else {
+        if (k in availableStates) {
+          s[k] = availableStates[k].includes(v) ? newState[k] : defaultState[k];
+        }
       }
     }
     return s;
