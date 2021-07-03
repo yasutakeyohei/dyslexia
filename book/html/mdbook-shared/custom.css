@@ -897,7 +897,6 @@ blockquote > h2 {
   cursor: pointer;
   color: inherit;
   background: inherit;
-  font-size: inherit;
 }
 .a11y-popup-div button.selected,
 .a11y-popup-div input.selected {
