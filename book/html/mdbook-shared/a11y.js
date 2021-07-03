@@ -187,3 +187,11 @@
   });
 
 })();
+
+/* click to set font-family */
+const a11ySetFontFamily = (fontFamily) => {
+  const a11yFontFamilyInput = document.getElementById('a11y-font-family-name');
+  a11yFontFamilyInput.value = fontFamily;
+  a11yFontFamilyInput.dispatchEvent(new Event("keyup", {bubbles:true}));
+  a11yFontFamilyInput.dispatchEvent(new MouseEvent("click", {bubbles:true}));
+}
