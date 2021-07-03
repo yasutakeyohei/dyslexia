@@ -63,10 +63,9 @@
       elm.classList.remove("selected");
     });
     Object.keys(defaultState).forEach((key) => {
+      a11yPopup.querySelector(`[data-key='${key}'][data-val='${state[key]}']`).classList.add("selected");
       if (state[key] === "font-family-input") {
         a11yFontFamilyInput.value = state["fontFamilyName"];
-      } else {
-        a11yPopup.querySelector(`[data-key='${key}'][data-val='${state[key]}']`).classList.add("selected");
       }
     });
   }
