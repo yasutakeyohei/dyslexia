@@ -5,7 +5,7 @@
 .font-family-mincho { font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "serif"; }
 .font-family-uiprop { font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "MS PGothic", "sans-serif"; }
 
-.line-height-0 { --line-height: 2.6rem; --line-height-chapter: 1.5em; }
+.line-height-0 { --line-height: 3.0rem; --line-height-chapter: 1.5em; }
 .line-height-1 { --line-height: 3.5rem; --line-height-chapter: 3.5rem; }
 .line-height-2 { --line-height: 4.5rem; --line-height-chapter: 4.5rem; }
 .line-height-3 { --line-height: 5.5rem; --line-height-chapter: 5.5rem; }
