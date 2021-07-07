@@ -20,8 +20,6 @@
         - [平成25年6月 特総研補足調査](./potential-number/h25-nise-survey.md)
     - [平成14年2月 文科省調査](./potential-number/h14-mext-survey.md)
 - [誰も見過ごさないためのアセスメント](./assessments/index.md)
-    - [test](./assessments/test/index.md)
-    - [greg](./assessments/test/greg.md)
 <!--    - [都教委 アセスマニュアル・中学校](./assessments/h30-tmbe-yomi-kaki-chugaku.md)
     - [都教委 アセス個別指導例・中学校](./assessments/h30-tmbe-yomi-kaki-kobetu-chugaku.md)
     - [都教委 アセスマニュアル・小学校](./assessments/h29-tmbe-yomi-kaki-syogaku.md)
