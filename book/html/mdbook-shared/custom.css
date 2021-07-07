@@ -1185,3 +1185,17 @@ input[type="checkbox"]{
   background-color: #4CAF50;
   color: white;
 }
+
+
+div.recent-updated {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 15rem;
+  border: 1px solid var(--fg);
+}
+
+div.recent-updated ul {
+  list-style-type: none;
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
