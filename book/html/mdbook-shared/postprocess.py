@@ -134,7 +134,7 @@ for filePath in glob.iglob('../../book/**/*.html', recursive=True):
         fpFromHtml = fpFromHtml.replace("\\", "/")
 
     fp = "../../src/" + fpFromHtml
-
+    print(fp)
     if os.path.exists(fp) :
         dt = datetime.datetime.fromtimestamp(os.stat(fp).st_mtime)
         keyJST8601 = dt.strftime('%Y/%m月%d日%H:%M:%S+09:00')
