@@ -1199,3 +1199,11 @@ div.recent-updated ul {
   padding: 0 0 0 1rem;
   margin: 0;
 }
+
+
+#sidebar-toggle {
+  color: var(--links);
+}
+#menu-bar i, #menu-bar .icon-button {
+  transition: unset;
+}
