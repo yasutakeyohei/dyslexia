@@ -5,16 +5,16 @@
   const sidebarToggleIcon = document.getElementById('sidebar-toggle-icon');
 
   if (sidebarToggle.getAttribute("aria-expanded") === "true") {
-    sidebarToggleIcon.classList.replace("fa-chevron-circle-right", "fa-chevron-circle-left");
+    sidebarToggleIcon.classList.replace("fa-angle-right", "fa-angle-left");
   }
 
   const observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
       if (mutation.attributeName === "aria-expanded") {
         if (sidebarToggle.getAttribute("aria-expanded") === "true") {
-          sidebarToggleIcon.classList.replace("fa-chevron-circle-right", "fa-chevron-circle-left");
+          sidebarToggleIcon.classList.replace("fa-angle-right", "fa-angle-left");
         } else {
-          sidebarToggleIcon.classList.replace("fa-chevron-circle-left", "fa-chevron-circle-right");
+          sidebarToggleIcon.classList.replace("fa-angle-left", "fa-angle-right");
         }
       }
     })

@@ -126,43 +126,45 @@ with open('../../breadcrumbs.csv', 'r', encoding="utf-8") as f:
 updates = []
 for filePath in glob.iglob('../../book/**/*.html', recursive=True):
     filePath = os.path.normpath(filePath)
-    
-    if(os.sep == "/") :
-        fpFromHtml = re.sub(r"../../book/html/(.+)/.html", "\\1.md", filePath, 0) # filepath from html
-    else :
-        fpFromHtml = re.sub(r"..\\..\\book\\html\\(.+)\.html", "\\1.md", filePath, 0)
-        fpFromHtml = fpFromHtml.replace("\\", "/")
+    fileName = os.path.basename(filePath)
 
-    fp = "../../src/" + fpFromHtml
-    print(fp)
-    if os.path.exists(fp) :
-        dt = datetime.datetime.fromtimestamp(os.stat(fp).st_mtime)
-        keyJST8601 = dt.strftime('%Y/%m月%d日%H:%M:%S+09:00')
-        y = str(int(dt.strftime('%Y')) - 2019)
-        mon = str(int(dt.strftime('%m')))
-        d = str(int(dt.strftime('%d')))
-    with open(filePath, encoding="utf8") as file:
-        s = file.read()
-    m = re.search(r"<!-- heading:\s*(.*) -->", s)
-    if(m) :
-        heading = m.group(1)
-    else :
-        m = re.search(r'<h1 id=.+><a.+>(.+?)</a></h1>', s)
-        if(m) :
-            heading = m.group(1)
+    if(fileName != "404.html") :
+        if(os.sep == "/") :
+            fpFromHtml = re.sub(r"../../book/html/(.+)/.html", "\\1.md", filePath, 0) # filepath from html
         else :
-            heading = "No title"
+            fpFromHtml = re.sub(r"..\\..\\book\\html\\(.+)\.html", "\\1.md", filePath, 0)
+            fpFromHtml = fpFromHtml.replace("\\", "/")
 
-    # 更新日・記事タイトル・パスに追加
-    if(keyJST8601 != "") :
-        updates.append({
-            "JST8601": keyJST8601,
-            "year": y,
-            "month": mon,
-            "day": d,
-            "heading": heading,
-            "path": fpFromHtml
-        })
+        fp = "../../src/" + fpFromHtml
+
+        if os.path.exists(fp) :
+            dt = datetime.datetime.fromtimestamp(os.stat(fp).st_mtime)
+            keyJST8601 = dt.strftime('%Y/%m/%d %H:%M:%S+09:00')
+            y = str(int(dt.strftime('%Y')) - 2019)
+            mon = str(int(dt.strftime('%m')))
+            d = str(int(dt.strftime('%d')))
+            with open(filePath, encoding="utf8") as file:
+                s = file.read()
+            m = re.search(r"<!-- heading:\s*(.*) -->", s)
+            if(m) :
+                heading = m.group(1)
+            else :
+                m = re.search(r'<h1 id=.+><a.+>(.+?)</a></h1>', s)
+                if(m) :
+                    heading = m.group(1)
+                else :
+                    heading = "No title"
+
+            # 更新日・記事タイトル・パスに追加
+            if(keyJST8601 != "") :
+                updates.append({
+                    "JST8601": keyJST8601,
+                    "year": y,
+                    "month": mon,
+                    "day": d,
+                    "heading": heading,
+                    "path": fpFromHtml
+                })
 
 # 最近の更新日用HTML作成
 recentUpdateHtmls = ["<div class='recent-updated'>", "<ul>"]
@@ -221,8 +223,8 @@ for filePath in glob.iglob('../../book/**/*.html', recursive=True):
     if (breadcrumbsHtml != "") :
         s = s.replace("<!-- breadcrumbs -->", breadcrumbsHtml, 1)
 
-    # <!-- recent update -->を最近の更新日に変換
-    s = s.replace("<!-- recent update -->", recentUpdateHtml, 1)
+    # <!-- recent updates -->を最近の更新日に変換
+    s = s.replace("<!-- recent updates -->", recentUpdateHtml, 1)
 
     matchedStr = ""
     s = re.sub(r"<p>.*{{description:(.*)}}.*</p>", getMatched, s, 0)
