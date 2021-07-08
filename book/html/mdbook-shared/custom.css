@@ -947,12 +947,18 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: var(--letter-spacing);
 }
 li {
-  line-height: calc( var(--line-height)*1.2);
+  line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
+  margin-bottom: calc(var(--line-height)*0.5);
 }
+li:last-child {
+  margin-bottom: 0;
+}
+.chapter li,
 .chapter li.chapter-item {
-  line-height: var(--line-height-chapter);
+  line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
+  margin-bottom:0;
 }
 
 
@@ -1100,6 +1106,9 @@ span.q-a {
   font-weight: 500;
   text-shadow: 0 -1px 1px var(--links);
 }
+.acd-wrapper label span a {
+  color: var(--bg) !important;
+}
 .acd-wrapper .child-tab label span{
   font-size: calc(var(--font-size)*1.05);
 }
@@ -1198,6 +1207,9 @@ div.recent-updated ul {
   list-style-type: none;
   padding: 0 0 0 1rem;
   margin: 0;
+}
+div.recent-updated ul li {
+  margin-bottom:0;
 }
 
 
