@@ -1,7 +1,9 @@
 "use strict";
 
 // Fix back button cache problem
-window.onunload = function () { };
+//window.onunload = function () { };
+const terminationEvent = 'onpagehide' in self ? 'pagehide' : 'unload';
+addEventListener(terminationEvent, () => {}, {capture: true});
 
 // Global variable, shared between modules
 function playpen_text(playpen) {
