@@ -20,7 +20,20 @@
 > [bizSPA!フレッシュ 失読症を乗り越え天職に。23歳「太神楽師」がYoutuberになったわけ](https://bizspa.jp/post-378645/)
 
 ### 砂長 美ん（すななが びん）氏
-[一般社団法人 ありがとうショップの代表理事](http://arigatoshop.jp/ourvision/)をされている方で、[『DXな日々 美んちゃんの場合』](http://dxnahibi.com/introduction.html)という映画で主人公も務められています。
+[一般社団法人 ありがとうショップの代表](http://arigatoshop.jp/ourvision/)をされている方で、『[DXな日々 美んちゃんの場合](http://dxnahibi.com/introduction.html)』という、日本で初めて、ディスレクシアに焦点を当てたドキュメンタリー映画の、主人公でもあります。障害者手帳をLD（学習障害）で取られたのも、美んさんが日本で最初とのことです。
+
+> ロンドン芸術大学在学中にディスレクシアを指摘される。帰国後も転職を12回繰り返すどん底のなか、ドキュメンタリー映画「DX（ディスレクシア）な日々」（2012年）の主役。
+> 全国4万件あるという障害者就労施設の商品を、お城、博物館、道の駅などの観光地で販売。また国会議員会館売店（衆議院・参議院、4店舗）でも新しい付加価値をつけて販売するスタイルを確立。
+> 現在は、[ぜんち共済](https://www.z-kyosai.com/)、[VALT JAPAN](https://www.valt-japan.com/)、[ミンナのミカタ](https://minnanomikata.com/)、[リンクライン](http://www.linkline.co.jp/)、3社の宣伝顧問もつとめる。
+> 著者に「[障がい福祉の学ぶ働く暮らすを変えた5人のビジネス](https://store.lagunapublishing.co.jp/items/38893638)」「[企業と障がい福祉5人のSDGs的働き方改革](https://store.lagunapublishing.co.jp/items/38883229)」
+>
+> [ありがとうショップ・代表プロフィール](代表プロフィール)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yw7GA3iPkME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+なお、「DX（ディスレクシア）な日々 美んちゃんの場合」は無料レンタルしているとのことです。詳しくは[ありがとうショップ：私達の目標と理念](https://arigatoshop.jp/ourvision/)の下の方をご覧ください。
+
+また、東京都港区にある[東京都人権プラザ](https://www.tokyo-hrp.jp/)の図書資料室でも、映画を無料でレンタルできるようです。[東京都人権プラザ・図書資料室](https://ilisod007.apsel.jp/tokyo-hrp-lib/)の検索窓に、「19006D1」と記入して検索するとヒットするかと思います。[図書資料室の利用案内](https://www.tokyo-hrp.jp/plaza-library-index.html)を見ると、東京都内に居住、通勤・通学している人であれば、1週間借りられるようです。
 
 ### 中竹 竜二 氏
 [日本ラグビーフットボール協会コーチングディレクター](https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%AB%B9%E7%AB%9C%E4%BA%8C)をされています。
