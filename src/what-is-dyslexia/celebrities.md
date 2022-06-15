@@ -27,7 +27,7 @@
 > 現在は、[ぜんち共済](https://www.z-kyosai.com/)、[VALT JAPAN](https://www.valt-japan.com/)、[ミンナのミカタ](https://minnanomikata.com/)、[リンクライン](http://www.linkline.co.jp/)、3社の宣伝顧問もつとめる。
 > 著者に「[障がい福祉の学ぶ働く暮らすを変えた5人のビジネス](https://store.lagunapublishing.co.jp/items/38893638)」「[企業と障がい福祉5人のSDGs的働き方改革](https://store.lagunapublishing.co.jp/items/38883229)」
 >
-> [ありがとうショップ・代表プロフィール](代表プロフィール)
+> [ありがとうショップ・代表プロフィール](https://arigatoshop.jp/ourvision/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yw7GA3iPkME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
